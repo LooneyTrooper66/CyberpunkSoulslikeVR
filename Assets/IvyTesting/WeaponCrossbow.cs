@@ -1,7 +1,10 @@
 using UnityEngine;
 
-public class WeaponCrossbow : MonoBehaviour
+public class WeaponCrossbow : WeaponClass
 {
+    [Header("Core")]
+    [SerializeField] bool Ammo;
+
 
 
 
@@ -19,7 +22,7 @@ public class WeaponCrossbow : MonoBehaviour
 
 
 
-    public void Fire()
+    public override void Fire()
     {
         Debug.Log("Shoot");
     }

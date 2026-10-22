@@ -7,7 +7,6 @@ public class WeaponCrossbow : WeaponClass
 
 
 
-
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -27,3 +26,4 @@ public class WeaponCrossbow : WeaponClass
         Debug.Log("Shoot");
     }
 }
+

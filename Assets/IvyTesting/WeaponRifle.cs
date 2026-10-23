@@ -10,27 +10,34 @@ public class WeaponRifle : WeaponClass
     public override void OnEmpty()
     {
         base.OnEmpty();
-        mag.enabled = true;
+        //mag.enabled = true;
 
     }
 
     public override void OnPickUp()
     {
-       base.OnPickUp();
-        //enable the mag obj
-        Debug.Log("rifel pickuo");
+        base.OnPickUp();
         Body.enabled = false;
-        magInteractable.enabled = true;
+
+        if (magInteractable != null) 
+        { 
+            magInteractable.enabled = true;
+        }
+
+        //deselect the mag from the rifle on grab
 
     }
 
     public override void OnDrop()
     {
         base.OnDrop();
-        Debug.Log("rifel drop");
         //disabkle grabbing the mag
         Body.enabled = true;
-        magInteractable.enabled = false;
+
+        if (magInteractable != null)
+        {
+            magInteractable.enabled = false;
+        }
 
     }
 }

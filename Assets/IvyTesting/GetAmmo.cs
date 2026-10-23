@@ -9,7 +9,7 @@ public class GetAmmo : MonoBehaviour
         if (GetAmmoDebug) { GetAmmoDebug = false;GrabAmmo(); }
     }
 
-    public static GetAmmo Instance = new GetAmmo();
+    public static GetAmmo Instance;
     private void Start() {  Instance = this; }
 
     public WeaponClass WeaponClass;

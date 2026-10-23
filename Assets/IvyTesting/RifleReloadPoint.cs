@@ -12,7 +12,7 @@ public class RifleReloadPoint : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         //checks if th ecollision is a mag and the magaise matched the weapon type
-        if(other.CompareTag("Magazine") && other.gameObject.GetComponent<Magazine>().Type == magType)
+        /*if(other.CompareTag("Magazine") && other.gameObject.GetComponent<Magazine>().Type == magType)
         {
             //reload the weapon with the provided mag
             Magazine mag = other.gameObject.GetComponent<Magazine>();
@@ -23,7 +23,7 @@ public class RifleReloadPoint : MonoBehaviour
             mag.gameObject.transform.rotation = LockedPoint.rotation;
             mag.gameObject.GetComponent<Rigidbody>().isKinematic = true;
             //
-        }
+        }*/
         
     }
 }

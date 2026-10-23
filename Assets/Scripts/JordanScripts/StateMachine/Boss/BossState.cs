@@ -1,14 +1,14 @@
 using UnityEngine;
 
-public class EnemyState : MonoBehaviour
+public class BossState
 {
-    protected EnemyBase enemyBase;
-    protected StateMachineManager stateManager;
+    protected BossStateMachine enemyBase;
+    protected BossStateMachineManager stateManager;
 
 
-    public EnemyState (EnemyBase enemyBase, StateMachineManager stateManager)
+    public BossState(BossStateMachine enemyBase, BossStateMachineManager stateManager)
     {
-        this.enemyBase = enemyBase; 
+        this.enemyBase = enemyBase;
         this.stateManager = stateManager;
     }
 

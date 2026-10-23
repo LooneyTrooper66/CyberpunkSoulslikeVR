@@ -1,19 +1,25 @@
 using UnityEngine;
 
-public class DroneChaseState : EnemyState
+public class BossIdleState : BossState
 {
-    public DroneChaseState(EnemyBase enemyBase, StateMachineManager stateManager) : base(enemyBase, stateManager)
+    float i = 0;
+
+
+    public BossIdleState(BossStateMachine enemyBase, BossStateMachineManager stateManager) : base(enemyBase, stateManager)
     {
     }
 
     public override void EnterLogic()
     {
         base.EnterLogic();
+        Debug.Log("entered chase");
     }
 
     public override void FrameUpdate()
     {
         base.FrameUpdate();
+        i += Time.deltaTime;
+        if (i > 5) stateManager.ChangeState(enemyBase.tileAttackState);
     }
 
     public override void PhysicsUpdate()
@@ -24,5 +30,6 @@ public class DroneChaseState : EnemyState
     public override void ExitLogic()
     {
         base.ExitLogic();
+        Debug.Log("exited chase");
     }
 }

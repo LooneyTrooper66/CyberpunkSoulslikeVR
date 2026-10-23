@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class StateMachineManager
+public class EnemyStateMachineManager
 {
     public EnemyState currentState { get; set; }
 

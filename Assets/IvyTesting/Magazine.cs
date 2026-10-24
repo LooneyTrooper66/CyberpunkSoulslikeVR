@@ -3,6 +3,7 @@ using UnityEngine;
 public class Magazine : MonoBehaviour
 {
     [Header("base")]
+    public WeaponClass loadedWeapon; //the weapon this mag is loaded into
     public GameObject bulletObj;
     public uint ammo;
     public uint magSize;
@@ -15,18 +16,24 @@ public class Magazine : MonoBehaviour
         //disable all the rigibyody stuff
 
         //deparent it from the rifle
-        transform.parent = null;
         //deslect da thingy
         //allow it to be droped into a reload point
 
         Debug.Log("GRAB");
+        if (loadedWeapon != null)
+        {
+            loadedWeapon.Unload();
+            loadedWeapon.mag = null;
+            loadedWeapon = null;
+
+        }
     }
     public void OnDrop()
     {
         Debug.Log("DROP");
-        GetComponent<Rigidbody>().isKinematic = false;
 
         LookForHost();
+        
     }
 
     /// <summary>
@@ -35,17 +42,31 @@ public class Magazine : MonoBehaviour
     public void LookForHost()
     {
         //do a shepere cast for nearby mags if return true then attach mag to thingyyyyyyyyyyyyyyyyyy
-        RaycastHit hit;
-        Physics.SphereCast(transform.position, 0.3f,Vector3.zero,out hit,0.1f,magMask);
-
+        RaycastHit[] hits;
+        hits = Physics.SphereCastAll(transform.position, 0.1f,Vector3.forward,0.1f,magMask);
         Debug.Log("LOOKING FOR HOST");
+        Debug.Log(hits.Length);
 
-        if (hit.collider != null && hit.collider.GetComponent<WeaponClass>() != null)
+        foreach (RaycastHit hit in hits)
         {
-            //I FOUND A MAG!!!!!!!! 
-            //yippier
-            Debug.Log("RAHHHHHHHH"); 
+            Debug.Log(hit.collider.name);
 
+            if (hit.collider != null && hit.collider.GetComponent<ReloadPoint>() != null && hit.collider.GetComponent<ReloadPoint>().attachedWeapon.mag == null && hit.collider.GetComponent<ReloadPoint>().magType == Type)
+            {
+                //I FOUND A MAG!!!!!!!! 
+                //yippier
+                loadedWeapon = hit.collider.GetComponent<ReloadPoint>().attachedWeapon;
+                loadedWeapon.Reload(this);
+
+                this.transform.position = hit.collider.GetComponent<ReloadPoint>().LockedPoint.position;
+                this.transform.rotation = hit.collider.GetComponent<ReloadPoint>().LockedPoint.rotation;
+                transform.parent = loadedWeapon.gameObject.transform; 
+                //set the postion of this magasie
+                Debug.Log("RAHHHHHHHH");
+                GetComponent<Rigidbody>().isKinematic = true;
+                return;
+            }
+            else { transform.parent = null; Debug.Log("NOTHING FOUNDs"); }
         }
     }
 

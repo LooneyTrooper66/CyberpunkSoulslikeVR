@@ -5,8 +5,6 @@ public class WeaponRifle : WeaponClass
 {
     [Header("Rifle")]
     public Collider Body;
-    public XRGrabInteractable magInteractable;
-
     public override void OnEmpty()
     {
         base.OnEmpty();
@@ -19,9 +17,9 @@ public class WeaponRifle : WeaponClass
         base.OnPickUp();
         Body.enabled = false;
 
-        if (magInteractable != null) 
+        if (mag != null) 
         { 
-            magInteractable.enabled = true;
+            mag.GetComponent<XRGrabInteractable>().enabled = true;
         }
 
         //deselect the mag from the rifle on grab
@@ -34,9 +32,9 @@ public class WeaponRifle : WeaponClass
         //disabkle grabbing the mag
         Body.enabled = true;
 
-        if (magInteractable != null)
+        if (mag != null)
         {
-            magInteractable.enabled = false;
+            mag.GetComponent<XRGrabInteractable>().enabled = false;
         }
 
     }

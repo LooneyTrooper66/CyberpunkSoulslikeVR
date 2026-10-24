@@ -59,7 +59,13 @@ public abstract class WeaponClass : MonoBehaviour
 
     public virtual void Reload(Magazine Mag) //if the weapon uses special ammo types
     {
-        ammoVisuliser.text = ($"{mag.ammo}\n---\n{mag.magSize}");
+        mag = Mag;
+        ammoVisuliser.text = ($"{Mag.ammo}\n---\n{Mag.magSize}");
+    }
+    public virtual void Unload()
+    {
+        ammoVisuliser.text = ($"{0}\n---\n{0}");
+        mag = null;
     }
 
     public virtual void OnPickUp()

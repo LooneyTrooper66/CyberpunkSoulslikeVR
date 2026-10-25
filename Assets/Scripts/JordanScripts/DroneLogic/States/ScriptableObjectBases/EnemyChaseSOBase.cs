@@ -2,11 +2,11 @@ using UnityEngine;
 
 public class EnemyChaseSOBase : ScriptableObject
 {
-    protected DroneStateMachine enemyBase;
+    protected EnemyBase enemyBase;
     protected GameObject gameObject;
 
 
-    public virtual void Initialize(DroneStateMachine enemyBase, GameObject gameObject)
+    public virtual void Initialize(EnemyBase enemyBase, GameObject gameObject)
     {
         this.enemyBase = enemyBase;
         this.gameObject = gameObject;

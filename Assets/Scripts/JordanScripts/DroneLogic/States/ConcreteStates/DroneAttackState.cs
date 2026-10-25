@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class DroneAttackState : EnemyState
 {
-    public DroneAttackState(DroneStateMachine enemyBase, EnemyStateMachineManager stateManager) : base(enemyBase, stateManager)
+    public DroneAttackState(EnemyBase enemyBase, EnemyStateMachineManager stateManager) : base(enemyBase, stateManager)
     {
     }
 

@@ -2,11 +2,11 @@ using UnityEngine;
 
 public class EnemyState
 {
-    protected DroneStateMachine enemyBase;
+    protected EnemyBase enemyBase;
     protected EnemyStateMachineManager stateManager;
 
 
-    public EnemyState (DroneStateMachine enemyBase, EnemyStateMachineManager stateManager)
+    public EnemyState (EnemyBase enemyBase, EnemyStateMachineManager stateManager)
     {
         this.enemyBase = enemyBase; 
         this.stateManager = stateManager;

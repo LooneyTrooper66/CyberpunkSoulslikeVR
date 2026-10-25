@@ -5,14 +5,14 @@ public class BossLaserAttackState : BossState
     float i = 0;
 
 
-    public BossLaserAttackState(BossStateMachine enemyBase, BossStateMachineManager stateManager) : base(enemyBase, stateManager)
+    public BossLaserAttackState(BossBase enemyBase, BossStateMachineManager stateManager) : base(enemyBase, stateManager)
     {
     }
 
     public override void EnterLogic()
     {
         base.EnterLogic();
-        Debug.Log("entered chase");
+        Debug.Log("entered laser");
     }
 
     public override void FrameUpdate()
@@ -30,6 +30,6 @@ public class BossLaserAttackState : BossState
     public override void ExitLogic()
     {
         base.ExitLogic();
-        Debug.Log("exited chase");
+        Debug.Log("exited laser");
     }
 }

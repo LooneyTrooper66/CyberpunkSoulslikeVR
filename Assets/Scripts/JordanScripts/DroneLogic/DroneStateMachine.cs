@@ -3,7 +3,7 @@ using UnityEngine;
 public class DroneStateMachine : EnemyBase
 {
     // Concrete States \\
-    public DronePatrolState patrolState; 
+    /*public DronePatrolState patrolState; 
     public DroneChaseState chaseState;
     public DroneAttackState attackState;
 
@@ -35,5 +35,5 @@ public class DroneStateMachine : EnemyBase
         attackBaseInstance.Initialize(this, gameObject);
 
         stateManager.Initialize(patrolState);
-    }
+    }*/
 }

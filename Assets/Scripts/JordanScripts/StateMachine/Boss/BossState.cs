@@ -2,11 +2,11 @@ using UnityEngine;
 
 public class BossState
 {
-    protected BossStateMachine enemyBase;
+    protected BossBase enemyBase;
     protected BossStateMachineManager stateManager;
 
 
-    public BossState(BossStateMachine enemyBase, BossStateMachineManager stateManager)
+    public BossState(BossBase enemyBase, BossStateMachineManager stateManager)
     {
         this.enemyBase = enemyBase;
         this.stateManager = stateManager;

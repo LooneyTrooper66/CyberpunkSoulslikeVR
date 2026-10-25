@@ -5,14 +5,14 @@ public class BossIdleState : BossState
     float i = 0;
 
 
-    public BossIdleState(BossStateMachine enemyBase, BossStateMachineManager stateManager) : base(enemyBase, stateManager)
+    public BossIdleState(BossBase enemyBase, BossStateMachineManager stateManager) : base(enemyBase, stateManager)
     {
     }
 
     public override void EnterLogic()
     {
         base.EnterLogic();
-        Debug.Log("entered chase");
+        Debug.Log("entered idle");
     }
 
     public override void FrameUpdate()
@@ -30,6 +30,6 @@ public class BossIdleState : BossState
     public override void ExitLogic()
     {
         base.ExitLogic();
-        Debug.Log("exited chase");
+        Debug.Log("exited idle");
     }
 }

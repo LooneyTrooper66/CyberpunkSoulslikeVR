@@ -5,14 +5,14 @@ public class BossTileAttackState : BossState
     float i = 0;
 
 
-    public BossTileAttackState(BossStateMachine enemyBase, BossStateMachineManager stateManager) : base(enemyBase, stateManager)
+    public BossTileAttackState(BossBase enemyBase, BossStateMachineManager stateManager) : base(enemyBase, stateManager)
     {
     }
 
     public override void EnterLogic()
     {
         base.EnterLogic();
-        Debug.Log("entered chase");
+        Debug.Log("entered tile");
     }
 
     public override void FrameUpdate()
@@ -30,6 +30,6 @@ public class BossTileAttackState : BossState
     public override void ExitLogic()
     {
         base.ExitLogic();
-        Debug.Log("exited chase");
+        Debug.Log("exited tile");
     }
 }

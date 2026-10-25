@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class BossStateMachine : BossBase
 {
-    public BossIdleState idleState; 
+    /*public BossIdleState idleState; 
     public BossTileAttackState tileAttackState;
     public BossLaserAttackState laserAttackState;
     public BossDroneAttackState droneAttackState;
@@ -20,5 +20,5 @@ public class BossStateMachine : BossBase
     private void Start()
     {
         stateManager.Initialize(idleState);
-    }
+    }*/
 }

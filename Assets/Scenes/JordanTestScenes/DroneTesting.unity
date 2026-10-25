@@ -138,7 +138,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!136 &166576416
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -374,6 +374,9 @@ MonoBehaviour:
   patrolBase: {fileID: 11400000, guid: 370b7d62a65ea1545a9db30be6223fc6, type: 2}
   chaseBase: {fileID: 11400000, guid: e679b5af1c66f4f4fbf7a7c4f1886c54, type: 2}
   attackBase: {fileID: 11400000, guid: b14724bc87f97e442945ed88c0804300, type: 2}
+  <patrolBaseInstance>k__BackingField: {fileID: 0}
+  <chaseBaseInstance>k__BackingField: {fileID: 0}
+  <attackBaseInstance>k__BackingField: {fileID: 0}
 --- !u!1 &871105797
 GameObject:
   m_ObjectHideFlags: 0

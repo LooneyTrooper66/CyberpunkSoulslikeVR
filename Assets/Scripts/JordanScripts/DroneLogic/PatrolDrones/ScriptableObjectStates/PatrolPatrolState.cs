@@ -3,17 +3,24 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "PatrolPatrolState", menuName = "Scriptable Objects/PatrolDrone/PatrolPatrolState")]
 public class PatrolPatrolState : EnemyPatrolSOBase
 {
-    float i = 0;
+    [SerializeField] DronePatrolRouteHandler handler;
+
+
+    public override void Initialize(EnemyBase enemyBase, GameObject gameObject)
+    {
+        base.Initialize(enemyBase, gameObject);
+        handler = gameObject.GetComponentInChildren<DronePatrolRouteHandler>();
+        handler.parent = gameObject;
+    }
 
     public override void DoEnterLogic()
     {
-        i = 0;
-        Debug.Log("entered patrol");
+        handler.enabled = true;
+        handler.StartPatrol();
     }
     public override void DoFrameUpdateLogic()
     {
-        i += Time.deltaTime;
-        if (i > 3) enemyBase.stateManager.ChangeState(enemyBase.chaseState);
+
     }
     public override void DoPhysicsUpdateLogic()
     {
@@ -21,6 +28,6 @@ public class PatrolPatrolState : EnemyPatrolSOBase
     }
     public override void DoExitLogic()
     {
-        Debug.Log("exited patrol");
+        handler.enabled = true;
     }
 }

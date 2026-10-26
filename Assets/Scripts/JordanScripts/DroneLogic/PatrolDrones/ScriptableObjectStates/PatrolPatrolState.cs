@@ -20,7 +20,7 @@ public class PatrolPatrolState : EnemyPatrolSOBase
     }
     public override void DoFrameUpdateLogic()
     {
-
+        if (enemyBase.IsAggroed) enemyBase.stateManager.ChangeState(enemyBase.chaseState); 
     }
     public override void DoPhysicsUpdateLogic()
     {
@@ -28,6 +28,6 @@ public class PatrolPatrolState : EnemyPatrolSOBase
     }
     public override void DoExitLogic()
     {
-        handler.enabled = true;
+        handler.enabled = false;
     }
 }

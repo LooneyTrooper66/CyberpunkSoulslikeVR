@@ -17,6 +17,10 @@ public class EnemyBase : MonoBehaviour
     public EnemyChaseSOBase chaseBaseInstance { get; set; }
     public EnemyAttackSOBase attackBaseInstance { get; set; }
 
+    // Aggro Bools \\
+    public bool IsAggroed { get; set; }
+    public bool IsWithinAttackDist { get; set; }
+
 
     private void Awake()
     {
@@ -46,5 +50,14 @@ public class EnemyBase : MonoBehaviour
     private void FixedUpdate()
     {
         stateManager.currentState.PhysicsUpdate();
+    }
+
+    public void SetAggroStatus(bool isAggroed)
+    {
+        IsAggroed = isAggroed;
+    }
+    public void SetAttackDistBool(bool isWithinAttackDist)
+    {
+        IsWithinAttackDist = isWithinAttackDist;
     }
 }

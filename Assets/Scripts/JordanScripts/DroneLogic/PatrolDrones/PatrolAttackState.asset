@@ -12,3 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f46b11fcf7d9984ebd0c9a7e5dea2a5, type: 3}
   m_Name: PatrolAttackState
   m_EditorClassIdentifier: Assembly-CSharp::PatrolAttackState
+  timeBetweenAttacks: 4

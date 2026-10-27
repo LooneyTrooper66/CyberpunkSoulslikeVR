@@ -255,6 +255,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 257666710}
+  - component: {fileID: 257666712}
+  - component: {fileID: 257666711}
   m_Layer: 0
   m_Name: AttackTrigger
   m_TagString: Untagged
@@ -277,6 +279,40 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1681528420}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &257666711
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 257666709}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 93c3339b26df7794c8f9d64d1cca08e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AttackTrigger
+  enemyBase: {fileID: 1681528421}
+--- !u!135 &257666712
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 257666709}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 5
+  m_Center: {x: 0, y: 0, z: 5}
 --- !u!1 &671680927
 GameObject:
   m_ObjectHideFlags: 0

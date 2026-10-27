@@ -11,6 +11,10 @@ public class PatrolChaseState : EnemyChaseSOBase
     }
     public override void DoFrameUpdateLogic()
     {
+        // only swap to attack state if the player is within drones attack range AND aggro zone
+        if (enemyBase.IsAggroed && enemyBase.IsWithinAttackDist) enemyBase.stateManager.ChangeState(enemyBase.attackState);
+
+        // chase player
 
     }
     public override void DoPhysicsUpdateLogic()

@@ -3,6 +3,8 @@ using UnityEngine;
 public class EnemyBase : MonoBehaviour
 {
     public EnemyStateMachineManager stateManager { get; set; }
+    public Pooler pooler;
+    public GameObject player;
 
     // Concrete States \\
     public DronePatrolState patrolState;

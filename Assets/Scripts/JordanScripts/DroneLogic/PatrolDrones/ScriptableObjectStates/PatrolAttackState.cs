@@ -7,13 +7,19 @@ public class PatrolAttackState : EnemyAttackSOBase
     float attackTimer;
 
 
+    public override void Initialize(EnemyBase enemyBase, GameObject gameObject)
+    {
+        base.Initialize(enemyBase, gameObject);
+    }
     public override void DoEnterLogic()
     {
         enemyBase.shootPoint.gameObject.SetActive(true);
-        attackTimer = timeBetweenAttacks - 1;
+        attackTimer = timeBetweenAttacks - 2;
     }
     public override void DoFrameUpdateLogic()
     {
+        // chase and object avoidance will be running from base enemy script \\
+
         attackTimer += Time.deltaTime;
         if (attackTimer >= timeBetweenAttacks)
         {

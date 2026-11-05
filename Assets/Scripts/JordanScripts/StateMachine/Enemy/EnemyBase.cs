@@ -3,10 +3,20 @@ using UnityEngine;
 public class EnemyBase : MonoBehaviour, IDamageable
 {
     public EnemyStateMachineManager stateManager { get; set; }
+    public GameObject player;
+    public DroneFollowLogic followLogic;
     public Pooler pooler;
     public Transform shootPoint;
-    public GameObject player;
 
+    // Aggro Bools \\
+    public bool IsAggroed { get; set; }
+    public bool IsWithinAttackDist { get; set; }
+
+    // Stats \\
+    [SerializeField] float maxHealth;
+    float currentHealth;
+
+    [Header("State Machine")]
     // Concrete States \\
     public DronePatrolState patrolState;
     public DroneChaseState chaseState;
@@ -20,13 +30,6 @@ public class EnemyBase : MonoBehaviour, IDamageable
     public EnemyChaseSOBase chaseBaseInstance { get; set; }
     public EnemyAttackSOBase attackBaseInstance { get; set; }
 
-    // Aggro Bools \\
-    public bool IsAggroed { get; set; }
-    public bool IsWithinAttackDist { get; set; }
-
-    // Stats \\
-    [SerializeField] float maxHealth;
-    float currentHealth;
 
 
     private void Awake()
@@ -51,7 +54,7 @@ public class EnemyBase : MonoBehaviour, IDamageable
         stateManager.Initialize(patrolState);
     }
 
-    #region // State Updates \\
+    #region // Updates & State Updates \\
     private void Update()
     {
         stateManager.currentState.FrameUpdate();
@@ -73,7 +76,7 @@ public class EnemyBase : MonoBehaviour, IDamageable
     }
     #endregion
 
-    // Enemy Stats Stuff \\
+    // Enemy Stats Logic \\
     public void TakeDamage(float damage)
     {
         currentHealth -= damage;

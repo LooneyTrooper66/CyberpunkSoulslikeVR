@@ -12,3 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4150124a765e55e44b67317d83d8f1cf, type: 3}
   m_Name: PatrolChaseState
   m_EditorClassIdentifier: Assembly-CSharp::PatrolChaseState
+  minDesiredDist: 3
+  maxDesiredDist: 5
+  moveSpeed: 5

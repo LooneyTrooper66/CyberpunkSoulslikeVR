@@ -35,7 +35,6 @@ public class DronePatrolRouteHandler : MonoBehaviour
     {
         // if not at patrol point, lerp towards
         // if at patrol point, play hover anim before moving to next one
-
         if (moveToNextPoint) MoveToNextPoint();
     }
 

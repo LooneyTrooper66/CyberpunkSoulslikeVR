@@ -17,6 +17,7 @@ public class PatrolPatrolState : EnemyPatrolSOBase
     {
         handler.enabled = true;
         handler.StartPatrol();
+        enemyBase.followLogic.enabled = false;
     }
     public override void DoFrameUpdateLogic()
     {
@@ -29,5 +30,6 @@ public class PatrolPatrolState : EnemyPatrolSOBase
     public override void DoExitLogic()
     {
         handler.enabled = false;
+        enemyBase.followLogic.enabled = true;
     }
 }

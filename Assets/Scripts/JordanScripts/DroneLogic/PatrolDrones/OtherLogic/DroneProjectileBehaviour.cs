@@ -4,7 +4,7 @@ public class DroneProjectileBehaviour : MonoBehaviour
 {
     [SerializeField] Rigidbody rb;
     [SerializeField] float damageDeals = 1;
-    [SerializeField] float lifetime = 6;
+    [SerializeField] float lifetime = 4;
     float timer = 0;
 
 

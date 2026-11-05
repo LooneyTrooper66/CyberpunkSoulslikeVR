@@ -128,7 +128,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DroneProjectileBehaviour
   rb: {fileID: 8014206497383021461}
   damageDeals: 1
-  lifetime: 6
+  lifetime: 4
 --- !u!54 &8014206497383021461
 Rigidbody:
   m_ObjectHideFlags: 0

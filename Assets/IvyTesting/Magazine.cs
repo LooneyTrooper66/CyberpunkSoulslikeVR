@@ -22,18 +22,24 @@ public class Magazine : MonoBehaviour
         Debug.Log("GRAB");
         if (loadedWeapon != null)
         {
-            loadedWeapon.Unload();
+            switch (Type)
+            {
+                case WeaponClass.WeaponType.Shotgun:
+                    loadedWeapon.Unload(this);
+                    break;
+                default:
+                    loadedWeapon.Unload();
+                    break;
+            }
             loadedWeapon.mag = null;
             loadedWeapon = null;
 
         }
     }
+
     public void OnDrop()
     {
-        Debug.Log("DROP");
-
         LookForHost();
-        
     }
 
     /// <summary>
@@ -51,18 +57,21 @@ public class Magazine : MonoBehaviour
         {
             Debug.Log(hit.collider.name);
 
-            if (hit.collider != null && hit.collider.GetComponent<ReloadPoint>() != null && hit.collider.GetComponent<ReloadPoint>().attachedWeapon.mag == null && hit.collider.GetComponent<ReloadPoint>().magType == Type)
+            if (hit.collider != null && hit.collider.GetComponent<ReloadPoint>() != null && hit.collider.GetComponent<ReloadPoint>().attachedWeapon.IsAvaiableMagSlot(Type))
             {
                 //I FOUND A MAG!!!!!!!! 
                 //yippier
                 loadedWeapon = hit.collider.GetComponent<ReloadPoint>().attachedWeapon;
-                loadedWeapon.Reload(this);
+                //loadedWeapon.Reload(this);
+                Transform Magpos = loadedWeapon.LockedPoint();
 
-                this.transform.position = hit.collider.GetComponent<ReloadPoint>().LockedPoint.position;
-                this.transform.rotation = hit.collider.GetComponent<ReloadPoint>().LockedPoint.rotation;
-                transform.parent = loadedWeapon.gameObject.transform; 
+                this.transform.position = Magpos.position;
+                this.transform.rotation = Magpos.rotation;
+                transform.parent = Magpos; 
                 //set the postion of this magasie
                 Debug.Log("RAHHHHHHHH");
+
+                loadedWeapon.Reload(this);
                 GetComponent<Rigidbody>().isKinematic = true;
                 return;
             }

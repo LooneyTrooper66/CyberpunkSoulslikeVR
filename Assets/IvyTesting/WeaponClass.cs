@@ -26,6 +26,8 @@ public abstract class WeaponClass : MonoBehaviour
     public enum WeaponType
     { Rifle, Shotgun, Crossbow }
 
+    public WeaponType type;
+    public Transform MagLockedPoint;
 
     private void Update()
     {
@@ -39,7 +41,6 @@ public abstract class WeaponClass : MonoBehaviour
         if (mag == null || mag.ammo <= 0) { return; } //could also play a no ammo noise
 
         mag.ammo -= 1;
-        if (mag.ammo == 0) { OnEmpty(); }
 
         particalSystem.Play();
         ammoVisuliser.text = ($"{mag.ammo}\n---\n{mag.magSize}");
@@ -55,6 +56,19 @@ public abstract class WeaponClass : MonoBehaviour
         //for most weapons this will enable the ability to grab the mag discard it and get a new one
     }
 
+    public virtual bool IsAvaiableMagSlot(WeaponType MagType)
+    {
+        if (MagType != type) { return false; }
+
+        if (mag == null) { return true; }
+
+        return false;
+    }
+    public virtual Transform LockedPoint()
+    {
+        return MagLockedPoint;
+    }
+
     public virtual void AltFire() { }
 
     public virtual void Reload(Magazine Mag) //if the weapon uses special ammo types
@@ -66,6 +80,11 @@ public abstract class WeaponClass : MonoBehaviour
     {
         ammoVisuliser.text = ($"{0}\n---\n{0}");
         mag = null;
+    }
+    //used for specific versions of the unloading if a gun has multiple weapon types
+    public virtual void Unload(Magazine mag)
+    {
+
     }
 
     public virtual void OnPickUp()

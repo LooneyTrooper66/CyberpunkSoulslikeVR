@@ -5,6 +5,9 @@ public class WeaponRifle : WeaponClass
 {
     [Header("Rifle")]
     public Collider Body;
+
+
+
     public override void OnEmpty()
     {
         base.OnEmpty();

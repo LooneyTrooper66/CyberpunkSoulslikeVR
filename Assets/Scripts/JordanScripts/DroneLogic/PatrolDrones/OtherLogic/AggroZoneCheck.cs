@@ -5,17 +5,20 @@ using System.Collections;
 public class AggroZoneCheck : MonoBehaviour
 {
     // place this on the aggro zone trigger
-
     [Tooltip("Every enemy in this trigger zone must be in this array to be able to aggro")]
     [SerializeField] EnemyBase[] enemiesInZone;
+    Coroutine lastCoroutine;
 
+    [Header("For draw gizmos")]
+    [SerializeField] Vector3 boxColCenter;
+    [SerializeField] Vector3 boxColSize;
 
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
         {
-            StopCoroutine(SetBackToFalse());
+            if (lastCoroutine != null) StopCoroutine(lastCoroutine);
             for (int i = 0; i < enemiesInZone.Length; i++)
             {
                 EnemyBase thisBase = enemiesInZone[i].GetComponentInChildren<EnemyBase>();
@@ -28,7 +31,7 @@ public class AggroZoneCheck : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            StartCoroutine(SetBackToFalse());
+            lastCoroutine = StartCoroutine(SetBackToFalse());
         }
     }
 
@@ -40,5 +43,12 @@ public class AggroZoneCheck : MonoBehaviour
             EnemyBase thisBase = enemiesInZone[i].GetComponentInChildren<EnemyBase>();
             thisBase.SetAggroStatus(false);
         }
+    }
+
+    // to show collider areas in editor
+    private void OnDrawGizmos()
+    {
+        Gizmos.color = Color.green;
+        Gizmos.DrawWireCube(boxColCenter, boxColSize);
     }
 }

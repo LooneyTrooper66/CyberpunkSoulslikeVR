@@ -7,14 +7,28 @@ public class PatrolAttackState : EnemyAttackSOBase
     float attackTimer;
 
 
+    public override void Initialize(EnemyBase enemyBase, GameObject gameObject)
+    {
+        base.Initialize(enemyBase, gameObject);
+    }
     public override void DoEnterLogic()
     {
-        Debug.Log("entered attack");
-        attackTimer = timeBetweenAttacks - 1;
+        enemyBase.shootPoint.gameObject.SetActive(true);
+        attackTimer = timeBetweenAttacks - 2;
     }
     public override void DoFrameUpdateLogic()
     {
+        // chase and object avoidance will be running from base enemy script \\
 
+        attackTimer += Time.deltaTime;
+        if (attackTimer >= timeBetweenAttacks)
+        {
+            // need to upgrade to alternate between two shoot points or shoot two at once
+            enemyBase.pooler.SpawnFromPool("droneProjectiles", enemyBase.shootPoint.position, enemyBase.shootPoint.rotation);
+            attackTimer = 0;
+        }
+
+        if (!enemyBase.IsAggroed || !enemyBase.IsWithinAttackDist) enemyBase.stateManager.ChangeState(enemyBase.chaseState);
     }
     public override void DoPhysicsUpdateLogic()
     {
@@ -22,6 +36,6 @@ public class PatrolAttackState : EnemyAttackSOBase
     }
     public override void DoExitLogic()
     {
-        Debug.Log("exited attack");
+        enemyBase.shootPoint.gameObject.SetActive(false);
     }
 }

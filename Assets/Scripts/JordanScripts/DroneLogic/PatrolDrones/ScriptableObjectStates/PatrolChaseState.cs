@@ -5,24 +5,22 @@ public class PatrolChaseState : EnemyChaseSOBase
 {
 
 
-    public override void DoEnterLogic()
+    public override void Initialize(EnemyBase enemyBase, GameObject gameObject)
     {
-        Debug.Log("entered chase");
+        base.Initialize(enemyBase, gameObject);
     }
     public override void DoFrameUpdateLogic()
     {
+        // chase and object avoidance will be running from base enemy script \\
+
         // only swap to attack state if the player is within drones attack range AND aggro zone
         if (enemyBase.IsAggroed && enemyBase.IsWithinAttackDist) enemyBase.stateManager.ChangeState(enemyBase.attackState);
-
-        // chase player
-
+        // if player is outside of aggro area, swap back to patrol
+        if (!enemyBase.IsAggroed) enemyBase.stateManager.ChangeState(enemyBase.patrolState);
     }
-    public override void DoPhysicsUpdateLogic()
-    {
 
-    }
     public override void DoExitLogic()
     {
-        Debug.Log("exited chase");
+
     }
 }

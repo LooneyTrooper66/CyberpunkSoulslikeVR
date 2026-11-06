@@ -1,5 +1,5 @@
+using System.Runtime.CompilerServices;
 using UnityEngine;
-using UnityEngine.PlayerLoop;
 
 public class DroneFollowLogic : MonoBehaviour
 {
@@ -10,29 +10,41 @@ public class DroneFollowLogic : MonoBehaviour
     [SerializeField] float turnSpeed;
     [SerializeField] float minDesiredDist;
     [SerializeField] float maxDesiredDist;
+    [SerializeField] float thisHeight;
     [Header("Obstacle Avoidance Variables")]
-    [SerializeField] float obstacleCheckRadius;
-    [SerializeField] float obstacleCheckDistance;
+    [SerializeField] int numOfRaycasts;
+    [SerializeField] float rayAngle;
+    [SerializeField] float rayLength;
     [SerializeField] LayerMask obstacleAvoidanceMask;
-    float hitDist;
+    bool obstacleDetected;
 
 
     void Start()
     {
         desiredDistanceFromPlayer = Random.Range(minDesiredDist, maxDesiredDist);
+        obstacleDetected = false;
     }
 
     void Update()
     {
         // will cause drone to follow player at a fixed distance while avoiding any obstacles 
-        gameObject.transform.position = Vector3.MoveTowards(transform.position, FindDesiredDestination(), moveSpeed * Time.deltaTime);
+        ObstacleAvoidanceMovement();
 
         LookAtPlayer();
     }
 
     void FixedUpdate()
     {
-        AvoidObstacles();
+        //AvoidObstacles();
+    }
+
+    void ObstacleAvoidanceMovement()
+    {
+        DetectObstacles();
+        if (!obstacleDetected)
+        {
+            transform.position = Vector3.MoveTowards(transform.position, FindDesiredDestination(), moveSpeed * Time.deltaTime);
+        }
     }
 
     Vector3 FindDesiredDestination()
@@ -42,16 +54,52 @@ public class DroneFollowLogic : MonoBehaviour
         float distanceFromPlayer = Vector3.Distance(transform.position, player.transform.position);
         float distToTravel = distanceFromPlayer - desiredDistanceFromPlayer;
         Vector3 desiredDestination = transform.position + (dirToPlayer * distToTravel);
+        desiredDestination = new Vector3(desiredDestination.x, thisHeight, desiredDestination.z);
 
         return desiredDestination;
     }
 
-    void AvoidObstacles()
+    void DetectObstacles()
     {
-        
+        bool hitSomething = false;
+        Vector3 dirToMove = Vector3.zero;
+        for (int i = 0; i < numOfRaycasts; i++)
+        {
+            Quaternion rot = transform.rotation;
+            Quaternion rotMod = Quaternion.AngleAxis(i / ((float)numOfRaycasts - 1) * rayAngle, Vector3.up);
+            Vector3 dir = rot * rotMod * Vector3.forward;
+            RaycastHit hit;
+            if (Physics.Raycast(transform.position, dir, out hit,  rayLength, obstacleAvoidanceMask))
+            {
+                hitSomething = true;
 
-       // Vector3 dirToMoveIn = Vector3.Reflect(hit.point, hit.normal);
-       // transform.position += dirToMoveIn.normalized;
+                // this logic DOES cause the enemy to get stuck when the player is directly in front of it
+                // on the opposite side of a wall, but that should never happen in the gameplay so I'm leaving it for now
+                // as I have sunk far too much time into this already and need to move on.
+                dirToMove -= (1 / numOfRaycasts) * moveSpeed * dir;
+                dirToMove = new Vector3(dirToMove.x, thisHeight, dirToMove.z);
+                Debug.DrawRay(transform.position, dirToMove, Color.green, 5);
+
+                transform.position = Vector3.MoveTowards(transform.position, dirToMove, moveSpeed * Time.deltaTime);
+                break;
+            }
+        }
+
+        // if any of the raycasts hits anything, the drone will prioritise moving around it over moving towards the player
+        if (hitSomething == false) obstacleDetected = false;
+        else obstacleDetected = true;
+    }
+
+    private void OnDrawGizmos()
+    {
+        Gizmos.color = Color.red;
+        for (int i = 0; i < numOfRaycasts;  i++)
+        {
+            Quaternion rot = transform.rotation;
+            Quaternion rotMod = Quaternion.AngleAxis(i / ((float)numOfRaycasts - 1) * rayAngle, Vector3.up);
+            Vector3 dir = rot * rotMod * Vector3.forward;
+            Gizmos.DrawRay(transform.position, dir * rayLength);
+        }
     }
 
     void LookAtPlayer()

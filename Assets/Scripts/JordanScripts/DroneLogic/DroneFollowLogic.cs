@@ -33,11 +33,6 @@ public class DroneFollowLogic : MonoBehaviour
         LookAtPlayer();
     }
 
-    void FixedUpdate()
-    {
-        //AvoidObstacles();
-    }
-
     void ObstacleAvoidanceMovement()
     {
         DetectObstacles();
@@ -90,7 +85,7 @@ public class DroneFollowLogic : MonoBehaviour
         else obstacleDetected = true;
     }
 
-    private void OnDrawGizmos()
+    /*private void OnDrawGizmos()
     {
         Gizmos.color = Color.red;
         for (int i = 0; i < numOfRaycasts;  i++)
@@ -100,7 +95,7 @@ public class DroneFollowLogic : MonoBehaviour
             Vector3 dir = rot * rotMod * Vector3.forward;
             Gizmos.DrawRay(transform.position, dir * rayLength);
         }
-    }
+    }*/
 
     void LookAtPlayer()
     {

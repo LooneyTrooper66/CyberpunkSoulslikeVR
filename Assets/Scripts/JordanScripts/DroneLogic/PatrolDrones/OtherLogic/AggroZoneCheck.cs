@@ -9,9 +9,9 @@ public class AggroZoneCheck : MonoBehaviour
     [SerializeField] EnemyBase[] enemiesInZone;
     Coroutine lastCoroutine;
 
-    [Header("For draw gizmos")]
+    /*[Header("For draw gizmos")]
     [SerializeField] Vector3 boxColCenter;
-    [SerializeField] Vector3 boxColSize;
+    [SerializeField] Vector3 boxColSize;*/
 
 
     private void OnTriggerEnter(Collider other)
@@ -45,10 +45,10 @@ public class AggroZoneCheck : MonoBehaviour
         }
     }
 
-    // to show collider areas in editor
+    /*// to show collider areas in editor
     private void OnDrawGizmos()
     {
         Gizmos.color = Color.green;
         Gizmos.DrawWireCube(boxColCenter, boxColSize);
-    }
+    }*/
 }

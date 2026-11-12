@@ -5,6 +5,7 @@ public class PatrolAttackState : EnemyAttackSOBase
 {
     [SerializeField] float timeBetweenAttacks;
     float attackTimer;
+    bool useGun1;
 
 
     public override void Initialize(EnemyBase enemyBase, GameObject gameObject)
@@ -13,7 +14,8 @@ public class PatrolAttackState : EnemyAttackSOBase
     }
     public override void DoEnterLogic()
     {
-        enemyBase.shootPoint.gameObject.SetActive(true);
+        enemyBase.shootPoint1.gameObject.SetActive(true);
+        enemyBase.shootPoint2.gameObject.SetActive(true);
         attackTimer = timeBetweenAttacks - 2;
     }
     public override void DoFrameUpdateLogic()
@@ -23,8 +25,17 @@ public class PatrolAttackState : EnemyAttackSOBase
         attackTimer += Time.deltaTime;
         if (attackTimer >= timeBetweenAttacks)
         {
-            // need to upgrade to alternate between two shoot points or shoot two at once
-            enemyBase.pooler.SpawnFromPool("droneProjectiles", enemyBase.shootPoint.position, enemyBase.shootPoint.rotation);
+            // alternate between each shoot point
+            if (useGun1)
+            {
+                enemyBase.pooler.SpawnFromPool("droneProjectiles", enemyBase.shootPoint1.position, enemyBase.shootPoint1.rotation);
+                useGun1 = false;
+            }
+            else
+            {
+                enemyBase.pooler.SpawnFromPool("droneProjectiles", enemyBase.shootPoint2.position, enemyBase.shootPoint1.rotation);
+                useGun1 = true;
+            }
             attackTimer = 0;
         }
 
@@ -36,6 +47,7 @@ public class PatrolAttackState : EnemyAttackSOBase
     }
     public override void DoExitLogic()
     {
-        enemyBase.shootPoint.gameObject.SetActive(false);
+        enemyBase.shootPoint1.gameObject.SetActive(false);
+        enemyBase.shootPoint2.gameObject.SetActive(false);
     }
 }

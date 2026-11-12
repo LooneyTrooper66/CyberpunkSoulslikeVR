@@ -6,7 +6,8 @@ public class EnemyBase : MonoBehaviour, IDamageable
     public GameObject player;
     public DroneFollowLogic followLogic;
     public Pooler pooler;
-    public Transform shootPoint;
+    public Transform shootPoint1;
+    public Transform shootPoint2;
 
     // Aggro Bools \\
     public bool IsAggroed { get; set; }

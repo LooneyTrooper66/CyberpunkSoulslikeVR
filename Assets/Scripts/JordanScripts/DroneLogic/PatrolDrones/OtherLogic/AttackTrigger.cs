@@ -25,10 +25,10 @@ public class AttackTrigger : MonoBehaviour
         }
     }
 
-    // to show collider areas in editor
+    /*// to show collider areas in editor
     private void OnDrawGizmos()
     {
         Gizmos.color = Color.yellow;
         Gizmos.DrawWireSphere(transform.position, 5);
-    }
+    }*/
 }

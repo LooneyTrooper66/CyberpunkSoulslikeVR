@@ -63,7 +63,6 @@ public class DroneFollowLogic : MonoBehaviour
         Vector3 dirToClosestEnemy = DetectOtherEnemies();
 
         Vector3 dirToMove = dirToObstacle + dirToClosestEnemy;
-        Debug.Log(dirToMove);
 
         // if any of the raycasts hits anything, the drone will prioritise moving around it over moving towards the player
         if (hitSomething == false || dirToMove == Vector3.zero) { obstacleDetected = false; return; }
@@ -71,9 +70,8 @@ public class DroneFollowLogic : MonoBehaviour
 
         dirToMove = new Vector3(dirToMove.x, 0, dirToMove.z);
         dirToMove = transform.position - dirToMove.normalized;
-        //Debug.Log("dir to move: " + dirToMove);
         transform.position = Vector3.MoveTowards(transform.position, dirToMove, moveSpeed * Time.deltaTime);
-        Debug.DrawRay(transform.position, dirToMove, Color.yellow);
+        //Debug.DrawRay(transform.position, dirToMove, Color.yellow);
 
         // if any of the raycasts hits anything, the drone will prioritise moving around it over moving towards the player
         if (hitSomething == false) obstacleDetected = false;
@@ -82,6 +80,7 @@ public class DroneFollowLogic : MonoBehaviour
 
     Vector3 DetectEnvironment()
     {
+        // if any of the raycasts hit an environmental obstacle, this will return the directional vector to that obstacle
         Vector3 dirToObs = Vector3.zero;
         for (int i = 0; i < numOfRaycasts; i++)
         {
@@ -92,8 +91,8 @@ public class DroneFollowLogic : MonoBehaviour
             if (Physics.Raycast(transform.position, dir, out hit, avoidRadius, obstacleAvoidanceMask))
             {
                 hitSomething = true;
-                dirToObs -= (1 / numOfRaycasts) * moveSpeed * dir;
-                Debug.Log("dir to obs: " + dirToObs + " obs name: " +hit.collider.gameObject.name);
+                dirToObs = hit.collider.gameObject.transform.position - transform.position;
+                //Debug.DrawRay(transform.position, dirToObs, Color.yellow, 5);
                 break;
             }
         }
@@ -101,6 +100,7 @@ public class DroneFollowLogic : MonoBehaviour
     }
     Vector3 DetectOtherEnemies()
     {
+        // if the closest enemy in this drones area gets within the avoid radius, this will return the directional vector to that enemy
         Vector3 dirToEnemy = Vector3.zero;
 
         // catch null error
@@ -121,14 +121,21 @@ public class DroneFollowLogic : MonoBehaviour
         if (closestDist <= avoidRadius)
         {
             hitSomething = true;
-            dirToEnemy = (closestEnemy.position - transform.position) * -1;
-            //Debug.Log("dir to enemy: " + dirToEnemy);
+            dirToEnemy = closestEnemy.position - transform.position;
+            //Debug.DrawRay(transform.position, dirToEnemy, Color.purple, 5);
             return dirToEnemy;
         }
         else return dirToEnemy;
     }
 
-    private void OnDrawGizmos()
+    void LookAtPlayer()
+    {
+        Quaternion goalRotation = Quaternion.LookRotation(player.position - transform.position);
+        transform.rotation = Quaternion.Lerp(transform.rotation, goalRotation, Time.deltaTime * turnSpeed);
+    }
+
+
+    /*private void OnDrawGizmos()
     {
         Gizmos.color = Color.red;
         for (int i = 0; i < numOfRaycasts; i++)
@@ -138,11 +145,5 @@ public class DroneFollowLogic : MonoBehaviour
             Vector3 dir = rot * rotMod * Vector3.forward;
             Gizmos.DrawRay(transform.position, dir * avoidRadius);
         }
-    }
-
-    void LookAtPlayer()
-    {
-        Quaternion goalRotation = Quaternion.LookRotation(player.position - transform.position);
-        transform.rotation = Quaternion.Lerp(transform.rotation, goalRotation, Time.deltaTime * turnSpeed);
-    }
+    }*/
 }

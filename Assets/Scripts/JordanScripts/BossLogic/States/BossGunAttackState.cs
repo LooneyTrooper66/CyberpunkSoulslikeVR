@@ -1,25 +1,25 @@
 using UnityEngine;
 
-public class BossLaserAttackState : BossState
+public class BossGunAttackState : BossState
 {
     float i = 0;
 
 
-    public BossLaserAttackState(BossBase enemyBase, BossStateMachineManager stateManager) : base(enemyBase, stateManager)
+    public BossGunAttackState(BossBase enemyBase, BossStateMachineManager stateManager) : base(enemyBase, stateManager)
     {
     }
 
     public override void EnterLogic()
     {
         base.EnterLogic();
-        Debug.Log("entered laser");
+        Debug.Log("entered gun");
     }
 
     public override void FrameUpdate()
     {
         base.FrameUpdate();
         i += Time.deltaTime;
-        if (i > 5) stateManager.ChangeState(enemyBase.droneAttackState);
+        if (i > 5) stateManager.ChangeState(enemyBase.tileAttackState);
     }
 
     public override void PhysicsUpdate()
@@ -30,6 +30,6 @@ public class BossLaserAttackState : BossState
     public override void ExitLogic()
     {
         base.ExitLogic();
-        Debug.Log("exited laser");
+        Debug.Log("exited gun");
     }
 }

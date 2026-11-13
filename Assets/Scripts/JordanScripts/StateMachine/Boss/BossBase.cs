@@ -5,8 +5,8 @@ public class BossBase : MonoBehaviour
     public BossStateMachineManager stateManager { get; set; }
 
     public BossIdleState idleState;
+    public BossGunAttackState gunAttackState;
     public BossTileAttackState tileAttackState;
-    public BossLaserAttackState laserAttackState;
     public BossDroneAttackState droneAttackState;
 
 
@@ -15,8 +15,8 @@ public class BossBase : MonoBehaviour
         stateManager = new BossStateMachineManager();
 
         idleState = new BossIdleState(this, stateManager);
+        gunAttackState = new BossGunAttackState(this, stateManager);
         tileAttackState = new BossTileAttackState(this, stateManager);
-        laserAttackState = new BossLaserAttackState(this, stateManager);
         droneAttackState = new BossDroneAttackState(this, stateManager);
     }
 

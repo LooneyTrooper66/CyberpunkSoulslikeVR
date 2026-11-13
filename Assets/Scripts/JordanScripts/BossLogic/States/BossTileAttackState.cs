@@ -19,7 +19,7 @@ public class BossTileAttackState : BossState
     {
         base.FrameUpdate();
         i += Time.deltaTime;
-        if (i > 5) stateManager.ChangeState(enemyBase.laserAttackState);
+        if (i > 5) stateManager.ChangeState(enemyBase.droneAttackState);
     }
 
     public override void PhysicsUpdate()

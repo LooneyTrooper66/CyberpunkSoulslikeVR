@@ -19,7 +19,7 @@ public class BossIdleState : BossState
     {
         base.FrameUpdate();
         i += Time.deltaTime;
-        if (i > 5) stateManager.ChangeState(enemyBase.tileAttackState);
+        if (i > 5) stateManager.ChangeState(enemyBase.gunAttackState);
     }
 
     public override void PhysicsUpdate()

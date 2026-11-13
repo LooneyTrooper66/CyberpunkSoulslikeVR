@@ -1427,7 +1427,7 @@ MonoBehaviour:
   minDesiredDist: 3
   maxDesiredDist: 5
   thisHeight: 3
-  numOfRaycasts: 40
+  numOfRaycasts: 24
   rayAngle: 360
   rayLength: 2
   obstacleAvoidanceMask:

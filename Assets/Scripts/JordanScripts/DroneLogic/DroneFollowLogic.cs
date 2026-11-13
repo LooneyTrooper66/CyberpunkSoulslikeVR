@@ -77,6 +77,7 @@ public class DroneFollowLogic : MonoBehaviour
                 // on the opposite side of a wall, but that should never happen in the gameplay so I'm leaving it for now
                 // as I have sunk far too much time into this already and need to move on.
                 dirToMove -= (1 / numOfRaycasts) * moveSpeed * dir;
+                Debug.Log(dirToMove);
                 dirToMove = new Vector3(dirToMove.x, thisHeight, dirToMove.z);
                 Debug.DrawRay(transform.position, dirToMove, Color.green, 5);
 

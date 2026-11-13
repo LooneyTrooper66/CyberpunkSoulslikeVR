@@ -41,7 +41,6 @@ public class DroneFollowLogic : MonoBehaviour
         if (!obstacleDetected)
         {
             transform.position = Vector3.MoveTowards(transform.position, FindDesiredDestination(), moveSpeed * Time.deltaTime);
-            Debug.Log("chasing player");
         }
     }
 
@@ -63,13 +62,16 @@ public class DroneFollowLogic : MonoBehaviour
         Vector3 dirToObstacle = DetectEnvironment();
         Vector3 dirToClosestEnemy = DetectOtherEnemies();
 
+        Vector3 dirToMove = dirToObstacle + dirToClosestEnemy;
+        Debug.Log(dirToMove);
+
         // if any of the raycasts hits anything, the drone will prioritise moving around it over moving towards the player
-        if (hitSomething == false) { obstacleDetected = false; return; }
+        if (hitSomething == false || dirToMove == Vector3.zero) { obstacleDetected = false; return; }
         else obstacleDetected = true;
 
-        Vector3 dirToMove = (dirToObstacle + dirToClosestEnemy).normalized * 5;
         dirToMove = new Vector3(dirToMove.x, 0, dirToMove.z);
-        Debug.Log("dir to move: " + dirToMove);
+        dirToMove = transform.position - dirToMove.normalized;
+        //Debug.Log("dir to move: " + dirToMove);
         transform.position = Vector3.MoveTowards(transform.position, dirToMove, moveSpeed * Time.deltaTime);
         Debug.DrawRay(transform.position, dirToMove, Color.yellow);
 
@@ -80,7 +82,7 @@ public class DroneFollowLogic : MonoBehaviour
 
     Vector3 DetectEnvironment()
     {
-        Vector3 dirToObs = transform.position;
+        Vector3 dirToObs = Vector3.zero;
         for (int i = 0; i < numOfRaycasts; i++)
         {
             Quaternion rot = Quaternion.Euler(transform.rotation.x, 0, transform.rotation.z);
@@ -90,14 +92,7 @@ public class DroneFollowLogic : MonoBehaviour
             if (Physics.Raycast(transform.position, dir, out hit, avoidRadius, obstacleAvoidanceMask))
             {
                 hitSomething = true;
-
-                // this logic DOES cause the enemy to get stuck when the player is directly in front of it
-                // on the opposite side of a wall, but that should never happen in the gameplay so I'm leaving it for now
-                // as I have sunk far too much time into this already and need to move on.
-                Vector3 dirToThisObstacle = (1 / numOfRaycasts) * moveSpeed * dir;
-                dirToThisObstacle = new Vector3(dirToThisObstacle.x, thisHeight, dirToThisObstacle.z);
-
-                dirToObs = dirToThisObstacle;
+                dirToObs -= (1 / numOfRaycasts) * moveSpeed * dir;
                 Debug.Log("dir to obs: " + dirToObs + " obs name: " +hit.collider.gameObject.name);
                 break;
             }
@@ -106,7 +101,7 @@ public class DroneFollowLogic : MonoBehaviour
     }
     Vector3 DetectOtherEnemies()
     {
-        Vector3 dirToEnemy = transform.position;
+        Vector3 dirToEnemy = Vector3.zero;
 
         // catch null error
         if (otherEnemiesInZone.Length <= 0) return dirToEnemy;
@@ -127,7 +122,7 @@ public class DroneFollowLogic : MonoBehaviour
         {
             hitSomething = true;
             dirToEnemy = (closestEnemy.position - transform.position) * -1;
-            Debug.Log("dir to enemy: " + dirToEnemy);
+            //Debug.Log("dir to enemy: " + dirToEnemy);
             return dirToEnemy;
         }
         else return dirToEnemy;

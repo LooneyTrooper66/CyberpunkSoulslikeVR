@@ -14,9 +14,11 @@ public class DroneFollowLogic : MonoBehaviour
     [Header("Obstacle Avoidance Variables")]
     [SerializeField] int numOfRaycasts;
     [SerializeField] float rayAngle;
-    [SerializeField] float rayLength;
+    [SerializeField] float avoidRadius;
     [SerializeField] LayerMask obstacleAvoidanceMask;
+    [SerializeField] Transform[] otherEnemiesInZone;
     bool obstacleDetected;
+    bool hitSomething;
 
 
     void Start()
@@ -39,6 +41,7 @@ public class DroneFollowLogic : MonoBehaviour
         if (!obstacleDetected)
         {
             transform.position = Vector3.MoveTowards(transform.position, FindDesiredDestination(), moveSpeed * Time.deltaTime);
+            Debug.Log("chasing player");
         }
     }
 
@@ -56,46 +59,91 @@ public class DroneFollowLogic : MonoBehaviour
 
     void DetectObstacles()
     {
-        bool hitSomething = false;
-        Vector3 dirToMove = Vector3.zero;
-        for (int i = 0; i < numOfRaycasts; i++)
-        {
-            Quaternion rot = transform.rotation;
-            Quaternion rotMod = Quaternion.AngleAxis(i / ((float)numOfRaycasts - 1) * rayAngle, Vector3.up);
-            Vector3 dir = rot * rotMod * Vector3.forward;
-            RaycastHit hit;
-            if (Physics.Raycast(transform.position, dir, out hit,  rayLength, obstacleAvoidanceMask))
-            {
-                hitSomething = true;
+        hitSomething = false;
+        Vector3 dirToObstacle = DetectEnvironment();
+        Vector3 dirToClosestEnemy = DetectOtherEnemies();
 
-                // this logic DOES cause the enemy to get stuck when the player is directly in front of it
-                // on the opposite side of a wall, but that should never happen in the gameplay so I'm leaving it for now
-                // as I have sunk far too much time into this already and need to move on.
-                dirToMove -= (1 / numOfRaycasts) * moveSpeed * dir;
-                dirToMove = new Vector3(dirToMove.x, thisHeight, dirToMove.z);
-                Debug.DrawRay(transform.position, dirToMove, Color.green, 5);
+        // if any of the raycasts hits anything, the drone will prioritise moving around it over moving towards the player
+        if (hitSomething == false) { obstacleDetected = false; return; }
+        else obstacleDetected = true;
 
-                transform.position = Vector3.MoveTowards(transform.position, dirToMove, moveSpeed * Time.deltaTime);
-                break;
-            }
-        }
+        Vector3 dirToMove = (dirToObstacle + dirToClosestEnemy).normalized * 5;
+        dirToMove = new Vector3(dirToMove.x, 0, dirToMove.z);
+        Debug.Log("dir to move: " + dirToMove);
+        transform.position = Vector3.MoveTowards(transform.position, dirToMove, moveSpeed * Time.deltaTime);
+        Debug.DrawRay(transform.position, dirToMove, Color.yellow);
 
         // if any of the raycasts hits anything, the drone will prioritise moving around it over moving towards the player
         if (hitSomething == false) obstacleDetected = false;
         else obstacleDetected = true;
     }
 
-    /*private void OnDrawGizmos()
+    Vector3 DetectEnvironment()
     {
-        Gizmos.color = Color.red;
-        for (int i = 0; i < numOfRaycasts;  i++)
+        Vector3 dirToObs = transform.position;
+        for (int i = 0; i < numOfRaycasts; i++)
         {
-            Quaternion rot = transform.rotation;
+            Quaternion rot = Quaternion.Euler(transform.rotation.x, 0, transform.rotation.z);
             Quaternion rotMod = Quaternion.AngleAxis(i / ((float)numOfRaycasts - 1) * rayAngle, Vector3.up);
             Vector3 dir = rot * rotMod * Vector3.forward;
-            Gizmos.DrawRay(transform.position, dir * rayLength);
+            RaycastHit hit;
+            if (Physics.Raycast(transform.position, dir, out hit, avoidRadius, obstacleAvoidanceMask))
+            {
+                hitSomething = true;
+
+                // this logic DOES cause the enemy to get stuck when the player is directly in front of it
+                // on the opposite side of a wall, but that should never happen in the gameplay so I'm leaving it for now
+                // as I have sunk far too much time into this already and need to move on.
+                Vector3 dirToThisObstacle = (1 / numOfRaycasts) * moveSpeed * dir;
+                dirToThisObstacle = new Vector3(dirToThisObstacle.x, thisHeight, dirToThisObstacle.z);
+
+                dirToObs = dirToThisObstacle;
+                Debug.Log("dir to obs: " + dirToObs + " obs name: " +hit.collider.gameObject.name);
+                break;
+            }
         }
-    }*/
+        return dirToObs;
+    }
+    Vector3 DetectOtherEnemies()
+    {
+        Vector3 dirToEnemy = transform.position;
+
+        // catch null error
+        if (otherEnemiesInZone.Length <= 0) return dirToEnemy;
+
+        Transform closestEnemy = null;
+        float closestDist = Mathf.Infinity;
+        foreach (Transform t in otherEnemiesInZone)
+        {
+            float dist = Vector3.Distance(transform.position, t.position);
+            if (dist < closestDist)
+            {
+                closestDist = dist;
+                closestEnemy = t;
+            }
+        }
+
+        if (closestDist <= avoidRadius)
+        {
+            hitSomething = true;
+            dirToEnemy = (closestEnemy.position - transform.position) * -1;
+            Debug.Log("dir to enemy: " + dirToEnemy);
+            return dirToEnemy;
+        }
+        else return dirToEnemy;
+    }
+
+    private void OnDrawGizmos()
+    {
+        Gizmos.color = Color.red;
+        for (int i = 0; i < numOfRaycasts; i++)
+        {
+            Quaternion rot = Quaternion.Euler(transform.rotation.x, 0, transform.rotation.z);
+            Quaternion rotMod = Quaternion.AngleAxis(i / ((float)numOfRaycasts - 1) * rayAngle, Vector3.up);
+            Vector3 dir = rot * rotMod * Vector3.forward;
+            Gizmos.DrawRay(transform.position, dir * avoidRadius);
+        }
+    }
 
     void LookAtPlayer()
     {

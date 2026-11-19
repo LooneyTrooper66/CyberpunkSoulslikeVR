@@ -1,35 +1,38 @@
 using UnityEngine;
 
+// Jordan/Libby Script\\
 public class BossGunAttackState : BossState
 {
-    float i = 0;
+    LookAtPlayer lookAt;
 
 
-    public BossGunAttackState(BossBase enemyBase, BossStateMachineManager stateManager) : base(enemyBase, stateManager)
+    public BossGunAttackState(BossBase bossBase, BossStateMachineManager stateManager) : base(bossBase, stateManager)
     {
+        lookAt = bossBase.gameObject.GetComponent<LookAtPlayer>();
     }
 
     public override void EnterLogic()
     {
-        base.EnterLogic();
-        Debug.Log("entered gun");
+        lookAt.enabled = false;
+        bossBase.animManager.ChangeAnimation(AnimationManager.AnimationStates.gunAttack);
     }
 
-    public override void FrameUpdate()
+    void ShootGun()
     {
-        base.FrameUpdate();
-        i += Time.deltaTime;
-        if (i > 5) stateManager.ChangeState(enemyBase.tileAttackState);
+        for (int i = 0; i < bossBase.shootPoints.Length; i++)
+        {
+            bossBase.pooler.SpawnFromPool("bossProjectiles", bossBase.shootPoints[i].position, bossBase.shootPoints[i].rotation);
+        }
     }
 
-    public override void PhysicsUpdate()
+    public override void AnimationTriggerEvent(BossBase.AnimationTriggers trigger)
     {
-        base.PhysicsUpdate();
+        if (trigger == BossBase.AnimationTriggers.shootGun) ShootGun();
+        else if (trigger == BossBase.AnimationTriggers.returnToIdle) ChangeToIdle();
     }
 
     public override void ExitLogic()
     {
-        base.ExitLogic();
-        Debug.Log("exited gun");
+        lookAt.enabled = true;
     }
 }

@@ -1,5 +1,6 @@
 using UnityEngine;
 
+// Jordan/Libby Script\\
 [CreateAssetMenu(fileName = "PatrolChaseState", menuName = "Scriptable Objects/PatrolDrone/PatrolChaseState")]
 public class PatrolChaseState : EnemyChaseSOBase
 {

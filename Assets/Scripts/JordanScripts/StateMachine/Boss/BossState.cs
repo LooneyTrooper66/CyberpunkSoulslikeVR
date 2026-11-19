@@ -1,14 +1,15 @@
 using UnityEngine;
 
+// Jordan/Libby Script\\
 public class BossState
 {
-    protected BossBase enemyBase;
+    protected BossBase bossBase;
     protected BossStateMachineManager stateManager;
 
 
-    public BossState(BossBase enemyBase, BossStateMachineManager stateManager)
+    public BossState(BossBase bossBase, BossStateMachineManager stateManager)
     {
-        this.enemyBase = enemyBase;
+        this.bossBase = bossBase;
         this.stateManager = stateManager;
     }
 
@@ -16,4 +17,14 @@ public class BossState
     public virtual void FrameUpdate() { }
     public virtual void PhysicsUpdate() { }
     public virtual void ExitLogic() { }
+    public virtual void AnimationTriggerEvent(BossBase.AnimationTriggers trigger) { }
+
+    protected void ChangeToIdle()
+    {
+        bossBase.stateManager.ChangeState(bossBase.idleState);
+    }
+    protected void UpdateAnimation(AnimationManager.AnimationStates state)
+    {
+        bossBase.animManager.ChangeAnimation(state);
+    }
 }

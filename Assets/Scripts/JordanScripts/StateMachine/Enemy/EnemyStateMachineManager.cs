@@ -1,5 +1,6 @@
 using UnityEngine;
 
+// Jordan/Libby Script\\
 public class EnemyStateMachineManager
 {
     public EnemyState currentState { get; set; }

@@ -1,10 +1,10 @@
 using UnityEngine;
 
+// Jordan/Libby Script\\
 public class EnemyBase : MonoBehaviour, IDamageable
 {
     public EnemyStateMachineManager stateManager { get; set; }
     public GameObject player;
-    public DroneFollowLogic followLogic;
     public Pooler pooler;
     public Transform shootPoint1;
     public Transform shootPoint2;

@@ -1,15 +1,18 @@
 using UnityEngine;
 
+// Jordan/Libby Script\\
 [CreateAssetMenu(fileName = "PatrolPatrolState", menuName = "Scriptable Objects/PatrolDrone/PatrolPatrolState")]
 public class PatrolPatrolState : EnemyPatrolSOBase
 {
-    [SerializeField] DronePatrolRouteHandler handler;
+    DronePatrolRouteHandler handler;
+    DroneFollowLogic followLogic;
 
 
     public override void Initialize(EnemyBase enemyBase, GameObject gameObject)
     {
         base.Initialize(enemyBase, gameObject);
         handler = gameObject.GetComponentInChildren<DronePatrolRouteHandler>();
+        followLogic = gameObject.GetComponent<DroneFollowLogic>();
         handler.parent = gameObject;
     }
 
@@ -17,7 +20,7 @@ public class PatrolPatrolState : EnemyPatrolSOBase
     {
         handler.enabled = true;
         handler.StartPatrol();
-        enemyBase.followLogic.enabled = false;
+        followLogic.enabled = false;
     }
     public override void DoFrameUpdateLogic()
     {
@@ -30,6 +33,6 @@ public class PatrolPatrolState : EnemyPatrolSOBase
     public override void DoExitLogic()
     {
         handler.enabled = false;
-        enemyBase.followLogic.enabled = true;
+        followLogic.enabled = true;
     }
 }

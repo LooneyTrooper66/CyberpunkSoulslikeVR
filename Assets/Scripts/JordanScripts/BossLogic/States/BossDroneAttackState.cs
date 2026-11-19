@@ -1,25 +1,22 @@
 using UnityEngine;
 
+// Jordan/Libby Script\\
 public class BossDroneAttackState : BossState
 {
-    float i = 0;
 
 
-    public BossDroneAttackState(BossBase enemyBase, BossStateMachineManager stateManager) : base(enemyBase, stateManager)
+    public BossDroneAttackState(BossBase bossBase, BossStateMachineManager stateManager) : base(bossBase, stateManager)
     {
     }
 
     public override void EnterLogic()
     {
         base.EnterLogic();
-        Debug.Log("entered drone");
     }
 
     public override void FrameUpdate()
     {
         base.FrameUpdate();
-        i += Time.deltaTime;
-        if (i > 5) stateManager.ChangeState(enemyBase.idleState);
     }
 
     public override void PhysicsUpdate()
@@ -30,6 +27,5 @@ public class BossDroneAttackState : BossState
     public override void ExitLogic()
     {
         base.ExitLogic();
-        Debug.Log("exited drone");
     }
 }

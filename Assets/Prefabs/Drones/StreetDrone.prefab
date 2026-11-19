@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5652807428868023862}
   - component: {fileID: 7342794304132200686}
   - component: {fileID: 7720305374726559127}
-  - component: {fileID: 6719466341930673919}
+  - component: {fileID: 5583164027678287535}
   m_Layer: 12
   m_Name: StreetDrone
   m_TagString: PatrolDrone
@@ -79,7 +79,7 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1.5, y: 1.2, z: 1.7}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &6719466341930673919
+--- !u!114 &5583164027678287535
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

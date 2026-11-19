@@ -45,6 +45,7 @@ public class EnemyBase : MonoBehaviour, IDamageable
         attackState = new DroneAttackState(this, stateManager);
 
         currentHealth = maxHealth;
+        IsWithinAttackDist = false;
     }
     private void Start()
     {
@@ -86,6 +87,6 @@ public class EnemyBase : MonoBehaviour, IDamageable
 
     void Die()
     {
-        Debug.Log("ded");
+        gameObject.SetActive(false);
     }
 }

@@ -20,6 +20,7 @@ public class BossBase : MonoBehaviour, IDamageable
     public GameObject player;
     public Pooler pooler;
     public Transform[] shootPoints;
+    public Transform droneSpawn;
 
 
     private void Awake()

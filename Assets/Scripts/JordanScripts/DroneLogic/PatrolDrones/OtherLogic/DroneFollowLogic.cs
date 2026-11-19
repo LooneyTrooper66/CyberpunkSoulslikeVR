@@ -1,6 +1,7 @@
 using System.Runtime.CompilerServices;
 using UnityEngine;
 
+// Jordan/Libby Script\\
 public class DroneFollowLogic : MonoBehaviour
 {
     [Header("Player Follow Variables")]

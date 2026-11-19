@@ -1514,7 +1514,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 512853227}
-  m_Layer: 12
+  m_Layer: 14
   m_Name: ShootPoint2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1572,6 +1572,9 @@ MonoBehaviour:
   - tag: droneProjectiles
     prefab: {fileID: 3534302898155556167, guid: c84bebdf0ca1ede489101777c1a7b433, type: 3}
     size: 30
+  - tag: bossDrones
+    prefab: {fileID: 1490020383269694506, guid: 7f68c7a5fd30cf14bbd3ff9971fcdb39, type: 3}
+    size: 15
 --- !u!4 &528178265
 Transform:
   m_ObjectHideFlags: 0
@@ -3261,6 +3264,37 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1112258309}
   m_Mesh: {fileID: 1556635032923997459, guid: d7585a08008eefd46a1948c4cb0c6174, type: 3}
+--- !u!1 &1127890621
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1127890622}
+  m_Layer: 14
+  m_Name: DroneSpawn
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1127890622
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1127890621}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.5, y: 0.5, z: -0.5, w: 0.5}
+  m_LocalPosition: {x: -0.0028779334, y: -0.0130269565, z: 0}
+  m_LocalScale: {x: 0.03062506, y: 0.030625068, z: 0.030625068}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7595267480686530083}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!1 &1131925945
 GameObject:
   m_ObjectHideFlags: 0
@@ -5271,7 +5305,7 @@ Transform:
   m_GameObject: {fileID: 1933459232}
   serializedVersion: 2
   m_LocalRotation: {x: 0.12981924, y: -0.86633235, z: 0.29937974, w: 0.37813634}
-  m_LocalPosition: {x: 32.2, y: 43.86, z: 32.4}
+  m_LocalPosition: {x: 43.6, y: 73.7, z: 43}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5376,7 +5410,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1986899345}
-  m_Layer: 12
+  m_Layer: 14
   m_Name: ShootPoint1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5902,7 +5936,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2914678676352007960}
-  m_Layer: 12
+  m_Layer: 14
   m_Name: DroneGuard
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6133,7 +6167,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5779587081625866860}
   - component: {fileID: 8817519516200458283}
-  m_Layer: 12
+  m_Layer: 14
   m_Name: Down
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6150,7 +6184,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7548156099690189225}
   - component: {fileID: 3222104506655596150}
-  m_Layer: 12
+  m_Layer: 14
   m_Name: Up
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6166,7 +6200,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1979710347522095578}
-  m_Layer: 12
+  m_Layer: 14
   m_Name: Left_Weapon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6257,7 +6291,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7595267480686530083}
-  m_Layer: 12
+  m_Layer: 14
   m_Name: Up_Half
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6455,7 +6489,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8049441025678972858}
-  m_Layer: 12
+  m_Layer: 14
   m_Name: Left_Arm 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6472,7 +6506,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8047158919066452631}
   - component: {fileID: 1583255102317365371}
-  m_Layer: 12
+  m_Layer: 14
   m_Name: Left_Arm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6658,7 +6692,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6016779338685157521}
-  m_Layer: 12
+  m_Layer: 14
   m_Name: Down_Half
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7009,7 +7043,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 415547457009112543}
-  m_Layer: 12
+  m_Layer: 14
   m_Name: Right_Weapon_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7376,7 +7410,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1718895462989705411}
-  m_Layer: 12
+  m_Layer: 14
   m_Name: Bone_Main
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7423,7 +7457,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7233404567264281969}
-  m_Layer: 12
+  m_Layer: 14
   m_Name: Down_Half_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7440,7 +7474,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4313811015112424289}
   - component: {fileID: 4505404826845112035}
-  m_Layer: 12
+  m_Layer: 14
   m_Name: Right_Arm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7523,7 +7557,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 883318611819781712}
-  m_Layer: 12
+  m_Layer: 14
   m_Name: Up_Half_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7669,7 +7703,7 @@ GameObject:
   - component: {fileID: 7686268774500893582}
   - component: {fileID: 7686268774500893584}
   - component: {fileID: 7686268774500893585}
-  m_Layer: 12
+  m_Layer: 14
   m_Name: Boss
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -7749,7 +7783,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2001747411748389269}
-  m_Layer: 12
+  m_Layer: 14
   m_Name: Left_Weapon_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7897,6 +7931,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 883318611819781712}
+  - {fileID: 1127890622}
   m_Father: {fileID: 1718895462989705411}
   m_LocalEulerAnglesHint: {x: 0, y: 90.00001, z: 90}
 --- !u!1 &7618215993455852743
@@ -7908,7 +7943,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3538552815639509129}
-  m_Layer: 12
+  m_Layer: 14
   m_Name: Right_Arm 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8019,6 +8054,7 @@ MonoBehaviour:
   shootPoints:
   - {fileID: 1986899345}
   - {fileID: 512853227}
+  droneSpawn: {fileID: 1127890622}
 --- !u!135 &7686268774500893583
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -8075,7 +8111,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2321626536776157727}
-  m_Layer: 12
+  m_Layer: 14
   m_Name: Right_Weapon
   m_TagString: Untagged
   m_Icon: {fileID: 0}

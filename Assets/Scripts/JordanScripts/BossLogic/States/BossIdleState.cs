@@ -6,9 +6,9 @@ public class BossIdleState : BossState
     float maxTimeBetweenAttacks = 6;
     float minTimeBetweenAttacks = 3;
     float timeBeforeCanAttackAgain;
-    float gunStateCooldown = 6;
-    float tileStateCooldown = 12;
-    float droneStateCooldown = 24;
+    float gunStateCooldown = 20/*6*/;
+    float tileStateCooldown = 20/*12*/;
+    float droneStateCooldown = 5/*24*/;
     float gunTimer;
     float tileTimer;
     float droneTimer;

@@ -23,7 +23,6 @@ public class BossAttackState : EnemyAttackSOBase
     {
         // drone will stay still while in this state \\
 
-
         ShootOnTimer();
 
         // if player gets out of range swap back to chase

@@ -43,9 +43,6 @@ public class EnemyBase : MonoBehaviour, IDamageable
         patrolState = new DronePatrolState(this, stateManager);
         chaseState = new DroneChaseState(this, stateManager);
         attackState = new DroneAttackState(this, stateManager);
-
-        currentHealth = maxHealth;
-        IsWithinAttackDist = false;
     }
     private void Start()
     {
@@ -54,6 +51,12 @@ public class EnemyBase : MonoBehaviour, IDamageable
         attackBaseInstance.Initialize(this, gameObject);
 
         stateManager.Initialize(patrolState);
+    }
+
+    private void OnEnable()
+    {
+        currentHealth = maxHealth;
+        IsWithinAttackDist = false;
     }
 
     #region // Updates & State Updates \\

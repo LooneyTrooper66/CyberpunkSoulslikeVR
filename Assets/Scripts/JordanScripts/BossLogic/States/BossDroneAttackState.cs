@@ -4,9 +4,8 @@ using System.Collections.Generic;
 // Jordan/Libby Script\\
 public class BossDroneAttackState : BossState
 {
-    float numOfDrones = 6;
-    float numDronesSpawned;
-    float spawnInterval = 3;
+    int numDronesSpawned;
+    float spawnInterval = 1;
     float spawnTimer;
     List<GameObject> drones = new List<GameObject>();
 
@@ -25,7 +24,7 @@ public class BossDroneAttackState : BossState
 
     public override void FrameUpdate()
     {
-        if (numDronesSpawned < numOfDrones)
+        if (numDronesSpawned < bossBase.drones.Length)
         {
             spawnTimer += Time.deltaTime;
             if (spawnTimer >= spawnInterval)
@@ -38,18 +37,19 @@ public class BossDroneAttackState : BossState
 
     void SpawnDrone()
     {
-        GameObject drone = bossBase.pooler.SpawnFromPool("bossDrones", bossBase.droneSpawn.position, bossBase.droneSpawn.rotation);
-        EnemyBase thisBase = drone.GetComponent<EnemyBase>();
-        thisBase.player = bossBase.player;
-        thisBase.pooler = bossBase.pooler;
-        drone.GetComponent<DronePursuitLogic>().player = bossBase.player.transform;
+        GameObject drone = bossBase.drones[numDronesSpawned];
+        drone.transform.position = bossBase.droneSpawn.position;
+        drone.transform.rotation = bossBase.droneSpawn.rotation;
         drone.GetComponent<CheckIfAllInactive>().thisState = this;
+        drone.SetActive(true);
         drones.Add(drone);
         numDronesSpawned++;
     }
 
+    // called by each drone on disable (when they 'die')
     public void CheckIfInactive()
     {
+        // if all drones are inactive, return to idle state
         if (CheckInactive()) ChangeToIdle();
     }
 

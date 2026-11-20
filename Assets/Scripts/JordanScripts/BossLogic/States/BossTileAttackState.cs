@@ -1,9 +1,13 @@
 using UnityEngine;
+using System.Collections.Generic;
 
 // Jordan/Libby Script\\
 public class BossTileAttackState : BossState
 {
-
+    List<TileLogic> tilesUsingThisAttack = new List<TileLogic>();
+    //float timeBetweenAttacks = 1f;
+    //bool startAttack;
+    // need a way to check if all missiles exploded
 
 
     public BossTileAttackState(BossBase bossBase, BossStateMachineManager stateManager) : base(bossBase, stateManager)
@@ -12,7 +16,8 @@ public class BossTileAttackState : BossState
 
     public override void EnterLogic()
     {
-        base.EnterLogic();
+        //startAttack = false;
+        ChooseRandomAttack();
     }
 
     public override void FrameUpdate()
@@ -20,13 +25,44 @@ public class BossTileAttackState : BossState
         base.FrameUpdate();
     }
 
-    public override void PhysicsUpdate()
+    void ChooseRandomAttack()
     {
-        base.PhysicsUpdate();
+        // will choose a random number and use that to choose attack function
+        TowerAttack();
     }
 
-    public override void ExitLogic()
+    void TowerAttack()
     {
-        base.ExitLogic();
+        string towerToAttack = bossBase.player.GetComponent<TestMovement>().towerCurrentlyOn; // will need to update this when make proper player script
+
+        // to catch potential null error
+        if (towerToAttack == null) RandomAttack();
+
+        foreach (BossBase.TowerTileHolder holder in bossBase.towerTiles)
+        {
+            if (holder.tower == towerToAttack)
+            {
+                for (int i = 0; i < holder.tiles.Length; i++)
+                {
+                    tilesUsingThisAttack.Add(holder.tiles[i]);
+                }
+            }
+        }
+        Debug.Log(tilesUsingThisAttack.Count);
+        StartAttack();
+    }
+    void RandomAttack()
+    {
+
+    }
+
+    void StartAttack()
+    {
+        foreach (TileLogic tile in tilesUsingThisAttack)
+        {
+            tile.LerpColourToRed();
+            GameObject missile = bossBase.pooler.SpawnFromPool("bossMissile", bossBase.missileSpawn.position, bossBase.missileSpawn.rotation);
+            missile.GetComponent<MissileLogic>().targetTile = tile.gameObject.transform;
+        }
     }
 }

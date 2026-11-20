@@ -1,4 +1,6 @@
 using UnityEngine;
+using System.Collections.Generic;
+using System;
 
 // Jordan/Libby Script\\
 public class BossBase : MonoBehaviour, IDamageable
@@ -16,11 +18,24 @@ public class BossBase : MonoBehaviour, IDamageable
     [SerializeField] float maxHealth;
     [HideInInspector] public float currentHealth;
 
+    [Header("General")]
     public AnimationManager animManager;
     public GameObject player;
     public Pooler pooler;
+    [Header("Gun Attack")]
     public Transform[] shootPoints;
+    [Header("Tile Attack")]
+    public Transform missileSpawn;
+    [System.Serializable]
+    public class TowerTileHolder
+    {
+        public string tower;
+        public TileLogic[] tiles;
+    }
+    public List<TowerTileHolder> towerTiles;
+    [Header("Drone Attack")]
     public Transform droneSpawn;
+    public GameObject[] drones;
 
 
     private void Awake()

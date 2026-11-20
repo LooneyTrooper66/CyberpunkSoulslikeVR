@@ -5,28 +5,29 @@ public class DronePursuitLogic : MonoBehaviour
 {
     [Header("Player Follow Variables")]
     [SerializeField] EnemyBase enemyBase;
-    public Transform player;
+    [SerializeField] Transform player;
     [SerializeField] float moveSpeed;
     [SerializeField] float turnSpeed;
-    float thisHeight;
+    [SerializeField] float thisHeight;
     [Header("Obstacle Avoidance Variables")]
     [SerializeField] int numOfRaycasts;
     [SerializeField] float rayAngle;
     [SerializeField] float avoidRadius;
-    [SerializeField] LayerMask obstacleAvoidanceMask;
+    [SerializeField] Transform[] otherEnemiesInZone;
+    [SerializeField] Transform bossTransform;
+    [SerializeField] float bossAvoidRadius;
     bool obstacleDetected;
     bool hitSomething;
 
 
     void OnEnable()
     {
-        thisHeight = gameObject.transform.position.y;
         obstacleDetected = false;
     }
 
     void Update()
     {
-        // follow player while avoiding any obstacles unless player within attack dist
+        // will cause drone to follow player at a fixed distance while avoiding any obstacles 
         ObstacleAvoidanceMovement();
 
         LookAtPlayer();
@@ -37,48 +38,71 @@ public class DronePursuitLogic : MonoBehaviour
         DetectObstacles();
         if (!obstacleDetected && !enemyBase.IsWithinAttackDist)
         {
-            transform.position = Vector3.MoveTowards(transform.position, player.transform.position, moveSpeed * Time.deltaTime);
+            Vector3 playerHigher = new Vector3(player.position.x, player.position.y + 2, player.position.z);
+            transform.position = Vector3.MoveTowards(transform.position, playerHigher, moveSpeed * Time.deltaTime);
         }
     }
 
     void DetectObstacles()
     {
         hitSomething = false;
-        Vector3 dirToObstacle = DetectEnvironment();
+        Vector3 dirToBoss = DetectBoss();
+        Vector3 dirToClosestEnemy = DetectOtherEnemies();
+
+        Vector3 dirToMove = dirToBoss + dirToClosestEnemy;
 
         // if any of the raycasts hits anything, the drone will prioritise moving around it over moving towards the player
-        if (hitSomething == false || dirToObstacle == Vector3.zero) { obstacleDetected = false; return; }
+        if (hitSomething == false || dirToMove == Vector3.zero) { obstacleDetected = false; return; }
         else obstacleDetected = true;
 
-        dirToObstacle = new Vector3(dirToObstacle.x, 0, dirToObstacle.z);
-        Vector3 dirToMove = transform.position - dirToObstacle.normalized;
+        dirToMove = new Vector3(dirToMove.x, 0, dirToMove.z);
+        dirToMove = transform.position - dirToMove.normalized;
         transform.position = Vector3.MoveTowards(transform.position, dirToMove, moveSpeed * Time.deltaTime);
-        //Debug.DrawRay(transform.position, dirToMove, Color.yellow);
-
-        // if any of the raycasts hits anything, the drone will prioritise moving around it over moving towards the player
-        if (hitSomething == false) obstacleDetected = false;
-        else obstacleDetected = true;
+        Debug.DrawRay(transform.position, dirToMove, Color.yellow);
     }
-
-    Vector3 DetectEnvironment()
+    Vector3 DetectBoss()
     {
-        // if any of the raycasts hit an obstacle, this will return the directional vector to that obstacle
-        Vector3 dirToObs = Vector3.zero;
-        for (int i = 0; i < numOfRaycasts; i++)
+        // if the closest enemy in this drones area gets within the avoid radius, this will return the directional vector to that enemy
+        float distToBoss = Vector3.Distance(transform.position, bossTransform.position);
+        Vector3 dirToBoss = Vector3.zero;
+
+        if (distToBoss <= bossAvoidRadius)
         {
-            Quaternion rot = Quaternion.Euler(transform.rotation.x, 0, transform.rotation.z);
-            Quaternion rotMod = Quaternion.AngleAxis(i / ((float)numOfRaycasts - 1) * rayAngle, Vector3.up);
-            Vector3 dir = rot * rotMod * Vector3.forward;
-            RaycastHit hit;
-            if (Physics.Raycast(transform.position, dir, out hit, avoidRadius, obstacleAvoidanceMask))
+            hitSomething = true;
+            dirToBoss = bossTransform.position - transform.position;
+            Debug.DrawRay(transform.position, dirToBoss, Color.purple, 5);
+            return dirToBoss;
+        }
+        else return dirToBoss;
+    }
+    Vector3 DetectOtherEnemies()
+    {
+        // if the closest enemy in this drones area gets within the avoid radius, this will return the directional vector to that enemy
+        Vector3 dirToEnemy = Vector3.zero;
+
+        // catch null error
+        if (otherEnemiesInZone.Length <= 0) return dirToEnemy;
+
+        Transform closestEnemy = null;
+        float closestDist = Mathf.Infinity;
+        foreach (Transform t in otherEnemiesInZone)
+        {
+            float dist = Vector3.Distance(transform.position, t.position);
+            if (dist < closestDist)
             {
-                hitSomething = true;
-                dirToObs = (dir * -10) - transform.position;
-                Debug.DrawRay(transform.position, dirToObs, Color.red, 5);
-                break;
+                closestDist = dist;
+                closestEnemy = t;
             }
         }
-        return dirToObs;
+
+        if (closestDist <= avoidRadius)
+        {
+            hitSomething = true;
+            dirToEnemy = closestEnemy.position - transform.position;
+            //Debug.DrawRay(transform.position, dirToEnemy, Color.purple, 5);
+            return dirToEnemy;
+        }
+        else return dirToEnemy;
     }
 
     void LookAtPlayer()
@@ -88,7 +112,7 @@ public class DronePursuitLogic : MonoBehaviour
     }
 
 
-    private void OnDrawGizmos()
+    /*private void OnDrawGizmos()
     {
         Gizmos.color = Color.red;
         for (int i = 0; i < numOfRaycasts; i++)
@@ -98,5 +122,5 @@ public class DronePursuitLogic : MonoBehaviour
             Vector3 dir = rot * rotMod * Vector3.forward;
             Gizmos.DrawRay(transform.position, dir * avoidRadius);
         }
-    }
+    }*/
 }

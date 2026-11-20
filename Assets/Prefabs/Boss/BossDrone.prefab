@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 7720305374726559127}
   - component: {fileID: 5494791618175851728}
   - component: {fileID: 699003781389374660}
+  - component: {fileID: 7187963730306725351}
   m_Layer: 12
   m_Name: BossDrone
   m_TagString: PatrolDrone
@@ -94,9 +95,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DronePursuitLogic
   enemyBase: {fileID: 7342794304132200686}
   player: {fileID: 0}
-  moveSpeed: 1
-  turnSpeed: 3
-  avoidRadius: {fileID: 8966997214907051748}
+  moveSpeed: 3
+  turnSpeed: 2
+  numOfRaycasts: 24
+  rayAngle: 360
+  avoidRadius: 2.5
+  obstacleAvoidanceMask:
+    serializedVersion: 2
+    m_Bits: 4096
+  otherEnemiesInZone: []
 --- !u!114 &699003781389374660
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -109,6 +116,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fc0a359df6b676349a99a829ac277d91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CheckIfAllInactive
+--- !u!54 &7187963730306725351
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1490020383269694506}
+  serializedVersion: 5
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
 --- !u!1 &3154170751961625247
 GameObject:
   m_ObjectHideFlags: 0
@@ -250,8 +284,7 @@ GameObject:
   - component: {fileID: 9186956444531101223}
   - component: {fileID: 8802423999314855787}
   - component: {fileID: 6997244060093699441}
-  - component: {fileID: 8966997214907051748}
-  m_Layer: 14
+  m_Layer: 12
   m_Name: DroneBody
   m_TagString: PatrolDrone
   m_Icon: {fileID: 0}
@@ -352,24 +385,3 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!135 &8966997214907051748
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9194831684589367486}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Radius: 8
-  m_Center: {x: 0, y: 0, z: 0}

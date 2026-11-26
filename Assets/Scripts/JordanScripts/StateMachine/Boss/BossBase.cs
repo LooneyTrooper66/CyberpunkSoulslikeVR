@@ -15,7 +15,7 @@ public class BossBase : MonoBehaviour, IDamageable
 
     public enum AnimationTriggers { shootGun, returnToIdle, deathAnimEnded }
 
-    [SerializeField] float maxHealth;
+    public float maxHealth;
     [HideInInspector] public float currentHealth;
 
     [Header("General")]

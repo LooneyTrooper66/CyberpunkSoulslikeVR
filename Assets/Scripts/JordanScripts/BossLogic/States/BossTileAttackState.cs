@@ -59,7 +59,7 @@ public class BossTileAttackState : BossState
 
     void SingleTowersTiles()
     {
-        string towerToAttack = bossBase.player.GetComponent<TestMovement>().towerCurrentlyOn; // will need to update this when make proper player script
+        string towerToAttack = bossBase.player.GetComponent<PlayerTowerOn>().towerCurrentlyOn; // will need to update this when make proper player script
 
         // to catch potential null error
         if (towerToAttack == null) AllTowersTilesRandom();
@@ -92,7 +92,7 @@ public class BossTileAttackState : BossState
     }
     void SingleTowersTilesRandom()
     {
-        string towerToAttack = bossBase.player.GetComponent<TestMovement>().towerCurrentlyOn; // will need to update this when make proper player script
+        string towerToAttack = bossBase.player.GetComponent<PlayerTowerOn>().towerCurrentlyOn; // will need to update this when make proper player script
 
         // to catch potential null error
         if (towerToAttack == null) AllTowersTilesRandom();

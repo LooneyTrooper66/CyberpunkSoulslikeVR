@@ -1,8 +1,8 @@
 using UnityEngine;
 
-public class TestMovement : MonoBehaviour, IDamageable
+// Jordan/Libby Script\\
+public class PlayerTowerOn : MonoBehaviour
 {
-    public float hitCount;
     public string towerCurrentlyOn;
     LayerMask floorMask;
 
@@ -15,11 +15,6 @@ public class TestMovement : MonoBehaviour, IDamageable
     private void FixedUpdate()
     {
         CheckTowerOn();
-    }
-
-    void IDamageable.TakeDamage(float damage)
-    {
-        hitCount += damage;
     }
 
     void CheckTowerOn()

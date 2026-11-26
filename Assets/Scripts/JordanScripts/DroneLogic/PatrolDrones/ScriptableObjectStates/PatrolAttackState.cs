@@ -1,5 +1,6 @@
 using UnityEngine;
 
+// Jordan/Libby Script\\
 [CreateAssetMenu(fileName = "PatrolAttackState", menuName = "Scriptable Objects/PatrolDrone/PatrolAttackState")]
 public class PatrolAttackState : EnemyAttackSOBase
 {

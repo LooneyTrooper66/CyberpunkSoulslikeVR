@@ -1,6 +1,7 @@
 using UnityEngine;
 using System.Collections.Generic;
 
+// Jordan/Libby Script\\
 public class Pooler : MonoBehaviour
 {
     [System.Serializable]
@@ -45,6 +46,7 @@ public class Pooler : MonoBehaviour
 
         GameObject objToSpawn = poolDictionary[tag].Dequeue();
 
+        objToSpawn.SetActive(false);
         objToSpawn.transform.position = position;
         objToSpawn.transform.rotation = rotation;
         objToSpawn.SetActive(true);

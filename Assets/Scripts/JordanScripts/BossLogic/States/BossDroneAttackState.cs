@@ -1,35 +1,64 @@
 using UnityEngine;
+using System.Collections.Generic;
 
+// Jordan/Libby Script\\
 public class BossDroneAttackState : BossState
 {
-    float i = 0;
+    int numDronesSpawned;
+    float spawnInterval = 1;
+    float spawnTimer;
+    List<GameObject> drones = new List<GameObject>();
 
 
-    public BossDroneAttackState(BossBase enemyBase, BossStateMachineManager stateManager) : base(enemyBase, stateManager)
+    public BossDroneAttackState(BossBase bossBase, BossStateMachineManager stateManager) : base(bossBase, stateManager)
     {
     }
 
     public override void EnterLogic()
     {
         base.EnterLogic();
-        Debug.Log("entered drone");
+        spawnTimer = 0; numDronesSpawned = 0;
+        drones.Clear();
+        bossBase.animManager.ChangeAnimation(AnimationManager.AnimationStates.droneAttack);
     }
 
     public override void FrameUpdate()
     {
-        base.FrameUpdate();
-        i += Time.deltaTime;
-        if (i > 5) stateManager.ChangeState(enemyBase.idleState);
+        if (numDronesSpawned < bossBase.drones.Length)
+        {
+            spawnTimer += Time.deltaTime;
+            if (spawnTimer >= spawnInterval)
+            {
+                SpawnDrone();
+                spawnTimer = 0;
+            }
+        }
     }
 
-    public override void PhysicsUpdate()
+    void SpawnDrone()
     {
-        base.PhysicsUpdate();
+        GameObject drone = bossBase.drones[numDronesSpawned];
+        drone.transform.position = bossBase.droneSpawn.position;
+        drone.transform.rotation = bossBase.droneSpawn.rotation;
+        drone.GetComponent<CheckIfAllInactive>().thisState = this;
+        drone.SetActive(true);
+        drones.Add(drone);
+        numDronesSpawned++;
     }
 
-    public override void ExitLogic()
+    // called by each drone on disable (when they 'die')
+    public void CheckIfInactive()
     {
-        base.ExitLogic();
-        Debug.Log("exited drone");
+        // if all drones are inactive, return to idle state
+        if (CheckInactive()) ChangeToIdle();
+    }
+
+    bool CheckInactive()
+    {
+        foreach (GameObject d in drones)
+        {
+            if (d.activeSelf) return false;
+        }
+        return true;
     }
 }

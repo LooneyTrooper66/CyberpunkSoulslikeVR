@@ -7,6 +7,7 @@ TagManager:
   - Anchor
   - AggroZone
   - PatrolDrone
+  - Enemy
   layers:
   - Default
   - TransparentFX
@@ -16,13 +17,13 @@ TagManager:
   - UI
   - 
   - Environment
-  - 
+  - TowerFloor
   - Weapon
-  - 
+  - Player
   - MagCollision
   - Enemy
   - EnemyBullet
-  - 
+  - Missile
   - 
   - 
   - 

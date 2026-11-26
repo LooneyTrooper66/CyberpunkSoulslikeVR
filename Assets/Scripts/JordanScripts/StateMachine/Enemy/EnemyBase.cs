@@ -1,10 +1,10 @@
 using UnityEngine;
 
+// Jordan/Libby Script\\
 public class EnemyBase : MonoBehaviour, IDamageable
 {
     public EnemyStateMachineManager stateManager { get; set; }
     public GameObject player;
-    public DroneFollowLogic followLogic;
     public Pooler pooler;
     public Transform shootPoint1;
     public Transform shootPoint2;
@@ -43,8 +43,6 @@ public class EnemyBase : MonoBehaviour, IDamageable
         patrolState = new DronePatrolState(this, stateManager);
         chaseState = new DroneChaseState(this, stateManager);
         attackState = new DroneAttackState(this, stateManager);
-
-        currentHealth = maxHealth;
     }
     private void Start()
     {
@@ -53,6 +51,12 @@ public class EnemyBase : MonoBehaviour, IDamageable
         attackBaseInstance.Initialize(this, gameObject);
 
         stateManager.Initialize(patrolState);
+    }
+
+    private void OnEnable()
+    {
+        currentHealth = maxHealth;
+        IsWithinAttackDist = false;
     }
 
     #region // Updates & State Updates \\
@@ -86,6 +90,6 @@ public class EnemyBase : MonoBehaviour, IDamageable
 
     void Die()
     {
-        Debug.Log("ded");
+        gameObject.SetActive(false);
     }
 }

@@ -1,6 +1,7 @@
 using UnityEngine;
 using System.Collections;
 
+// Jordan/Libby Script\\
 [RequireComponent(typeof(BoxCollider))]
 public class AggroZoneCheck : MonoBehaviour
 {

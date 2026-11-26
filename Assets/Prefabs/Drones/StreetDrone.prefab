@@ -10,8 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 5652807428868023862}
   - component: {fileID: 7342794304132200686}
-  - component: {fileID: 6077104778894497203}
   - component: {fileID: 7720305374726559127}
+  - component: {fileID: 5583164027678287535}
   m_Layer: 12
   m_Name: StreetDrone
   m_TagString: PatrolDrone
@@ -51,7 +51,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyBase
   player: {fileID: 0}
-  followLogic: {fileID: 6077104778894497203}
   pooler: {fileID: 0}
   shootPoint1: {fileID: 353403970188957409}
   shootPoint2: {fileID: 7430382646346757114}
@@ -59,7 +58,28 @@ MonoBehaviour:
   patrolBase: {fileID: 11400000, guid: 370b7d62a65ea1545a9db30be6223fc6, type: 2}
   chaseBase: {fileID: 11400000, guid: e679b5af1c66f4f4fbf7a7c4f1886c54, type: 2}
   attackBase: {fileID: 11400000, guid: b14724bc87f97e442945ed88c0804300, type: 2}
---- !u!114 &6077104778894497203
+--- !u!65 &7720305374726559127
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1490020383269694506}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.5, y: 1.2, z: 1.7}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &5583164027678287535
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -84,27 +104,6 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 128
   otherEnemiesInZone: []
---- !u!65 &7720305374726559127
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1490020383269694506}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1.5, y: 1.2, z: 1.7}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &3154170751961625247
 GameObject:
   m_ObjectHideFlags: 0

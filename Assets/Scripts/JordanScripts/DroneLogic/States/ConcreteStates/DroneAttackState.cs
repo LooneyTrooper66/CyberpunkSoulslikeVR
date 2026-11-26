@@ -1,5 +1,6 @@
 using UnityEngine;
 
+// Jordan/Libby Script\\
 public class DroneAttackState : EnemyState
 {
     public DroneAttackState(EnemyBase enemyBase, EnemyStateMachineManager stateManager) : base(enemyBase, stateManager)

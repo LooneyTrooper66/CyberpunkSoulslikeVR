@@ -1,5 +1,6 @@
 using UnityEngine;
 
+// Jordan/Libby Script\\
 public class EnemyState
 {
     protected EnemyBase enemyBase;

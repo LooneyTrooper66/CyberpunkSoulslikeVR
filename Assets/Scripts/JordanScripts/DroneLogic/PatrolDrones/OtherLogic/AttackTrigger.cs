@@ -1,5 +1,6 @@
 using UnityEngine;
 
+// Jordan/Libby Script\\
 [RequireComponent(typeof(SphereCollider))]
 public class AttackTrigger : MonoBehaviour
 {

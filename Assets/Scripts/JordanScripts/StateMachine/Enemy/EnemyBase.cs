@@ -14,8 +14,8 @@ public class EnemyBase : MonoBehaviour, IDamageable
     public bool IsWithinAttackDist { get; set; }
 
     // Stats \\
-    [SerializeField] float maxHealth;
-    float currentHealth;
+    public float maxHealth;
+    [HideInInspector] public float currentHealth;
 
     [Header("State Machine")]
     // Concrete States \\

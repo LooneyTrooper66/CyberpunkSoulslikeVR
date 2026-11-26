@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 
+// Jordan/Libby Script\\
 public class HealthUI : MonoBehaviour
 {
     [SerializeField] BossBase bossBase;
@@ -19,7 +20,7 @@ public class HealthUI : MonoBehaviour
     private void Update()
     {
         // health bar
-        //healthBar.value = bossBase.currentHealth / bossBase.maxHealth;
+        healthBar.value = bossBase.currentHealth / bossBase.maxHealth;
 
         // make sure ui is always facing player
         transform.rotation = playerCam.rotation * ogRotation;

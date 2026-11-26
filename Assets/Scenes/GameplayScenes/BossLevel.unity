@@ -720,6 +720,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4190342781076002771, guid: 7f68c7a5fd30cf14bbd3ff9971fcdb39, type: 3}
+      propertyPath: playerCam
+      value: 
+      objectReference: {fileID: 1933459236}
     - target: {fileID: 5494791618175851728, guid: 7f68c7a5fd30cf14bbd3ff9971fcdb39, type: 3}
       propertyPath: player
       value: 
@@ -843,6 +847,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4190342781076002771, guid: 7f68c7a5fd30cf14bbd3ff9971fcdb39, type: 3}
+      propertyPath: playerCam
+      value: 
+      objectReference: {fileID: 1933459236}
     - target: {fileID: 5494791618175851728, guid: 7f68c7a5fd30cf14bbd3ff9971fcdb39, type: 3}
       propertyPath: player
       value: 
@@ -1886,6 +1894,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4190342781076002771, guid: 7f68c7a5fd30cf14bbd3ff9971fcdb39, type: 3}
+      propertyPath: playerCam
+      value: 
+      objectReference: {fileID: 1933459236}
     - target: {fileID: 5494791618175851728, guid: 7f68c7a5fd30cf14bbd3ff9971fcdb39, type: 3}
       propertyPath: player
       value: 
@@ -2665,6 +2677,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4190342781076002771, guid: 7f68c7a5fd30cf14bbd3ff9971fcdb39, type: 3}
+      propertyPath: playerCam
+      value: 
+      objectReference: {fileID: 1933459236}
     - target: {fileID: 5494791618175851728, guid: 7f68c7a5fd30cf14bbd3ff9971fcdb39, type: 3}
       propertyPath: player
       value: 
@@ -5038,6 +5054,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4190342781076002771, guid: 7f68c7a5fd30cf14bbd3ff9971fcdb39, type: 3}
+      propertyPath: playerCam
+      value: 
+      objectReference: {fileID: 1933459236}
     - target: {fileID: 5494791618175851728, guid: 7f68c7a5fd30cf14bbd3ff9971fcdb39, type: 3}
       propertyPath: player
       value: 
@@ -6391,6 +6411,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4190342781076002771, guid: 7f68c7a5fd30cf14bbd3ff9971fcdb39, type: 3}
+      propertyPath: playerCam
+      value: 
+      objectReference: {fileID: 1933459236}
     - target: {fileID: 5494791618175851728, guid: 7f68c7a5fd30cf14bbd3ff9971fcdb39, type: 3}
       propertyPath: player
       value: 
@@ -11828,7 +11852,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2565713f607f8c140ae9cb1944389cfd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BossBase
-  maxHealth: 5
+  maxHealth: 100
   currentHealth: 5
   animManager: {fileID: 7686268774500893584}
   player: {fileID: 1785641259}

@@ -47,8 +47,7 @@ public class BossTileAttackState : BossState
     void ChooseRandomAttack()
     {
         // choose a random number and use that to choose attack function
-        //float attack = Random.Range(0, 2);
-        float attack = 2;
+        float attack = Random.Range(0, 3);
         switch (attack)
         {
             case 0: SingleTowersTiles(); break;
@@ -85,11 +84,7 @@ public class BossTileAttackState : BossState
             for (int i = 0; i < holder.tiles.Length; i++)
             {
                 int use = Random.Range(0, 2);
-                if (use >= 1)
-                {
-                    Debug.Log("added " + holder.tower + holder.tiles[i]);
-                    tilesUsingThisAttack.Add(holder.tiles[i]);
-                }
+                if (use >= 1) tilesUsingThisAttack.Add(holder.tiles[i]);
             }
         }
         totalAttacks = tilesUsingThisAttack.Count;
@@ -97,7 +92,6 @@ public class BossTileAttackState : BossState
     }
     void SingleTowersTilesRandom()
     {
-        Debug.Log("single random");
         string towerToAttack = bossBase.player.GetComponent<TestMovement>().towerCurrentlyOn; // will need to update this when make proper player script
 
         // to catch potential null error
@@ -110,11 +104,7 @@ public class BossTileAttackState : BossState
                 for (int i = 0; i < holder.tiles.Length; i++)
                 {
                     int use = Random.Range(0, 2);
-                    if (use >= 1)
-                    {
-                        Debug.Log("added " + holder.tower + holder.tiles[i]);
-                        tilesUsingThisAttack.Add(holder.tiles[i]);
-                    }
+                    if (use >= 1) tilesUsingThisAttack.Add(holder.tiles[i]);
                 }
             }
         }

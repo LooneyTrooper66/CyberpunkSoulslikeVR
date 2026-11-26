@@ -3,15 +3,12 @@ using UnityEngine;
 // Jordan/Libby Script\\
 public class BossIdleState : BossState
 {
-    float maxTimeBetweenAttacks = 4;
-    float minTimeBetweenAttacks = 2;
+    float maxTimeBetweenAttacks = 6;
+    float minTimeBetweenAttacks = 3;
     float timeBeforeCanAttackAgain;
-    /*float gunStateCooldown = 6;
+    float gunStateCooldown = 6;
     float tileStateCooldown = 12;
-    float droneStateCooldown = 24;*/
-    float gunStateCooldown = 20;
-    float tileStateCooldown = 5;
-    float droneStateCooldown = 20;
+    float droneStateCooldown = 24;
     float gunTimer;
     float tileTimer;
     float droneTimer;

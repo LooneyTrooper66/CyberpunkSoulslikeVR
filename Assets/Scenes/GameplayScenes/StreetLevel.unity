@@ -846,6 +846,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2413061317608600523, guid: bb90bdf6c4af5f7468968e53170f2859, type: 3}
+      propertyPath: playerCam
+      value: 
+      objectReference: {fileID: 1615701170}
     - target: {fileID: 4670126821091702639, guid: bb90bdf6c4af5f7468968e53170f2859, type: 3}
       propertyPath: m_Layer
       value: 13
@@ -950,6 +954,10 @@ PrefabInstance:
       propertyPath: pooler
       value: 
       objectReference: {fileID: 8246738665900225976}
+    - target: {fileID: 7686993936185165992, guid: bb90bdf6c4af5f7468968e53170f2859, type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 1615701169}
     - target: {fileID: 8357668792257834258, guid: bb90bdf6c4af5f7468968e53170f2859, type: 3}
       propertyPath: lerpTime
       value: 9
@@ -970,6 +978,14 @@ PrefabInstance:
       propertyPath: 'patrolPoints.Array.data[2]'
       value: 
       objectReference: {fileID: 952681286}
+    - target: {fileID: 8984360932863204559, guid: bb90bdf6c4af5f7468968e53170f2859, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8984360932863204559, guid: bb90bdf6c4af5f7468968e53170f2859, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1997,6 +2013,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2413061317608600523, guid: bb90bdf6c4af5f7468968e53170f2859, type: 3}
+      propertyPath: playerCam
+      value: 
+      objectReference: {fileID: 1615701170}
     - target: {fileID: 4670126821091702639, guid: bb90bdf6c4af5f7468968e53170f2859, type: 3}
       propertyPath: m_Layer
       value: 13
@@ -2101,6 +2121,10 @@ PrefabInstance:
       propertyPath: pooler
       value: 
       objectReference: {fileID: 8246738665900225976}
+    - target: {fileID: 7686993936185165992, guid: bb90bdf6c4af5f7468968e53170f2859, type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 1615701169}
     - target: {fileID: 8357668792257834258, guid: bb90bdf6c4af5f7468968e53170f2859, type: 3}
       propertyPath: lerpTime
       value: 10
@@ -2133,6 +2157,14 @@ PrefabInstance:
       propertyPath: 'patrolPoints.Array.data[5]'
       value: 
       objectReference: {fileID: 699448650}
+    - target: {fileID: 8984360932863204559, guid: bb90bdf6c4af5f7468968e53170f2859, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8984360932863204559, guid: bb90bdf6c4af5f7468968e53170f2859, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 9194831684589367486, guid: bb90bdf6c4af5f7468968e53170f2859, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
@@ -2418,6 +2450,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2413061317608600523, guid: bb90bdf6c4af5f7468968e53170f2859, type: 3}
+      propertyPath: playerCam
+      value: 
+      objectReference: {fileID: 1615701170}
     - target: {fileID: 4670126821091702639, guid: bb90bdf6c4af5f7468968e53170f2859, type: 3}
       propertyPath: m_Layer
       value: 13
@@ -2522,6 +2558,10 @@ PrefabInstance:
       propertyPath: pooler
       value: 
       objectReference: {fileID: 8246738665900225976}
+    - target: {fileID: 7686993936185165992, guid: bb90bdf6c4af5f7468968e53170f2859, type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 1615701169}
     - target: {fileID: 8357668792257834258, guid: bb90bdf6c4af5f7468968e53170f2859, type: 3}
       propertyPath: lerpTime
       value: 12
@@ -2538,6 +2578,14 @@ PrefabInstance:
       propertyPath: 'patrolPoints.Array.data[1]'
       value: 
       objectReference: {fileID: 274387109}
+    - target: {fileID: 8984360932863204559, guid: bb90bdf6c4af5f7468968e53170f2859, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8984360932863204559, guid: bb90bdf6c4af5f7468968e53170f2859, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2575,6 +2623,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2413061317608600523, guid: bb90bdf6c4af5f7468968e53170f2859, type: 3}
+      propertyPath: playerCam
+      value: 
+      objectReference: {fileID: 1615701170}
     - target: {fileID: 4670126821091702639, guid: bb90bdf6c4af5f7468968e53170f2859, type: 3}
       propertyPath: m_Layer
       value: 13
@@ -2671,6 +2723,10 @@ PrefabInstance:
       propertyPath: pooler
       value: 
       objectReference: {fileID: 8246738665900225976}
+    - target: {fileID: 7686993936185165992, guid: bb90bdf6c4af5f7468968e53170f2859, type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 1615701169}
     - target: {fileID: 8357668792257834258, guid: bb90bdf6c4af5f7468968e53170f2859, type: 3}
       propertyPath: lerpTime
       value: 10
@@ -2687,6 +2743,14 @@ PrefabInstance:
       propertyPath: 'patrolPoints.Array.data[1]'
       value: 
       objectReference: {fileID: 1516806806}
+    - target: {fileID: 8984360932863204559, guid: bb90bdf6c4af5f7468968e53170f2859, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8984360932863204559, guid: bb90bdf6c4af5f7468968e53170f2859, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6245,6 +6309,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: StreetDroneZ1_1
       objectReference: {fileID: 0}
+    - target: {fileID: 2413061317608600523, guid: bb90bdf6c4af5f7468968e53170f2859, type: 3}
+      propertyPath: playerCam
+      value: 
+      objectReference: {fileID: 1615701170}
     - target: {fileID: 4670126821091702639, guid: bb90bdf6c4af5f7468968e53170f2859, type: 3}
       propertyPath: m_Layer
       value: 13
@@ -6341,6 +6409,10 @@ PrefabInstance:
       propertyPath: pooler
       value: 
       objectReference: {fileID: 8246738665900225976}
+    - target: {fileID: 7686993936185165992, guid: bb90bdf6c4af5f7468968e53170f2859, type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 1615701169}
     - target: {fileID: 8357668792257834258, guid: bb90bdf6c4af5f7468968e53170f2859, type: 3}
       propertyPath: lerpTime
       value: 10
@@ -6361,6 +6433,14 @@ PrefabInstance:
       propertyPath: 'patrolPoints.Array.data[2]'
       value: 
       objectReference: {fileID: 466435778316519513}
+    - target: {fileID: 8984360932863204559, guid: bb90bdf6c4af5f7468968e53170f2859, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8984360932863204559, guid: bb90bdf6c4af5f7468968e53170f2859, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -11043,6 +11123,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2413061317608600523, guid: bb90bdf6c4af5f7468968e53170f2859, type: 3}
+      propertyPath: playerCam
+      value: 
+      objectReference: {fileID: 1615701170}
     - target: {fileID: 4670126821091702639, guid: bb90bdf6c4af5f7468968e53170f2859, type: 3}
       propertyPath: m_Layer
       value: 13
@@ -11155,6 +11239,10 @@ PrefabInstance:
       propertyPath: pooler
       value: 
       objectReference: {fileID: 8246738665900225976}
+    - target: {fileID: 7686993936185165992, guid: bb90bdf6c4af5f7468968e53170f2859, type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 1615701169}
     - target: {fileID: 8357668792257834258, guid: bb90bdf6c4af5f7468968e53170f2859, type: 3}
       propertyPath: lerpTime
       value: 9
@@ -11175,6 +11263,14 @@ PrefabInstance:
       propertyPath: 'patrolPoints.Array.data[2]'
       value: 
       objectReference: {fileID: 750465318}
+    - target: {fileID: 8984360932863204559, guid: bb90bdf6c4af5f7468968e53170f2859, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8984360932863204559, guid: bb90bdf6c4af5f7468968e53170f2859, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -13157,6 +13253,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2413061317608600523, guid: bb90bdf6c4af5f7468968e53170f2859, type: 3}
+      propertyPath: playerCam
+      value: 
+      objectReference: {fileID: 1615701170}
     - target: {fileID: 4670126821091702639, guid: bb90bdf6c4af5f7468968e53170f2859, type: 3}
       propertyPath: m_Layer
       value: 13
@@ -13253,6 +13353,10 @@ PrefabInstance:
       propertyPath: pooler
       value: 
       objectReference: {fileID: 8246738665900225976}
+    - target: {fileID: 7686993936185165992, guid: bb90bdf6c4af5f7468968e53170f2859, type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 1615701169}
     - target: {fileID: 8357668792257834258, guid: bb90bdf6c4af5f7468968e53170f2859, type: 3}
       propertyPath: lerpTime
       value: 11
@@ -13273,6 +13377,14 @@ PrefabInstance:
       propertyPath: 'patrolPoints.Array.data[2]'
       value: 
       objectReference: {fileID: 348780506}
+    - target: {fileID: 8984360932863204559, guid: bb90bdf6c4af5f7468968e53170f2859, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8984360932863204559, guid: bb90bdf6c4af5f7468968e53170f2859, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -14632,6 +14744,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2413061317608600523, guid: bb90bdf6c4af5f7468968e53170f2859, type: 3}
+      propertyPath: playerCam
+      value: 
+      objectReference: {fileID: 1615701170}
     - target: {fileID: 4670126821091702639, guid: bb90bdf6c4af5f7468968e53170f2859, type: 3}
       propertyPath: m_Layer
       value: 13
@@ -14736,6 +14852,10 @@ PrefabInstance:
       propertyPath: pooler
       value: 
       objectReference: {fileID: 8246738665900225976}
+    - target: {fileID: 7686993936185165992, guid: bb90bdf6c4af5f7468968e53170f2859, type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 1615701169}
     - target: {fileID: 8357668792257834258, guid: bb90bdf6c4af5f7468968e53170f2859, type: 3}
       propertyPath: lerpTime
       value: 8
@@ -14756,6 +14876,14 @@ PrefabInstance:
       propertyPath: 'patrolPoints.Array.data[2]'
       value: 
       objectReference: {fileID: 524238526}
+    - target: {fileID: 8984360932863204559, guid: bb90bdf6c4af5f7468968e53170f2859, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8984360932863204559, guid: bb90bdf6c4af5f7468968e53170f2859, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -14793,6 +14921,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2413061317608600523, guid: bb90bdf6c4af5f7468968e53170f2859, type: 3}
+      propertyPath: playerCam
+      value: 
+      objectReference: {fileID: 1615701170}
     - target: {fileID: 4670126821091702639, guid: bb90bdf6c4af5f7468968e53170f2859, type: 3}
       propertyPath: m_Layer
       value: 13
@@ -14905,6 +15037,10 @@ PrefabInstance:
       propertyPath: pooler
       value: 
       objectReference: {fileID: 8246738665900225976}
+    - target: {fileID: 7686993936185165992, guid: bb90bdf6c4af5f7468968e53170f2859, type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 1615701169}
     - target: {fileID: 8357668792257834258, guid: bb90bdf6c4af5f7468968e53170f2859, type: 3}
       propertyPath: lerpTime
       value: 12
@@ -14925,6 +15061,14 @@ PrefabInstance:
       propertyPath: 'patrolPoints.Array.data[2]'
       value: 
       objectReference: {fileID: 2132753315}
+    - target: {fileID: 8984360932863204559, guid: bb90bdf6c4af5f7468968e53170f2859, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8984360932863204559, guid: bb90bdf6c4af5f7468968e53170f2859, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -20841,6 +20985,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2413061317608600523, guid: bb90bdf6c4af5f7468968e53170f2859, type: 3}
+      propertyPath: playerCam
+      value: 
+      objectReference: {fileID: 1615701170}
     - target: {fileID: 4670126821091702639, guid: bb90bdf6c4af5f7468968e53170f2859, type: 3}
       propertyPath: m_Layer
       value: 13
@@ -20953,6 +21101,10 @@ PrefabInstance:
       propertyPath: pooler
       value: 
       objectReference: {fileID: 8246738665900225976}
+    - target: {fileID: 7686993936185165992, guid: bb90bdf6c4af5f7468968e53170f2859, type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 1615701169}
     - target: {fileID: 8357668792257834258, guid: bb90bdf6c4af5f7468968e53170f2859, type: 3}
       propertyPath: lerpTime
       value: 10
@@ -20977,6 +21129,14 @@ PrefabInstance:
       propertyPath: 'patrolPoints.Array.data[3]'
       value: 
       objectReference: {fileID: 1006895457}
+    - target: {fileID: 8984360932863204559, guid: bb90bdf6c4af5f7468968e53170f2859, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8984360932863204559, guid: bb90bdf6c4af5f7468968e53170f2859, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -29821,6 +29981,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2413061317608600523, guid: bb90bdf6c4af5f7468968e53170f2859, type: 3}
+      propertyPath: playerCam
+      value: 
+      objectReference: {fileID: 1615701170}
     - target: {fileID: 4670126821091702639, guid: bb90bdf6c4af5f7468968e53170f2859, type: 3}
       propertyPath: m_Layer
       value: 13
@@ -29917,6 +30081,10 @@ PrefabInstance:
       propertyPath: pooler
       value: 
       objectReference: {fileID: 8246738665900225976}
+    - target: {fileID: 7686993936185165992, guid: bb90bdf6c4af5f7468968e53170f2859, type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 1615701169}
     - target: {fileID: 8357668792257834258, guid: bb90bdf6c4af5f7468968e53170f2859, type: 3}
       propertyPath: lerpTime
       value: 9
@@ -29937,6 +30105,14 @@ PrefabInstance:
       propertyPath: 'patrolPoints.Array.data[2]'
       value: 
       objectReference: {fileID: 1304547390}
+    - target: {fileID: 8984360932863204559, guid: bb90bdf6c4af5f7468968e53170f2859, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8984360932863204559, guid: bb90bdf6c4af5f7468968e53170f2859, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -35489,6 +35665,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2413061317608600523, guid: bb90bdf6c4af5f7468968e53170f2859, type: 3}
+      propertyPath: playerCam
+      value: 
+      objectReference: {fileID: 1615701170}
     - target: {fileID: 4670126821091702639, guid: bb90bdf6c4af5f7468968e53170f2859, type: 3}
       propertyPath: m_Layer
       value: 13
@@ -35593,6 +35773,10 @@ PrefabInstance:
       propertyPath: pooler
       value: 
       objectReference: {fileID: 8246738665900225976}
+    - target: {fileID: 7686993936185165992, guid: bb90bdf6c4af5f7468968e53170f2859, type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 1615701169}
     - target: {fileID: 8357668792257834258, guid: bb90bdf6c4af5f7468968e53170f2859, type: 3}
       propertyPath: lerpTime
       value: 10
@@ -35613,6 +35797,14 @@ PrefabInstance:
       propertyPath: 'patrolPoints.Array.data[2]'
       value: 
       objectReference: {fileID: 844930099}
+    - target: {fileID: 8984360932863204559, guid: bb90bdf6c4af5f7468968e53170f2859, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8984360932863204559, guid: bb90bdf6c4af5f7468968e53170f2859, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -41708,6 +41900,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2413061317608600523, guid: bb90bdf6c4af5f7468968e53170f2859, type: 3}
+      propertyPath: playerCam
+      value: 
+      objectReference: {fileID: 1615701170}
     - target: {fileID: 4670126821091702639, guid: bb90bdf6c4af5f7468968e53170f2859, type: 3}
       propertyPath: m_Layer
       value: 13
@@ -41812,6 +42008,10 @@ PrefabInstance:
       propertyPath: pooler
       value: 
       objectReference: {fileID: 8246738665900225976}
+    - target: {fileID: 7686993936185165992, guid: bb90bdf6c4af5f7468968e53170f2859, type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 1615701169}
     - target: {fileID: 8357668792257834258, guid: bb90bdf6c4af5f7468968e53170f2859, type: 3}
       propertyPath: lerpTime
       value: 12
@@ -41828,6 +42028,14 @@ PrefabInstance:
       propertyPath: 'patrolPoints.Array.data[1]'
       value: 
       objectReference: {fileID: 858757622}
+    - target: {fileID: 8984360932863204559, guid: bb90bdf6c4af5f7468968e53170f2859, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8984360932863204559, guid: bb90bdf6c4af5f7468968e53170f2859, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -44428,6 +44636,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2413061317608600523, guid: bb90bdf6c4af5f7468968e53170f2859, type: 3}
+      propertyPath: playerCam
+      value: 
+      objectReference: {fileID: 1615701170}
     - target: {fileID: 4670126821091702639, guid: bb90bdf6c4af5f7468968e53170f2859, type: 3}
       propertyPath: m_Layer
       value: 13
@@ -44532,6 +44744,10 @@ PrefabInstance:
       propertyPath: pooler
       value: 
       objectReference: {fileID: 8246738665900225976}
+    - target: {fileID: 7686993936185165992, guid: bb90bdf6c4af5f7468968e53170f2859, type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 1615701169}
     - target: {fileID: 8357668792257834258, guid: bb90bdf6c4af5f7468968e53170f2859, type: 3}
       propertyPath: lerpTime
       value: 9
@@ -44552,6 +44768,14 @@ PrefabInstance:
       propertyPath: 'patrolPoints.Array.data[2]'
       value: 
       objectReference: {fileID: 2062551599}
+    - target: {fileID: 8984360932863204559, guid: bb90bdf6c4af5f7468968e53170f2859, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8984360932863204559, guid: bb90bdf6c4af5f7468968e53170f2859, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -46414,6 +46638,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2413061317608600523, guid: bb90bdf6c4af5f7468968e53170f2859, type: 3}
+      propertyPath: playerCam
+      value: 
+      objectReference: {fileID: 1615701170}
     - target: {fileID: 4670126821091702639, guid: bb90bdf6c4af5f7468968e53170f2859, type: 3}
       propertyPath: m_Layer
       value: 13
@@ -46526,6 +46754,10 @@ PrefabInstance:
       propertyPath: pooler
       value: 
       objectReference: {fileID: 8246738665900225976}
+    - target: {fileID: 7686993936185165992, guid: bb90bdf6c4af5f7468968e53170f2859, type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 1615701169}
     - target: {fileID: 8357668792257834258, guid: bb90bdf6c4af5f7468968e53170f2859, type: 3}
       propertyPath: lerpTime
       value: 11
@@ -46542,6 +46774,14 @@ PrefabInstance:
       propertyPath: 'patrolPoints.Array.data[1]'
       value: 
       objectReference: {fileID: 1126888186}
+    - target: {fileID: 8984360932863204559, guid: bb90bdf6c4af5f7468968e53170f2859, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8984360932863204559, guid: bb90bdf6c4af5f7468968e53170f2859, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -48142,6 +48382,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2413061317608600523, guid: bb90bdf6c4af5f7468968e53170f2859, type: 3}
+      propertyPath: playerCam
+      value: 
+      objectReference: {fileID: 1615701170}
     - target: {fileID: 4670126821091702639, guid: bb90bdf6c4af5f7468968e53170f2859, type: 3}
       propertyPath: m_Layer
       value: 13
@@ -48238,6 +48482,10 @@ PrefabInstance:
       propertyPath: pooler
       value: 
       objectReference: {fileID: 8246738665900225976}
+    - target: {fileID: 7686993936185165992, guid: bb90bdf6c4af5f7468968e53170f2859, type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 1615701169}
     - target: {fileID: 8357668792257834258, guid: bb90bdf6c4af5f7468968e53170f2859, type: 3}
       propertyPath: lerpTime
       value: 8
@@ -48258,6 +48506,14 @@ PrefabInstance:
       propertyPath: 'patrolPoints.Array.data[2]'
       value: 
       objectReference: {fileID: 1734393171}
+    - target: {fileID: 8984360932863204559, guid: bb90bdf6c4af5f7468968e53170f2859, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8984360932863204559, guid: bb90bdf6c4af5f7468968e53170f2859, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -55627,6 +55883,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2413061317608600523, guid: bb90bdf6c4af5f7468968e53170f2859, type: 3}
+      propertyPath: playerCam
+      value: 
+      objectReference: {fileID: 1615701170}
     - target: {fileID: 4670126821091702639, guid: bb90bdf6c4af5f7468968e53170f2859, type: 3}
       propertyPath: m_Layer
       value: 13
@@ -55731,6 +55991,10 @@ PrefabInstance:
       propertyPath: pooler
       value: 
       objectReference: {fileID: 8246738665900225976}
+    - target: {fileID: 7686993936185165992, guid: bb90bdf6c4af5f7468968e53170f2859, type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 1615701169}
     - target: {fileID: 8357668792257834258, guid: bb90bdf6c4af5f7468968e53170f2859, type: 3}
       propertyPath: lerpTime
       value: 12
@@ -55751,6 +56015,14 @@ PrefabInstance:
       propertyPath: 'patrolPoints.Array.data[2]'
       value: 
       objectReference: {fileID: 952681286}
+    - target: {fileID: 8984360932863204559, guid: bb90bdf6c4af5f7468968e53170f2859, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8984360932863204559, guid: bb90bdf6c4af5f7468968e53170f2859, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -56680,6 +56952,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2413061317608600523, guid: bb90bdf6c4af5f7468968e53170f2859, type: 3}
+      propertyPath: playerCam
+      value: 
+      objectReference: {fileID: 1615701170}
     - target: {fileID: 4670126821091702639, guid: bb90bdf6c4af5f7468968e53170f2859, type: 3}
       propertyPath: m_Layer
       value: 13
@@ -56784,6 +57060,10 @@ PrefabInstance:
       propertyPath: pooler
       value: 
       objectReference: {fileID: 8246738665900225976}
+    - target: {fileID: 7686993936185165992, guid: bb90bdf6c4af5f7468968e53170f2859, type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 1615701169}
     - target: {fileID: 8357668792257834258, guid: bb90bdf6c4af5f7468968e53170f2859, type: 3}
       propertyPath: lerpTime
       value: 11
@@ -56804,6 +57084,14 @@ PrefabInstance:
       propertyPath: 'patrolPoints.Array.data[2]'
       value: 
       objectReference: {fileID: 2133405932}
+    - target: {fileID: 8984360932863204559, guid: bb90bdf6c4af5f7468968e53170f2859, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8984360932863204559, guid: bb90bdf6c4af5f7468968e53170f2859, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -68582,6 +68870,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2413061317608600523, guid: bb90bdf6c4af5f7468968e53170f2859, type: 3}
+      propertyPath: playerCam
+      value: 
+      objectReference: {fileID: 1615701170}
     - target: {fileID: 4670126821091702639, guid: bb90bdf6c4af5f7468968e53170f2859, type: 3}
       propertyPath: m_Layer
       value: 13
@@ -68678,6 +68970,10 @@ PrefabInstance:
       propertyPath: pooler
       value: 
       objectReference: {fileID: 8246738665900225976}
+    - target: {fileID: 7686993936185165992, guid: bb90bdf6c4af5f7468968e53170f2859, type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 1615701169}
     - target: {fileID: 8357668792257834258, guid: bb90bdf6c4af5f7468968e53170f2859, type: 3}
       propertyPath: lerpTime
       value: 12
@@ -68694,6 +68990,14 @@ PrefabInstance:
       propertyPath: 'patrolPoints.Array.data[1]'
       value: 
       objectReference: {fileID: 1463353068}
+    - target: {fileID: 8984360932863204559, guid: bb90bdf6c4af5f7468968e53170f2859, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8984360932863204559, guid: bb90bdf6c4af5f7468968e53170f2859, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

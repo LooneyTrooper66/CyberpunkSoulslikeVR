@@ -37,6 +37,10 @@ public class BossBase : MonoBehaviour, IDamageable
     public Transform droneSpawn;
     public GameObject[] drones;
 
+    [Header("UI")]
+    public GameObject healthBar;
+    public GameObject winUI;
+
 
     private void Awake()
     {

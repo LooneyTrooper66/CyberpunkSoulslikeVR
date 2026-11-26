@@ -12,6 +12,8 @@ public class EnemyBase : MonoBehaviour, IDamageable
     // Aggro Bools \\
     public bool IsAggroed { get; set; }
     public bool IsWithinAttackDist { get; set; }
+    [SerializeField] GameObject aggroZone;
+    AggroZoneCheck aggroCheckScr;
 
     // Stats \\
     public float maxHealth;
@@ -51,6 +53,8 @@ public class EnemyBase : MonoBehaviour, IDamageable
         attackBaseInstance.Initialize(this, gameObject);
 
         stateManager.Initialize(patrolState);
+
+        if (aggroZone != gameObject) aggroCheckScr = aggroZone.GetComponent<AggroZoneCheck>();
     }
 
     private void OnEnable()
@@ -91,5 +95,6 @@ public class EnemyBase : MonoBehaviour, IDamageable
     void Die()
     {
         gameObject.SetActive(false);
+        if (aggroCheckScr != null) aggroCheckScr.CheckIfAllEnemiesInactive();
     }
 }

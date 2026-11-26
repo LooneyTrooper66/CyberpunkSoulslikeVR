@@ -56,6 +56,7 @@ MonoBehaviour:
   pooler: {fileID: 0}
   shootPoint1: {fileID: 353403970188957409}
   shootPoint2: {fileID: 7430382646346757114}
+  aggroZone: {fileID: 1490020383269694506}
   maxHealth: 5
   currentHealth: 0
   patrolBase: {fileID: 11400000, guid: 606d94ab09b21cf4194e9c81410fa248, type: 2}

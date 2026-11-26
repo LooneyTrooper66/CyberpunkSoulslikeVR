@@ -9,10 +9,7 @@ public class AggroZoneCheck : MonoBehaviour
     [Tooltip("Every enemy in this trigger zone must be in this array to be able to aggro")]
     [SerializeField] EnemyBase[] enemiesInZone;
     Coroutine lastCoroutine;
-
-    /*[Header("For draw gizmos")]
-    [SerializeField] Vector3 boxColCenter;
-    [SerializeField] Vector3 boxColSize;*/
+    [SerializeField] LootCarLogic thisZoneCar;
 
 
     private void OnTriggerEnter(Collider other)
@@ -46,10 +43,14 @@ public class AggroZoneCheck : MonoBehaviour
         }
     }
 
-    /*// to show collider areas in editor
-    private void OnDrawGizmos()
+    public void CheckIfAllEnemiesInactive()
     {
-        Gizmos.color = Color.green;
-        Gizmos.DrawWireCube(boxColCenter, boxColSize);
-    }*/
+        int numInactive = 0;
+        foreach (EnemyBase e in enemiesInZone)
+        {
+            if (e.gameObject.activeSelf == false) numInactive++;
+        }
+
+        if (numInactive >= enemiesInZone.Length) thisZoneCar.OpenCar();
+    }
 }

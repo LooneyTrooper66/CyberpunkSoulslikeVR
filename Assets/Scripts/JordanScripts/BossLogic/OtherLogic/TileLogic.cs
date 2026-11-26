@@ -8,6 +8,7 @@ public class TileLogic : MonoBehaviour
     [SerializeField] float damageDeals;
     public bool playerOnTile = false;
     MeshRenderer thisRenderer;
+    float lerpTime;
     bool lerpColour = false;
     Color colourToLerpTo = Color.white;
 
@@ -15,13 +16,15 @@ public class TileLogic : MonoBehaviour
     private void Start()
     {
         thisRenderer = gameObject.GetComponent<MeshRenderer>();
+        lerpTime = 0;
     }
 
     private void Update()
     {
         if (lerpColour)
         {
-            Color newColour = Color.Lerp(thisRenderer.material.color, colourToLerpTo, Time.deltaTime * 4);
+            lerpTime += Time.deltaTime * 0.02f;
+            Color newColour = Color.Lerp(thisRenderer.material.color, colourToLerpTo, lerpTime);
             thisRenderer.material.color = newColour;
             thisRenderer.material.SetColor("_EmissionColor", newColour);
             if (thisRenderer.material.color == colourToLerpTo) lerpColour = false;
@@ -41,12 +44,12 @@ public class TileLogic : MonoBehaviour
     public void LerpColourToRed()
     {
         colourToLerpTo = Color.red;
-        lerpColour = true;
+        lerpColour = true; lerpTime = 0;
     }
     void LerpColourToWhite()
     {
         colourToLerpTo = Color.white;
-        lerpColour = true;
+        lerpColour = true; lerpTime = 0;
     }
 
     public void TileHit()

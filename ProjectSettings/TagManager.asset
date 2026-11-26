@@ -19,11 +19,11 @@ TagManager:
   - Environment
   - TowerFloor
   - Weapon
-  - 
+  - Player
   - MagCollision
   - Enemy
   - EnemyBullet
-  - 
+  - Missile
   - 
   - 
   - 

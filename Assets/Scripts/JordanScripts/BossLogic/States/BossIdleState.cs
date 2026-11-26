@@ -3,8 +3,8 @@ using UnityEngine;
 // Jordan/Libby Script\\
 public class BossIdleState : BossState
 {
-    float maxTimeBetweenAttacks = 6;
-    float minTimeBetweenAttacks = 3;
+    float maxTimeBetweenAttacks = 4;
+    float minTimeBetweenAttacks = 2;
     float timeBeforeCanAttackAgain;
     /*float gunStateCooldown = 6;
     float tileStateCooldown = 12;

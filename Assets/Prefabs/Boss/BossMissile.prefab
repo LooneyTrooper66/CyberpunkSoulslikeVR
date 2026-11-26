@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 913932108730933409}
   - component: {fileID: 5401741558276586492}
   - component: {fileID: 2764354325388617694}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: Explode
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -50,7 +50,7 @@ ParticleSystem:
   emitterVelocityMode: 1
   looping: 0
   prewarm: 0
-  playOnAwake: 1
+  playOnAwake: 0
   useUnscaledTime: 0
   autoRandomSeed: 1
   startDelay:
@@ -106,7 +106,7 @@ ParticleSystem:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-  moveWithTransform: 0
+  moveWithTransform: 1
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
   randomSeed: 0
@@ -4907,7 +4907,7 @@ GameObject:
   - component: {fileID: 8512246227973656818}
   - component: {fileID: 8379317727314437077}
   - component: {fileID: 3384486770244671780}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: BossMissile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5020,5 +5020,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29f04d79b5b3b4444b42ba8bf5c234bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MissileLogic
+  startPos: {x: 0, y: 66, z: 0}
   targetTile: {fileID: 0}
+  missileSpeed: 0.15
+  maxLerpTime: 6.5
   ps: {fileID: 5401741558276586492}

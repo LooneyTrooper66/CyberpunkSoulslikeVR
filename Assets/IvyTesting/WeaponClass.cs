@@ -97,5 +97,6 @@ public abstract class WeaponClass : MonoBehaviour
     public virtual void OnDrop()
     {
         GetAmmo.Instance.WeaponClass = null;
+        GetComponent<Rigidbody>().linearVelocity = Vector3.zero;
     }
 }

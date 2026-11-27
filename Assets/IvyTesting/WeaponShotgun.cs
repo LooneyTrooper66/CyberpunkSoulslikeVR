@@ -13,10 +13,10 @@ public class WeaponShotgun : WeaponClass
 
     public override void Fire()
     {
-        if (mag.ammo != 0) {
-            FireLoop(mag,EjectHole);
+        if (mag != null && mag.ammo != 0) {
+            FireLoop(mag, EjectHole);
         }
-        else if (secondaryMag.ammo != 0)
+        else if (secondaryMag != null && secondaryMag.ammo != 0)
         {
             FireLoop(secondaryMag,secondaryEjectHole);
         }

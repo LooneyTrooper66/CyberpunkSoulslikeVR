@@ -5,8 +5,8 @@ public class Menu : MonoBehaviour
 {
     //MainMenu script
     [Header("<color=red>Menu Open </color>")]
-    public InputAction openMenu;
-    public InputAction closeMenu;
+    InputAction openMenu;
+    InputAction closeMenu;
 
     public Transform leftHand;
     public float distance;

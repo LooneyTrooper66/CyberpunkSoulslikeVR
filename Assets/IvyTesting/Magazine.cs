@@ -42,6 +42,7 @@ public class Magazine : MonoBehaviour
         LookForHost();
     }
 
+   
     /// <summary>
     /// check to see if inside a mag anchor of the matching weapon type
     /// </summary>

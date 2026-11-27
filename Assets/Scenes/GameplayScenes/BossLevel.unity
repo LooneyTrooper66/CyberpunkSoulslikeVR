@@ -270,7 +270,7 @@ GameObject:
   - component: {fileID: 49403459}
   - component: {fileID: 49403458}
   - component: {fileID: 49403457}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RoofTile13
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -304,7 +304,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9aab5529a78a5be4d8fca66044db490e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TileLogic
-  player: {fileID: 0}
+  playerHealth: {fileID: 1951352893}
   damageDeals: 5
   playerOnTile: 0
 --- !u!65 &49403458
@@ -397,7 +397,7 @@ GameObject:
   - component: {fileID: 59046614}
   - component: {fileID: 59046613}
   - component: {fileID: 59046615}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Tower1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -465,7 +465,7 @@ MonoBehaviour:
   m_Colliders:
   - {fileID: 59046613}
   m_InteractionLayers:
-    m_Bits: 256
+    m_Bits: 4294967295
   m_DistanceCalculationMode: 1
   m_SelectMode: 1
   m_FocusMode: 1
@@ -546,7 +546,7 @@ GameObject:
   - component: {fileID: 66165647}
   - component: {fileID: 66165646}
   - component: {fileID: 66165645}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RoofTile4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -580,7 +580,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9aab5529a78a5be4d8fca66044db490e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TileLogic
-  player: {fileID: 0}
+  playerHealth: {fileID: 1951352893}
   damageDeals: 5
   playerOnTile: 0
 --- !u!65 &66165646
@@ -674,7 +674,7 @@ GameObject:
   - component: {fileID: 93681327}
   - component: {fileID: 93681326}
   - component: {fileID: 93681325}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RoofTile5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -708,7 +708,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9aab5529a78a5be4d8fca66044db490e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TileLogic
-  player: {fileID: 0}
+  playerHealth: {fileID: 1951352893}
   damageDeals: 5
   playerOnTile: 0
 --- !u!65 &93681326
@@ -1064,7 +1064,7 @@ GameObject:
   - component: {fileID: 179246427}
   - component: {fileID: 179246426}
   - component: {fileID: 179246425}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RoofTile1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1098,7 +1098,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9aab5529a78a5be4d8fca66044db490e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TileLogic
-  player: {fileID: 0}
+  playerHealth: {fileID: 1951352893}
   damageDeals: 5
   playerOnTile: 0
 --- !u!65 &179246426
@@ -1282,7 +1282,7 @@ GameObject:
   - component: {fileID: 236759532}
   - component: {fileID: 236759531}
   - component: {fileID: 236759530}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RoofTile3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1316,7 +1316,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9aab5529a78a5be4d8fca66044db490e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TileLogic
-  player: {fileID: 0}
+  playerHealth: {fileID: 1951352893}
   damageDeals: 5
   playerOnTile: 0
 --- !u!65 &236759531
@@ -1443,7 +1443,7 @@ GameObject:
   - component: {fileID: 261900039}
   - component: {fileID: 261900038}
   - component: {fileID: 261900037}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RoofTile12
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1477,7 +1477,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9aab5529a78a5be4d8fca66044db490e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TileLogic
-  player: {fileID: 0}
+  playerHealth: {fileID: 1951352893}
   damageDeals: 5
   playerOnTile: 0
 --- !u!65 &261900038
@@ -1571,7 +1571,7 @@ GameObject:
   - component: {fileID: 274424653}
   - component: {fileID: 274424652}
   - component: {fileID: 274424651}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RoofTile10
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1605,7 +1605,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9aab5529a78a5be4d8fca66044db490e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TileLogic
-  player: {fileID: 0}
+  playerHealth: {fileID: 1951352893}
   damageDeals: 5
   playerOnTile: 0
 --- !u!65 &274424652
@@ -1698,7 +1698,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9aab5529a78a5be4d8fca66044db490e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TileLogic
-  player: {fileID: 0}
+  playerHealth: {fileID: 1951352893}
   damageDeals: 5
   playerOnTile: 0
 --- !u!1 &307383718
@@ -1714,7 +1714,7 @@ GameObject:
   - component: {fileID: 307383722}
   - component: {fileID: 307383721}
   - component: {fileID: 307383720}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RoofTile14
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1748,7 +1748,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9aab5529a78a5be4d8fca66044db490e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TileLogic
-  player: {fileID: 0}
+  playerHealth: {fileID: 1951352893}
   damageDeals: 5
   playerOnTile: 0
 --- !u!65 &307383721
@@ -1841,7 +1841,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9aab5529a78a5be4d8fca66044db490e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TileLogic
-  player: {fileID: 0}
+  playerHealth: {fileID: 1951352893}
   damageDeals: 5
   playerOnTile: 0
 --- !u!1 &327213455
@@ -1857,7 +1857,7 @@ GameObject:
   - component: {fileID: 327213459}
   - component: {fileID: 327213458}
   - component: {fileID: 327213457}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RoofTile3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1891,7 +1891,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9aab5529a78a5be4d8fca66044db490e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TileLogic
-  player: {fileID: 0}
+  playerHealth: {fileID: 1951352893}
   damageDeals: 5
   playerOnTile: 0
 --- !u!65 &327213458
@@ -2206,7 +2206,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9aab5529a78a5be4d8fca66044db490e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TileLogic
-  player: {fileID: 0}
+  playerHealth: {fileID: 1951352893}
   damageDeals: 5
   playerOnTile: 0
 --- !u!1 &386874202
@@ -2388,7 +2388,7 @@ GameObject:
   - component: {fileID: 393721606}
   - component: {fileID: 393721605}
   - component: {fileID: 393721604}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RoofTile16
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2422,7 +2422,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9aab5529a78a5be4d8fca66044db490e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TileLogic
-  player: {fileID: 0}
+  playerHealth: {fileID: 1951352893}
   damageDeals: 5
   playerOnTile: 0
 --- !u!65 &393721605
@@ -2516,7 +2516,7 @@ GameObject:
   - component: {fileID: 432236507}
   - component: {fileID: 432236506}
   - component: {fileID: 432236505}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RoofTile5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2550,7 +2550,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9aab5529a78a5be4d8fca66044db490e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TileLogic
-  player: {fileID: 0}
+  playerHealth: {fileID: 1951352893}
   damageDeals: 5
   playerOnTile: 0
 --- !u!65 &432236506
@@ -2644,7 +2644,7 @@ GameObject:
   - component: {fileID: 444926863}
   - component: {fileID: 444926862}
   - component: {fileID: 444926861}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RoofTile15
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2678,7 +2678,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9aab5529a78a5be4d8fca66044db490e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TileLogic
-  player: {fileID: 0}
+  playerHealth: {fileID: 1951352893}
   damageDeals: 5
   playerOnTile: 0
 --- !u!65 &444926862
@@ -2903,7 +2903,7 @@ GameObject:
   - component: {fileID: 458888238}
   - component: {fileID: 458888237}
   - component: {fileID: 458888236}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RoofTile2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2937,7 +2937,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9aab5529a78a5be4d8fca66044db490e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TileLogic
-  player: {fileID: 0}
+  playerHealth: {fileID: 1951352893}
   damageDeals: 5
   playerOnTile: 0
 --- !u!65 &458888237
@@ -3110,7 +3110,7 @@ GameObject:
   - component: {fileID: 479661911}
   - component: {fileID: 479661910}
   - component: {fileID: 479661909}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RoofTile9
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3144,7 +3144,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9aab5529a78a5be4d8fca66044db490e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TileLogic
-  player: {fileID: 0}
+  playerHealth: {fileID: 1951352893}
   damageDeals: 5
   playerOnTile: 0
 --- !u!65 &479661910
@@ -3323,7 +3323,7 @@ GameObject:
   - component: {fileID: 534043108}
   - component: {fileID: 534043107}
   - component: {fileID: 534043106}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RoofTile5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3357,7 +3357,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9aab5529a78a5be4d8fca66044db490e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TileLogic
-  player: {fileID: 0}
+  playerHealth: {fileID: 1951352893}
   damageDeals: 5
   playerOnTile: 0
 --- !u!65 &534043107
@@ -3451,7 +3451,7 @@ GameObject:
   - component: {fileID: 559679560}
   - component: {fileID: 559679559}
   - component: {fileID: 559679558}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RoofTile6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3485,7 +3485,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9aab5529a78a5be4d8fca66044db490e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TileLogic
-  player: {fileID: 0}
+  playerHealth: {fileID: 1951352893}
   damageDeals: 5
   playerOnTile: 0
 --- !u!65 &559679559
@@ -3684,6 +3684,118 @@ MonoBehaviour:
   bossBase: {fileID: 7686268774500893582}
   healthBar: {fileID: 2010507301}
   playerCam: {fileID: 1625131816}
+--- !u!1 &622447190
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 622447191}
+  - component: {fileID: 622447194}
+  - component: {fileID: 622447193}
+  - component: {fileID: 622447192}
+  m_Layer: 0
+  m_Name: Cube
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &622447191
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 622447190}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.45553, y: 0.31295365, z: 0.21240143}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1713311455}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &622447192
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 622447190}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &622447193
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 622447190}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 5d5f100c3f4a80f4e802e3d27f700d84, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_MaskInteraction: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &622447194
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 622447190}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!114 &661206603
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3696,7 +3808,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9aab5529a78a5be4d8fca66044db490e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TileLogic
-  player: {fileID: 0}
+  playerHealth: {fileID: 1951352893}
   damageDeals: 5
   playerOnTile: 0
 --- !u!114 &686330444
@@ -3711,9 +3823,121 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9aab5529a78a5be4d8fca66044db490e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TileLogic
-  player: {fileID: 0}
+  playerHealth: {fileID: 1951352893}
   damageDeals: 5
   playerOnTile: 0
+--- !u!1 &687481983
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 687481984}
+  - component: {fileID: 687481987}
+  - component: {fileID: 687481986}
+  - component: {fileID: 687481985}
+  m_Layer: 0
+  m_Name: Cube (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &687481984
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 687481983}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0.072437145, w: 0.997373}
+  m_LocalPosition: {x: 0.008, y: 0.119, z: 0}
+  m_LocalScale: {x: 0.48081112, y: 0.14298089, z: 0.22240263}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1713311455}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -8.308}
+--- !u!65 &687481985
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 687481983}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &687481986
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 687481983}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 5d5f100c3f4a80f4e802e3d27f700d84, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_MaskInteraction: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &687481987
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 687481983}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &722916384
 GameObject:
   m_ObjectHideFlags: 0
@@ -3829,7 +4053,7 @@ GameObject:
   - component: {fileID: 739796366}
   - component: {fileID: 739796365}
   - component: {fileID: 739796364}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RoofTile10
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3863,7 +4087,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9aab5529a78a5be4d8fca66044db490e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TileLogic
-  player: {fileID: 0}
+  playerHealth: {fileID: 1951352893}
   damageDeals: 5
   playerOnTile: 0
 --- !u!65 &739796365
@@ -4089,7 +4313,7 @@ GameObject:
   - component: {fileID: 842695983}
   - component: {fileID: 842695982}
   - component: {fileID: 842695981}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RoofTile7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4123,7 +4347,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9aab5529a78a5be4d8fca66044db490e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TileLogic
-  player: {fileID: 0}
+  playerHealth: {fileID: 1951352893}
   damageDeals: 5
   playerOnTile: 0
 --- !u!65 &842695982
@@ -4217,7 +4441,7 @@ GameObject:
   - component: {fileID: 864932131}
   - component: {fileID: 864932130}
   - component: {fileID: 864932129}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RoofTile2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4251,7 +4475,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9aab5529a78a5be4d8fca66044db490e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TileLogic
-  player: {fileID: 0}
+  playerHealth: {fileID: 1951352893}
   damageDeals: 5
   playerOnTile: 0
 --- !u!65 &864932130
@@ -4345,7 +4569,7 @@ GameObject:
   - component: {fileID: 903092680}
   - component: {fileID: 903092679}
   - component: {fileID: 903092678}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RoofTile1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4379,7 +4603,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9aab5529a78a5be4d8fca66044db490e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TileLogic
-  player: {fileID: 0}
+  playerHealth: {fileID: 1951352893}
   damageDeals: 5
   playerOnTile: 0
 --- !u!65 &903092679
@@ -4473,7 +4697,7 @@ GameObject:
   - component: {fileID: 923985923}
   - component: {fileID: 923985922}
   - component: {fileID: 923985921}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RoofTile6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4507,7 +4731,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9aab5529a78a5be4d8fca66044db490e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TileLogic
-  player: {fileID: 0}
+  playerHealth: {fileID: 1951352893}
   damageDeals: 5
   playerOnTile: 0
 --- !u!65 &923985922
@@ -4600,7 +4824,7 @@ GameObject:
   - component: {fileID: 989258041}
   - component: {fileID: 989258040}
   - component: {fileID: 989258042}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Tower3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4668,7 +4892,7 @@ MonoBehaviour:
   m_Colliders:
   - {fileID: 989258040}
   m_InteractionLayers:
-    m_Bits: 256
+    m_Bits: 4294967295
   m_DistanceCalculationMode: 1
   m_SelectMode: 1
   m_FocusMode: 1
@@ -4770,7 +4994,7 @@ GameObject:
   - component: {fileID: 1010998993}
   - component: {fileID: 1010998992}
   - component: {fileID: 1010998991}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RoofTile15
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4804,7 +5028,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9aab5529a78a5be4d8fca66044db490e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TileLogic
-  player: {fileID: 0}
+  playerHealth: {fileID: 1951352893}
   damageDeals: 5
   playerOnTile: 0
 --- !u!65 &1010998992
@@ -4898,7 +5122,7 @@ GameObject:
   - component: {fileID: 1015456929}
   - component: {fileID: 1015456928}
   - component: {fileID: 1015456927}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RoofTile4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4932,7 +5156,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9aab5529a78a5be4d8fca66044db490e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TileLogic
-  player: {fileID: 0}
+  playerHealth: {fileID: 1951352893}
   damageDeals: 5
   playerOnTile: 0
 --- !u!65 &1015456928
@@ -5064,7 +5288,7 @@ GameObject:
   - component: {fileID: 1043477373}
   - component: {fileID: 1043477372}
   - component: {fileID: 1043477371}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RoofTile7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5098,7 +5322,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9aab5529a78a5be4d8fca66044db490e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TileLogic
-  player: {fileID: 0}
+  playerHealth: {fileID: 1951352893}
   damageDeals: 5
   playerOnTile: 0
 --- !u!65 &1043477372
@@ -5213,7 +5437,7 @@ GameObject:
   - component: {fileID: 1075088079}
   - component: {fileID: 1075088078}
   - component: {fileID: 1075088077}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RoofTile14
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5247,7 +5471,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9aab5529a78a5be4d8fca66044db490e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TileLogic
-  player: {fileID: 0}
+  playerHealth: {fileID: 1951352893}
   damageDeals: 5
   playerOnTile: 0
 --- !u!65 &1075088078
@@ -5698,7 +5922,7 @@ GameObject:
   - component: {fileID: 1288167805}
   - component: {fileID: 1288167804}
   - component: {fileID: 1288167803}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RoofTile11
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5732,7 +5956,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9aab5529a78a5be4d8fca66044db490e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TileLogic
-  player: {fileID: 0}
+  playerHealth: {fileID: 1951352893}
   damageDeals: 5
   playerOnTile: 0
 --- !u!65 &1288167804
@@ -5826,7 +6050,7 @@ GameObject:
   - component: {fileID: 1291364926}
   - component: {fileID: 1291364925}
   - component: {fileID: 1291364924}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RoofTile10
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5860,7 +6084,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9aab5529a78a5be4d8fca66044db490e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TileLogic
-  player: {fileID: 0}
+  playerHealth: {fileID: 1951352893}
   damageDeals: 5
   playerOnTile: 0
 --- !u!65 &1291364925
@@ -5941,6 +6165,63 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1291364922}
   m_Mesh: {fileID: -1769842084991430243, guid: 6cde73c78d8d68f4eb345fe0a7c80237, type: 3}
+--- !u!1001 &1299994328
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 541953106413657791, guid: 074833690bee55a428a73e2789637231, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.54
+      objectReference: {fileID: 0}
+    - target: {fileID: 541953106413657791, guid: 074833690bee55a428a73e2789637231, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 42.24
+      objectReference: {fileID: 0}
+    - target: {fileID: 541953106413657791, guid: 074833690bee55a428a73e2789637231, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 31.66
+      objectReference: {fileID: 0}
+    - target: {fileID: 541953106413657791, guid: 074833690bee55a428a73e2789637231, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.4055799
+      objectReference: {fileID: 0}
+    - target: {fileID: 541953106413657791, guid: 074833690bee55a428a73e2789637231, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.57922786
+      objectReference: {fileID: 0}
+    - target: {fileID: 541953106413657791, guid: 074833690bee55a428a73e2789637231, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.5792282
+      objectReference: {fileID: 0}
+    - target: {fileID: 541953106413657791, guid: 074833690bee55a428a73e2789637231, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.40557942
+      objectReference: {fileID: 0}
+    - target: {fileID: 541953106413657791, guid: 074833690bee55a428a73e2789637231, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 541953106413657791, guid: 074833690bee55a428a73e2789637231, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -250
+      objectReference: {fileID: 0}
+    - target: {fileID: 541953106413657791, guid: 074833690bee55a428a73e2789637231, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 738841456989205199, guid: 074833690bee55a428a73e2789637231, type: 3}
+      propertyPath: m_Name
+      value: ShotGun
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 074833690bee55a428a73e2789637231, type: 3}
 --- !u!1 &1301143448
 GameObject:
   m_ObjectHideFlags: 0
@@ -5954,7 +6235,7 @@ GameObject:
   - component: {fileID: 1301143452}
   - component: {fileID: 1301143451}
   - component: {fileID: 1301143450}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RoofTile8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5988,7 +6269,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9aab5529a78a5be4d8fca66044db490e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TileLogic
-  player: {fileID: 0}
+  playerHealth: {fileID: 1951352893}
   damageDeals: 5
   playerOnTile: 0
 --- !u!65 &1301143451
@@ -6069,6 +6350,120 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1301143448}
   m_Mesh: {fileID: 5602858793207948554, guid: 6cde73c78d8d68f4eb345fe0a7c80237, type: 3}
+--- !u!1001 &1310042714
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 478675429323329279, guid: 52110e358c6aa684191ccabc9f5cd1a4, type: 3}
+      propertyPath: m_Name
+      value: Shell (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4066615962908014718, guid: 52110e358c6aa684191ccabc9f5cd1a4, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.45047975
+      objectReference: {fileID: 0}
+    - target: {fileID: 4066615962908014718, guid: 52110e358c6aa684191ccabc9f5cd1a4, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 42.068687
+      objectReference: {fileID: 0}
+    - target: {fileID: 4066615962908014718, guid: 52110e358c6aa684191ccabc9f5cd1a4, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 31.74794
+      objectReference: {fileID: 0}
+    - target: {fileID: 4066615962908014718, guid: 52110e358c6aa684191ccabc9f5cd1a4, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4066615962908014718, guid: 52110e358c6aa684191ccabc9f5cd1a4, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4066615962908014718, guid: 52110e358c6aa684191ccabc9f5cd1a4, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4066615962908014718, guid: 52110e358c6aa684191ccabc9f5cd1a4, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4066615962908014718, guid: 52110e358c6aa684191ccabc9f5cd1a4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4066615962908014718, guid: 52110e358c6aa684191ccabc9f5cd1a4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4066615962908014718, guid: 52110e358c6aa684191ccabc9f5cd1a4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 52110e358c6aa684191ccabc9f5cd1a4, type: 3}
+--- !u!1001 &1312157430
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4324609992807621185, guid: 9cb608fc088a3e04c9859f2b2cce5cef, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.592728
+      objectReference: {fileID: 0}
+    - target: {fileID: 4324609992807621185, guid: 9cb608fc088a3e04c9859f2b2cce5cef, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 41.58
+      objectReference: {fileID: 0}
+    - target: {fileID: 4324609992807621185, guid: 9cb608fc088a3e04c9859f2b2cce5cef, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 30.53172
+      objectReference: {fileID: 0}
+    - target: {fileID: 4324609992807621185, guid: 9cb608fc088a3e04c9859f2b2cce5cef, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.320794
+      objectReference: {fileID: 0}
+    - target: {fileID: 4324609992807621185, guid: 9cb608fc088a3e04c9859f2b2cce5cef, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.6790558
+      objectReference: {fileID: 0}
+    - target: {fileID: 4324609992807621185, guid: 9cb608fc088a3e04c9859f2b2cce5cef, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.45814142
+      objectReference: {fileID: 0}
+    - target: {fileID: 4324609992807621185, guid: 9cb608fc088a3e04c9859f2b2cce5cef, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.47547966
+      objectReference: {fileID: 0}
+    - target: {fileID: 4324609992807621185, guid: 9cb608fc088a3e04c9859f2b2cce5cef, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4324609992807621185, guid: 9cb608fc088a3e04c9859f2b2cce5cef, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4324609992807621185, guid: 9cb608fc088a3e04c9859f2b2cce5cef, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -21.987
+      objectReference: {fileID: 0}
+    - target: {fileID: 5511704388766892070, guid: 9cb608fc088a3e04c9859f2b2cce5cef, type: 3}
+      propertyPath: m_Name
+      value: Mag
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9cb608fc088a3e04c9859f2b2cce5cef, type: 3}
 --- !u!1 &1344216635
 GameObject:
   m_ObjectHideFlags: 0
@@ -6082,7 +6477,7 @@ GameObject:
   - component: {fileID: 1344216639}
   - component: {fileID: 1344216638}
   - component: {fileID: 1344216637}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RoofTile9
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6116,7 +6511,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9aab5529a78a5be4d8fca66044db490e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TileLogic
-  player: {fileID: 0}
+  playerHealth: {fileID: 1951352893}
   damageDeals: 5
   playerOnTile: 0
 --- !u!65 &1344216638
@@ -6209,7 +6604,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9aab5529a78a5be4d8fca66044db490e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TileLogic
-  player: {fileID: 0}
+  playerHealth: {fileID: 1951352893}
   damageDeals: 5
   playerOnTile: 0
 --- !u!114 &1407385661
@@ -6224,7 +6619,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9aab5529a78a5be4d8fca66044db490e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TileLogic
-  player: {fileID: 0}
+  playerHealth: {fileID: 1951352893}
   damageDeals: 5
   playerOnTile: 0
 --- !u!1 &1414071896
@@ -6240,7 +6635,7 @@ GameObject:
   - component: {fileID: 1414071900}
   - component: {fileID: 1414071899}
   - component: {fileID: 1414071898}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RoofTile13
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6274,7 +6669,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9aab5529a78a5be4d8fca66044db490e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TileLogic
-  player: {fileID: 0}
+  playerHealth: {fileID: 1951352893}
   damageDeals: 5
   playerOnTile: 0
 --- !u!65 &1414071899
@@ -6389,7 +6784,7 @@ GameObject:
   - component: {fileID: 1435595387}
   - component: {fileID: 1435595386}
   - component: {fileID: 1435595385}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RoofTile14
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6423,7 +6818,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9aab5529a78a5be4d8fca66044db490e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TileLogic
-  player: {fileID: 0}
+  playerHealth: {fileID: 1951352893}
   damageDeals: 5
   playerOnTile: 0
 --- !u!65 &1435595386
@@ -6574,7 +6969,7 @@ GameObject:
   - component: {fileID: 1515776547}
   - component: {fileID: 1515776546}
   - component: {fileID: 1515776545}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RoofTile12
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6608,7 +7003,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9aab5529a78a5be4d8fca66044db490e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TileLogic
-  player: {fileID: 0}
+  playerHealth: {fileID: 1951352893}
   damageDeals: 5
   playerOnTile: 0
 --- !u!65 &1515776546
@@ -6833,7 +7228,7 @@ GameObject:
   - component: {fileID: 1518680346}
   - component: {fileID: 1518680345}
   - component: {fileID: 1518680344}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RoofTile3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6867,7 +7262,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9aab5529a78a5be4d8fca66044db490e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TileLogic
-  player: {fileID: 0}
+  playerHealth: {fileID: 1951352893}
   damageDeals: 5
   playerOnTile: 0
 --- !u!65 &1518680345
@@ -6948,6 +7343,67 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1518680342}
   m_Mesh: {fileID: 7350283682058536763, guid: 6cde73c78d8d68f4eb345fe0a7c80237, type: 3}
+--- !u!1001 &1558985830
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 478675429323329279, guid: 52110e358c6aa684191ccabc9f5cd1a4, type: 3}
+      propertyPath: m_Name
+      value: Shell
+      objectReference: {fileID: 0}
+    - target: {fileID: 4066615962908014718, guid: 52110e358c6aa684191ccabc9f5cd1a4, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.8704798
+      objectReference: {fileID: 0}
+    - target: {fileID: 4066615962908014718, guid: 52110e358c6aa684191ccabc9f5cd1a4, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 42.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 4066615962908014718, guid: 52110e358c6aa684191ccabc9f5cd1a4, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 31.72776
+      objectReference: {fileID: 0}
+    - target: {fileID: 4066615962908014718, guid: 52110e358c6aa684191ccabc9f5cd1a4, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4066615962908014718, guid: 52110e358c6aa684191ccabc9f5cd1a4, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4066615962908014718, guid: 52110e358c6aa684191ccabc9f5cd1a4, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4066615962908014718, guid: 52110e358c6aa684191ccabc9f5cd1a4, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4066615962908014718, guid: 52110e358c6aa684191ccabc9f5cd1a4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4066615962908014718, guid: 52110e358c6aa684191ccabc9f5cd1a4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4066615962908014718, guid: 52110e358c6aa684191ccabc9f5cd1a4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7467581150684759960, guid: 52110e358c6aa684191ccabc9f5cd1a4, type: 3}
+      propertyPath: magSize
+      value: 10
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 52110e358c6aa684191ccabc9f5cd1a4, type: 3}
 --- !u!1 &1564863501
 GameObject:
   m_ObjectHideFlags: 0
@@ -6961,7 +7417,7 @@ GameObject:
   - component: {fileID: 1564863505}
   - component: {fileID: 1564863504}
   - component: {fileID: 1564863503}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RoofTile1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6995,7 +7451,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9aab5529a78a5be4d8fca66044db490e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TileLogic
-  player: {fileID: 0}
+  playerHealth: {fileID: 1951352893}
   damageDeals: 5
   playerOnTile: 0
 --- !u!65 &1564863504
@@ -7089,7 +7545,7 @@ GameObject:
   - component: {fileID: 1566671575}
   - component: {fileID: 1566671574}
   - component: {fileID: 1566671573}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RoofTile6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7123,7 +7579,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9aab5529a78a5be4d8fca66044db490e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TileLogic
-  player: {fileID: 0}
+  playerHealth: {fileID: 1951352893}
   damageDeals: 5
   playerOnTile: 0
 --- !u!65 &1566671574
@@ -7217,7 +7673,7 @@ GameObject:
   - component: {fileID: 1597691366}
   - component: {fileID: 1597691365}
   - component: {fileID: 1597691364}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RoofTile2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7251,7 +7707,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9aab5529a78a5be4d8fca66044db490e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TileLogic
-  player: {fileID: 0}
+  playerHealth: {fileID: 1951352893}
   damageDeals: 5
   playerOnTile: 0
 --- !u!65 &1597691365
@@ -7561,6 +8017,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -23
       objectReference: {fileID: 0}
+    - target: {fileID: 5484926215961174697, guid: 77e7c27b2c5525e4aa8cc9f99d654486, type: 3}
+      propertyPath: m_Velocity
+      value: 15
+      objectReference: {fileID: 0}
     - target: {fileID: 6513916827115202093, guid: 77e7c27b2c5525e4aa8cc9f99d654486, type: 3}
       propertyPath: m_Camera
       value: 
@@ -7613,28 +8073,10 @@ PrefabInstance:
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 7522528327663324250, guid: 77e7c27b2c5525e4aa8cc9f99d654486, type: 3}
+    - targetCorrespondingSourceObject: {fileID: 8806329115733545877, guid: 77e7c27b2c5525e4aa8cc9f99d654486, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1625131813}
+      addedObject: {fileID: 1625131827}
   m_SourcePrefab: {fileID: 100100000, guid: 77e7c27b2c5525e4aa8cc9f99d654486, type: 3}
---- !u!1 &1625131812 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7522528327663324250, guid: 77e7c27b2c5525e4aa8cc9f99d654486, type: 3}
-  m_PrefabInstance: {fileID: 1625131811}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1625131813
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1625131812}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0cb6d9349bfc4f7459c2cce32345acc0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PlayerTowerOn
-  towerCurrentlyOn: 
 --- !u!1 &1625131814 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8806329115733545877, guid: 77e7c27b2c5525e4aa8cc9f99d654486, type: 3}
@@ -7655,6 +8097,24 @@ Camera:
   m_CorrespondingSourceObject: {fileID: 7917674758326848207, guid: 77e7c27b2c5525e4aa8cc9f99d654486, type: 3}
   m_PrefabInstance: {fileID: 1625131811}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1625131827
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1625131814}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cb6d9349bfc4f7459c2cce32345acc0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerTowerOn
+  towerCurrentlyOn: 
+--- !u!4 &1625131833 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8806329115733545878, guid: 77e7c27b2c5525e4aa8cc9f99d654486, type: 3}
+  m_PrefabInstance: {fileID: 1625131811}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1673633156
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7667,7 +8127,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9aab5529a78a5be4d8fca66044db490e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TileLogic
-  player: {fileID: 0}
+  playerHealth: {fileID: 1951352893}
   damageDeals: 5
   playerOnTile: 0
 --- !u!1 &1706200361
@@ -7683,7 +8143,7 @@ GameObject:
   - component: {fileID: 1706200365}
   - component: {fileID: 1706200364}
   - component: {fileID: 1706200363}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RoofTile8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7717,7 +8177,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9aab5529a78a5be4d8fca66044db490e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TileLogic
-  player: {fileID: 0}
+  playerHealth: {fileID: 1951352893}
   damageDeals: 5
   playerOnTile: 0
 --- !u!65 &1706200364
@@ -7798,6 +8258,164 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1706200361}
   m_Mesh: {fileID: 5602858793207948554, guid: 6cde73c78d8d68f4eb345fe0a7c80237, type: 3}
+--- !u!1 &1713311451
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1713311455}
+  - component: {fileID: 1713311454}
+  - component: {fileID: 1713311453}
+  - component: {fileID: 1713311452}
+  m_Layer: 0
+  m_Name: AmmoPouch
+  m_TagString: Untagged
+  m_Icon: {fileID: 7250588514170254948, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1713311452
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1713311451}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a35f6cfbfba9b548aaa00d52cfe8a50, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.Interaction.Toolkit::UnityEngine.XR.Interaction.Toolkit.Interactables.XRSimpleInteractable
+  m_InteractionManager: {fileID: 0}
+  m_Colliders:
+  - {fileID: 1713311454}
+  m_InteractionLayers:
+    m_Bits: 1
+  m_DistanceCalculationMode: 1
+  m_SelectMode: 0
+  m_FocusMode: 1
+  m_CustomReticle: {fileID: 0}
+  m_AllowGazeInteraction: 0
+  m_AllowGazeSelect: 0
+  m_OverrideGazeTimeToSelect: 0
+  m_GazeTimeToSelect: 0.5
+  m_OverrideTimeToAutoDeselectGaze: 0
+  m_TimeToAutoDeselectGaze: 3
+  m_AllowGazeAssistance: 0
+  m_FirstHoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_LastHoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_HoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_HoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FirstSelectEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_LastSelectExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_SelectEntered:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1713311453}
+        m_TargetAssemblyTypeName: GetAmmo, Assembly-CSharp
+        m_MethodName: GrabAmmo
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  m_SelectExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FirstFocusEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_LastFocusExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FocusEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FocusExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Activated:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Deactivated:
+    m_PersistentCalls:
+      m_Calls: []
+  m_StartingHoverFilters: []
+  m_StartingSelectFilters: []
+  m_StartingInteractionStrengthFilters: []
+  m_AutoFindParentInteractableInHierarchy: 0
+  m_ParentInteractableObject: {fileID: 0}
+--- !u!114 &1713311453
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1713311451}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9058e1f9a70c214438a62c93a1f6e72b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GetAmmo
+  GetAmmoDebug: 0
+  WeaponClass: {fileID: 0}
+--- !u!65 &1713311454
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1713311451}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.59, y: 0.34, z: 0.3535127}
+  m_Center: {x: 0, y: 0.04, z: -0.014413662}
+--- !u!4 &1713311455
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1713311451}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.000015258789, y: 0.3130002, z: -3}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 622447191}
+  - {fileID: 687481984}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1719026618
 GameObject:
   m_ObjectHideFlags: 0
@@ -7811,7 +8429,7 @@ GameObject:
   - component: {fileID: 1719026622}
   - component: {fileID: 1719026621}
   - component: {fileID: 1719026620}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RoofTile13
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7845,7 +8463,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9aab5529a78a5be4d8fca66044db490e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TileLogic
-  player: {fileID: 0}
+  playerHealth: {fileID: 1951352893}
   damageDeals: 5
   playerOnTile: 0
 --- !u!65 &1719026621
@@ -7938,7 +8556,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9aab5529a78a5be4d8fca66044db490e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TileLogic
-  player: {fileID: 0}
+  playerHealth: {fileID: 1951352893}
   damageDeals: 5
   playerOnTile: 0
 --- !u!65 &1729296651
@@ -7975,7 +8593,7 @@ GameObject:
   - component: {fileID: 1760127495}
   - component: {fileID: 1760127494}
   - component: {fileID: 1760127493}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RoofTile4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8009,7 +8627,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9aab5529a78a5be4d8fca66044db490e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TileLogic
-  player: {fileID: 0}
+  playerHealth: {fileID: 1951352893}
   damageDeals: 5
   playerOnTile: 0
 --- !u!65 &1760127494
@@ -8103,7 +8721,7 @@ GameObject:
   - component: {fileID: 1762808082}
   - component: {fileID: 1762808081}
   - component: {fileID: 1762808080}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RoofTile15
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8137,7 +8755,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9aab5529a78a5be4d8fca66044db490e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TileLogic
-  player: {fileID: 0}
+  playerHealth: {fileID: 1951352893}
   damageDeals: 5
   playerOnTile: 0
 --- !u!65 &1762808081
@@ -8239,6 +8857,63 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.016, y: 0.016, z: 0.005}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!1001 &1781244649
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2773396093686963613, guid: 98a5ce09bba2bca4e9adcbe57725b515, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.0680052
+      objectReference: {fileID: 0}
+    - target: {fileID: 2773396093686963613, guid: 98a5ce09bba2bca4e9adcbe57725b515, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 41.58
+      objectReference: {fileID: 0}
+    - target: {fileID: 2773396093686963613, guid: 98a5ce09bba2bca4e9adcbe57725b515, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 30.488695
+      objectReference: {fileID: 0}
+    - target: {fileID: 2773396093686963613, guid: 98a5ce09bba2bca4e9adcbe57725b515, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.320794
+      objectReference: {fileID: 0}
+    - target: {fileID: 2773396093686963613, guid: 98a5ce09bba2bca4e9adcbe57725b515, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.6790558
+      objectReference: {fileID: 0}
+    - target: {fileID: 2773396093686963613, guid: 98a5ce09bba2bca4e9adcbe57725b515, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.45814142
+      objectReference: {fileID: 0}
+    - target: {fileID: 2773396093686963613, guid: 98a5ce09bba2bca4e9adcbe57725b515, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.47547966
+      objectReference: {fileID: 0}
+    - target: {fileID: 2773396093686963613, guid: 98a5ce09bba2bca4e9adcbe57725b515, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2773396093686963613, guid: 98a5ce09bba2bca4e9adcbe57725b515, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2773396093686963613, guid: 98a5ce09bba2bca4e9adcbe57725b515, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -21.987
+      objectReference: {fileID: 0}
+    - target: {fileID: 4902764530084098052, guid: 98a5ce09bba2bca4e9adcbe57725b515, type: 3}
+      propertyPath: m_Name
+      value: BlueMag
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 98a5ce09bba2bca4e9adcbe57725b515, type: 3}
 --- !u!65 &1784760309
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8273,7 +8948,7 @@ GameObject:
   - component: {fileID: 1792442240}
   - component: {fileID: 1792442239}
   - component: {fileID: 1792442238}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RoofTile7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8307,7 +8982,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9aab5529a78a5be4d8fca66044db490e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TileLogic
-  player: {fileID: 0}
+  playerHealth: {fileID: 1951352893}
   damageDeals: 5
   playerOnTile: 0
 --- !u!65 &1792442239
@@ -8421,7 +9096,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9aab5529a78a5be4d8fca66044db490e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TileLogic
-  player: {fileID: 0}
+  playerHealth: {fileID: 1951352893}
   damageDeals: 5
   playerOnTile: 0
 --- !u!1 &1845232886
@@ -8576,7 +9251,7 @@ GameObject:
   - component: {fileID: 1848404375}
   - component: {fileID: 1848404374}
   - component: {fileID: 1848404373}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RoofTile16
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8610,7 +9285,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9aab5529a78a5be4d8fca66044db490e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TileLogic
-  player: {fileID: 0}
+  playerHealth: {fileID: 1951352893}
   damageDeals: 5
   playerOnTile: 0
 --- !u!65 &1848404374
@@ -8728,6 +9403,63 @@ Transform:
   - {fileID: 1516943326}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1902711204
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1170399321464333115, guid: 6a005f1be8ad57649abdd8cb5d5fa48c, type: 3}
+      propertyPath: m_Name
+      value: Rifle
+      objectReference: {fileID: 0}
+    - target: {fileID: 3477850107201697201, guid: 6a005f1be8ad57649abdd8cb5d5fa48c, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.3992113
+      objectReference: {fileID: 0}
+    - target: {fileID: 3477850107201697201, guid: 6a005f1be8ad57649abdd8cb5d5fa48c, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 41.58
+      objectReference: {fileID: 0}
+    - target: {fileID: 3477850107201697201, guid: 6a005f1be8ad57649abdd8cb5d5fa48c, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 30.180048
+      objectReference: {fileID: 0}
+    - target: {fileID: 3477850107201697201, guid: 6a005f1be8ad57649abdd8cb5d5fa48c, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.4055799
+      objectReference: {fileID: 0}
+    - target: {fileID: 3477850107201697201, guid: 6a005f1be8ad57649abdd8cb5d5fa48c, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.57922786
+      objectReference: {fileID: 0}
+    - target: {fileID: 3477850107201697201, guid: 6a005f1be8ad57649abdd8cb5d5fa48c, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.5792282
+      objectReference: {fileID: 0}
+    - target: {fileID: 3477850107201697201, guid: 6a005f1be8ad57649abdd8cb5d5fa48c, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.40557942
+      objectReference: {fileID: 0}
+    - target: {fileID: 3477850107201697201, guid: 6a005f1be8ad57649abdd8cb5d5fa48c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3477850107201697201, guid: 6a005f1be8ad57649abdd8cb5d5fa48c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -250
+      objectReference: {fileID: 0}
+    - target: {fileID: 3477850107201697201, guid: 6a005f1be8ad57649abdd8cb5d5fa48c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -90
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6a005f1be8ad57649abdd8cb5d5fa48c, type: 3}
 --- !u!65 &1903861519
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8846,7 +9578,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9aab5529a78a5be4d8fca66044db490e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TileLogic
-  player: {fileID: 0}
+  playerHealth: {fileID: 1951352893}
   damageDeals: 5
   playerOnTile: 0
 --- !u!114 &1903861525
@@ -8861,7 +9593,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9aab5529a78a5be4d8fca66044db490e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TileLogic
-  player: {fileID: 0}
+  playerHealth: {fileID: 1951352893}
   damageDeals: 5
   playerOnTile: 0
 --- !u!114 &1903861526
@@ -8876,7 +9608,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9aab5529a78a5be4d8fca66044db490e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TileLogic
-  player: {fileID: 0}
+  playerHealth: {fileID: 1951352893}
   damageDeals: 5
   playerOnTile: 0
 --- !u!114 &1903861527
@@ -8891,7 +9623,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9aab5529a78a5be4d8fca66044db490e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TileLogic
-  player: {fileID: 0}
+  playerHealth: {fileID: 1951352893}
   damageDeals: 5
   playerOnTile: 0
 --- !u!1 &1910433693
@@ -8907,7 +9639,7 @@ GameObject:
   - component: {fileID: 1910433697}
   - component: {fileID: 1910433696}
   - component: {fileID: 1910433695}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RoofTile8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8941,7 +9673,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9aab5529a78a5be4d8fca66044db490e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TileLogic
-  player: {fileID: 0}
+  playerHealth: {fileID: 1951352893}
   damageDeals: 5
   playerOnTile: 0
 --- !u!65 &1910433696
@@ -9035,7 +9767,7 @@ GameObject:
   - component: {fileID: 1925489523}
   - component: {fileID: 1925489522}
   - component: {fileID: 1925489521}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RoofTile11
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9069,7 +9801,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9aab5529a78a5be4d8fca66044db490e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TileLogic
-  player: {fileID: 0}
+  playerHealth: {fileID: 1951352893}
   damageDeals: 5
   playerOnTile: 0
 --- !u!65 &1925489522
@@ -9285,7 +10017,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ca1de2a911908b489315e95a7b4a009, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LookAtPlayer
-  playerModel: {fileID: 0}
+  playerModel: {fileID: 1625131833}
+--- !u!114 &1951352893 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6801253797035327525, guid: 77e7c27b2c5525e4aa8cc9f99d654486, type: 3}
+  m_PrefabInstance: {fileID: 1625131811}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e409150a7976558419009a3f1f3ac8e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerHealth
 --- !u!1 &1954414047
 GameObject:
   m_ObjectHideFlags: 0
@@ -9299,7 +10042,7 @@ GameObject:
   - component: {fileID: 1954414051}
   - component: {fileID: 1954414050}
   - component: {fileID: 1954414049}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RoofTile11
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9333,7 +10076,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9aab5529a78a5be4d8fca66044db490e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TileLogic
-  player: {fileID: 0}
+  playerHealth: {fileID: 1951352893}
   damageDeals: 5
   playerOnTile: 0
 --- !u!65 &1954414050
@@ -9431,7 +10174,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1971114431
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9626,7 +10369,7 @@ GameObject:
   - component: {fileID: 2015856676}
   - component: {fileID: 2015856675}
   - component: {fileID: 2015856674}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RoofTile9
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9660,7 +10403,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9aab5529a78a5be4d8fca66044db490e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TileLogic
-  player: {fileID: 0}
+  playerHealth: {fileID: 1951352893}
   damageDeals: 5
   playerOnTile: 0
 --- !u!65 &2015856675
@@ -9956,7 +10699,7 @@ GameObject:
   - component: {fileID: 2124957520}
   - component: {fileID: 2124957519}
   - component: {fileID: 2124957518}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RoofTile16
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9990,7 +10733,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9aab5529a78a5be4d8fca66044db490e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TileLogic
-  player: {fileID: 0}
+  playerHealth: {fileID: 1951352893}
   damageDeals: 5
   playerOnTile: 0
 --- !u!65 &2124957519
@@ -10084,7 +10827,7 @@ GameObject:
   - component: {fileID: 2125231224}
   - component: {fileID: 2125231223}
   - component: {fileID: 2125231222}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RoofTile12
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10118,7 +10861,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9aab5529a78a5be4d8fca66044db490e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TileLogic
-  player: {fileID: 0}
+  playerHealth: {fileID: 1951352893}
   damageDeals: 5
   playerOnTile: 0
 --- !u!65 &2125231223
@@ -10211,7 +10954,7 @@ GameObject:
   - component: {fileID: 2128555223}
   - component: {fileID: 2128555222}
   - component: {fileID: 2128555224}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Tower4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10279,7 +11022,7 @@ MonoBehaviour:
   m_Colliders:
   - {fileID: 2128555222}
   m_InteractionLayers:
-    m_Bits: 256
+    m_Bits: 4294967295
   m_DistanceCalculationMode: 1
   m_SelectMode: 1
   m_FocusMode: 1
@@ -10359,7 +11102,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9aab5529a78a5be4d8fca66044db490e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TileLogic
-  player: {fileID: 0}
+  playerHealth: {fileID: 1951352893}
   damageDeals: 5
   playerOnTile: 0
 --- !u!114 &2138148033
@@ -10374,7 +11117,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9aab5529a78a5be4d8fca66044db490e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TileLogic
-  player: {fileID: 0}
+  playerHealth: {fileID: 1951352893}
   damageDeals: 5
   playerOnTile: 0
 --- !u!1 &202202790544444037
@@ -10414,7 +11157,7 @@ GameObject:
   - component: {fileID: 3289886613446346021}
   - component: {fileID: 1903861521}
   - component: {fileID: 1903861526}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RoofTile2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10470,7 +11213,7 @@ GameObject:
   - component: {fileID: 8710250409072021199}
   - component: {fileID: 1903861523}
   - component: {fileID: 8710250409072021200}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Tower2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10659,7 +11402,7 @@ GameObject:
   - component: {fileID: 4879420296062168173}
   - component: {fileID: 1434177487}
   - component: {fileID: 1724920972}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RoofTile6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10875,7 +11618,7 @@ GameObject:
   - component: {fileID: 1340379758195461332}
   - component: {fileID: 777267178}
   - component: {fileID: 2132595867}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RoofTile9
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10945,7 +11688,7 @@ GameObject:
   - component: {fileID: 3532553539923126416}
   - component: {fileID: 1512036861}
   - component: {fileID: 2138148033}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RoofTile5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11378,7 +12121,7 @@ GameObject:
   - component: {fileID: 976302517869360711}
   - component: {fileID: 1729296651}
   - component: {fileID: 1407385661}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RoofTile16
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11406,7 +12149,7 @@ GameObject:
   - component: {fileID: 9023443753430156871}
   - component: {fileID: 1903861520}
   - component: {fileID: 1903861525}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RoofTile3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11780,7 +12523,7 @@ GameObject:
   - component: {fileID: 3164427324002407667}
   - component: {fileID: 1903861522}
   - component: {fileID: 1903861527}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RoofTile1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11847,7 +12590,7 @@ GameObject:
   - component: {fileID: 4162828875083071882}
   - component: {fileID: 1804581647}
   - component: {fileID: 283007809}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RoofTile8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11932,7 +12675,7 @@ GameObject:
   - component: {fileID: 549944178905057053}
   - component: {fileID: 1784760309}
   - component: {fileID: 374594606}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RoofTile15
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11983,7 +12726,7 @@ GameObject:
   - component: {fileID: 8677656410930492872}
   - component: {fileID: 1903861519}
   - component: {fileID: 1903861524}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RoofTile4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12075,7 +12818,7 @@ GameObject:
   - component: {fileID: 5156695352835223334}
   - component: {fileID: 1769196990}
   - component: {fileID: 1386567056}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RoofTile14
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12165,7 +12908,7 @@ GameObject:
   - component: {fileID: 7002476563283512875}
   - component: {fileID: 797518307}
   - component: {fileID: 686330444}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RoofTile13
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12193,7 +12936,7 @@ GameObject:
   - component: {fileID: 8403197505681596127}
   - component: {fileID: 1067318614}
   - component: {fileID: 1811652478}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RoofTile11
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12262,7 +13005,7 @@ GameObject:
   - component: {fileID: 5883905928107586795}
   - component: {fileID: 1604540344}
   - component: {fileID: 1673633156}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RoofTile12
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12313,7 +13056,7 @@ GameObject:
   - component: {fileID: 4354340736639973501}
   - component: {fileID: 1224001830}
   - component: {fileID: 319442500}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RoofTile10
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12415,7 +13158,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2565713f607f8c140ae9cb1944389cfd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BossBase
-  maxHealth: 100
+  maxHealth: 500
   currentHealth: 5
   animManager: {fileID: 7686268774500893584}
   player: {fileID: 1625131814}
@@ -12583,7 +13326,7 @@ GameObject:
   - component: {fileID: 8502680337734384907}
   - component: {fileID: 1000901733}
   - component: {fileID: 661206603}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RoofTile7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12887,7 +13630,7 @@ MonoBehaviour:
   m_Colliders:
   - {fileID: 1903861523}
   m_InteractionLayers:
-    m_Bits: 256
+    m_Bits: 4294967295
   m_DistanceCalculationMode: 1
   m_SelectMode: 1
   m_FocusMode: 1
@@ -13121,3 +13864,10 @@ SceneRoots:
   - {fileID: 239951847}
   - {fileID: 1893255566}
   - {fileID: 1625131811}
+  - {fileID: 1299994328}
+  - {fileID: 1558985830}
+  - {fileID: 1310042714}
+  - {fileID: 1902711204}
+  - {fileID: 1781244649}
+  - {fileID: 1312157430}
+  - {fileID: 1713311455}

@@ -8,6 +8,7 @@ TagManager:
   - AggroZone
   - PatrolDrone
   - Enemy
+  - Gun
   layers:
   - Default
   - TransparentFX
@@ -17,7 +18,7 @@ TagManager:
   - UI
   - PlayerBullet
   - Environment
-  - TowerFloor
+  - Tile
   - Weapon
   - Player
   - MagCollision

@@ -9,7 +9,7 @@ public class PlayerTowerOn : MonoBehaviour
 
     void Start()
     {
-        floorMask = LayerMask.GetMask("TowerFloor");
+        floorMask = LayerMask.GetMask("Default");
     }
 
     private void FixedUpdate()

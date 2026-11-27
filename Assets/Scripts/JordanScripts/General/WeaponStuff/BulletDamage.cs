@@ -9,8 +9,9 @@ public class BulletDamage : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Enemy"))
         {
-            collision.gameObject.GetComponent<IDamageable>().TakeDamage(damageDeals);
+            collision.gameObject.GetComponent<IDamageable>().TakeDamage(damageDeals); 
         }
-        gameObject.SetActive(false);
+        
+        if (!collision.gameObject.CompareTag("Gun")) gameObject.SetActive(false);
     }
 }

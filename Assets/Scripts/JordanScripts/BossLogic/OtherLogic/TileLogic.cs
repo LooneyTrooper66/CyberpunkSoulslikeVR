@@ -4,7 +4,7 @@ using System.Collections;
 // Jordan/Libby Script\\
 public class TileLogic : MonoBehaviour
 {
-    [SerializeField] GameObject player; // change this reference to player health script later
+    [SerializeField] PlayerHealth playerHealth; // change this reference to player health script later
     [SerializeField] float damageDeals;
     public bool playerOnTile = false;
     MeshRenderer thisRenderer;
@@ -56,6 +56,6 @@ public class TileLogic : MonoBehaviour
     {
         LerpColourToWhite();
         // damage player if on tile
-        if (playerOnTile) player.GetComponent<IDamageable>().TakeDamage(damageDeals);
+        if (playerOnTile) playerHealth.GetComponent<IDamageable>().TakeDamage(damageDeals);
     }
 }

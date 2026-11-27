@@ -1,6 +1,8 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.XR.Interaction.Toolkit.Interactables;
+using UnityEngine.XR.Interaction.Toolkit.Interactors;
+using UnityEngine.XR.Interaction.Toolkit.Transformers;
 
 public class Menu : MonoBehaviour
 {
@@ -14,7 +16,7 @@ public class Menu : MonoBehaviour
     public LayerMask mask;
 
     public GameObject MenuObject;
-
+    public XRGrabInteractable rightHand;
 
 
     [Header("<color=blue>Menus  </color>")]
@@ -62,9 +64,8 @@ public class Menu : MonoBehaviour
     {
         //no idea how to spawn a weapon in the players hands
         GameObject Spawned = Instantiate(Prefab);
-        Spawned.transform.position = this.transform.position;
-        Spawned.GetComponent<XRGrabInteractable>().IsSelectedByRight();
-
+        //Spawned.transform.position = this.transform.position;
+        GetComponent<XRBaseInteractor>().IsSelecting(Spawned.GetComponent<XRGrabInteractable>());
         //grab a weapon from the menu/enable a weapon
     }
 

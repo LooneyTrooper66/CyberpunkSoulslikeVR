@@ -231,7 +231,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &6569138882999510991
 RectTransform:
   m_ObjectHideFlags: 0
@@ -379,7 +379,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerHealth
   playerHealth: 50
-  deadUI: {fileID: 0}
+  deadUI: {fileID: 7188904503804822097}
 --- !u!136 &7636038023926716887
 CapsuleCollider:
   m_ObjectHideFlags: 0

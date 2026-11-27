@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 1467660468065711830}
   - component: {fileID: 7727884810327808137}
   - component: {fileID: 814689547956252966}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: BlueBullet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30,7 +30,7 @@ Transform:
   m_GameObject: {fileID: 3292101536534837861}
   serializedVersion: 2
   m_LocalRotation: {x: -0.0000004172325, y: -0.17364839, z: -0.000000059604645, w: -0.9848078}
-  m_LocalPosition: {x: -2.4356005, y: 0.50000197, z: -2.306046}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.78677535, y: 0.78677535, z: 0.78677535}
   m_ConstrainProportionsScale: 0
   m_Children: []

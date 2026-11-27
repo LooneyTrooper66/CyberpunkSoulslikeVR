@@ -10,6 +10,7 @@ public class BulletDamage : MonoBehaviour
         if (collision.gameObject.CompareTag("Enemy"))
         {
             collision.gameObject.GetComponent<IDamageable>().TakeDamage(damageDeals);
+            Debug.Log("hit enemy");
         }
         gameObject.SetActive(false);
     }

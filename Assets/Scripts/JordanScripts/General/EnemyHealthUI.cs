@@ -23,6 +23,7 @@ public class EnemyHealthUI : MonoBehaviour
         healthBar.value = enemyBase.currentHealth / enemyBase.maxHealth;
 
         // make sure ui is always facing player
-        transform.rotation = playerCam.rotation * ogRotation;
+        transform.LookAt(playerCam);
+        //transform.rotation = playerCam.rotation * ogRotation;
     }
 }

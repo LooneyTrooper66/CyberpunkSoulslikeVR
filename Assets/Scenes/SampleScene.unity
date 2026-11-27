@@ -10546,6 +10546,10 @@ PrefabInstance:
       propertyPath: m_Handedness
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7188904503804822097, guid: 77e7c27b2c5525e4aa8cc9f99d654486, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8806329115733545877, guid: 77e7c27b2c5525e4aa8cc9f99d654486, type: 3}
       propertyPath: m_Name
       value: XR Origin Hands (XR Rig)

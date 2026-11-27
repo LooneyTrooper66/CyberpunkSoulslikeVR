@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 1274500889160577571}
   - component: {fileID: 4514211839431293984}
   - component: {fileID: 1561861737839518263}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Shell Bullet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30,7 +30,7 @@ Transform:
   m_GameObject: {fileID: 8452098898498945178}
   serializedVersion: 2
   m_LocalRotation: {x: -0.0000004172325, y: -0.17364839, z: -0.000000059604645, w: -0.9848078}
-  m_LocalPosition: {x: 0.000000013752636, y: 0.5, z: 0.00000042124407}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.039569423, y: 0.039569423, z: 0.039569423}
   m_ConstrainProportionsScale: 0
   m_Children: []

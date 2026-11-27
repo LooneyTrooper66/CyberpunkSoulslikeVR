@@ -207,7 +207,7 @@ GameObject:
   - component: {fileID: 5583164027678287535}
   m_Layer: 12
   m_Name: StreetDrone
-  m_TagString: PatrolDrone
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -248,6 +248,7 @@ MonoBehaviour:
   pooler: {fileID: 0}
   shootPoint1: {fileID: 353403970188957409}
   shootPoint2: {fileID: 7430382646346757114}
+  aggroZone: {fileID: 0}
   maxHealth: 5
   currentHealth: 0
   patrolBase: {fileID: 11400000, guid: 370b7d62a65ea1545a9db30be6223fc6, type: 2}

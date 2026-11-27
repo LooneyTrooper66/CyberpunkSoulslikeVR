@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.XR.Interaction.Toolkit.Interactables;
 
 public class Menu : MonoBehaviour
 {
@@ -7,7 +8,7 @@ public class Menu : MonoBehaviour
     [Header("<color=red>Menu Open </color>")]
     InputAction openMenu;
     InputAction closeMenu;
-
+    bool MenuState;
     public Transform leftHand;
     public float distance;
     public LayerMask mask;
@@ -22,18 +23,17 @@ public class Menu : MonoBehaviour
     {
         openMenu = InputSystem.actions.FindAction("RAHHHHHHHHHH");
 
-        openMenu.performed += cxt => OpenMenu();
+        openMenu.performed += cxt => ToggleMenu();
 
-        closeMenu = InputSystem.actions.FindAction("RAHHHHHHHHHH");
-
-        closeMenu.performed += cxt => CloseMenu();
 
     }
 
 
     //script called when the menu is open
-    public void OpenMenu()
+    public void ToggleMenu()
     {
+        if (MenuState == true) { CloseMenu(); return; }
+        MenuState = true;
         RaycastHit hit;
         Physics.Raycast(leftHand.position, leftHand.forward, out hit ,distance, mask, QueryTriggerInteraction.Ignore);
 
@@ -49,18 +49,10 @@ public class Menu : MonoBehaviour
         MenuObject.transform.LookAt(leftHand.transform.position);
 
         MenuObject.SetActive(true);
-        //enable the menu object linked to the players left hand (beacuse this game is for right handed people only!!!!!!!! fuck you leftiesss!!!!!!!!! im joking we love everyone <3 im just yapparoining)
-
-
-        //enable menu object
-
-
-        //when grab an 
-
-
     }
     public void CloseMenu()
     {
+        MenuState = false;
         MenuObject.SetActive(false);
         SecondaryMenu.SetActive(false);
     }
@@ -68,6 +60,10 @@ public class Menu : MonoBehaviour
 
     public void GrabWeapon(GameObject Prefab)
     {
+        //no idea how to spawn a weapon in the players hands
+        GameObject Spawned = Instantiate(Prefab);
+        Spawned.transform.position = this.transform.position;
+
         //grab a weapon from the menu/enable a weapon
     }
 

@@ -21,9 +21,9 @@ public class Menu : MonoBehaviour
     [SerializeField] GameObject SecondaryMenu;
     private void Awake()
     {
-        openMenu = InputSystem.actions.FindAction("RAHHHHHHHHHH");
+        //openMenu = InputSystem.actions.FindAction("RAHHHHHHHHHH");
 
-        openMenu.performed += cxt => ToggleMenu();
+        //openMenu.performed += cxt => ToggleMenu();
 
 
     }

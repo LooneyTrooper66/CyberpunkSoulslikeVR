@@ -63,6 +63,7 @@ public class Menu : MonoBehaviour
         //no idea how to spawn a weapon in the players hands
         GameObject Spawned = Instantiate(Prefab);
         Spawned.transform.position = this.transform.position;
+        Spawned.GetComponent<XRGrabInteractable>().IsSelectedByRight();
 
         //grab a weapon from the menu/enable a weapon
     }

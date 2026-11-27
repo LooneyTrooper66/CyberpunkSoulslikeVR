@@ -134,17 +134,4 @@ public class DroneFollowLogic : MonoBehaviour
         Quaternion goalRotation = Quaternion.LookRotation(player.position - transform.position);
         transform.rotation = Quaternion.Lerp(transform.rotation, goalRotation, Time.deltaTime * turnSpeed);
     }
-
-
-    /*private void OnDrawGizmos()
-    {
-        Gizmos.color = Color.red;
-        for (int i = 0; i < numOfRaycasts; i++)
-        {
-            Quaternion rot = Quaternion.Euler(transform.rotation.x, 0, transform.rotation.z);
-            Quaternion rotMod = Quaternion.AngleAxis(i / ((float)numOfRaycasts - 1) * rayAngle, Vector3.up);
-            Vector3 dir = rot * rotMod * Vector3.forward;
-            Gizmos.DrawRay(transform.position, dir * avoidRadius);
-        }
-    }*/
 }

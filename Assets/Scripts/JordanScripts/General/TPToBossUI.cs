@@ -22,7 +22,7 @@ public class TPToBossUI : MonoBehaviour
     private void Update()
     {
         // make sure ui is always facing player
-        if (playerCam != null) transform.rotation = playerCam.rotation * ogRotation;
+        if (playerCam != null) transform.LookAt(playerCam); //transform.rotation = playerCam.rotation * ogRotation;
 
         // display timer text and change scene
         timer -= Time.deltaTime;

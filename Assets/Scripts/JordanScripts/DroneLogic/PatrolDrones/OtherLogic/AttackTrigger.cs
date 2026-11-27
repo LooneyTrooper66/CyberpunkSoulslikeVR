@@ -25,11 +25,4 @@ public class AttackTrigger : MonoBehaviour
             enemyBase.IsWithinAttackDist = false;
         }
     }
-
-    /*// to show collider areas in editor
-    private void OnDrawGizmos()
-    {
-        Gizmos.color = Color.yellow;
-        Gizmos.DrawWireSphere(transform.position, 5);
-    }*/
 }

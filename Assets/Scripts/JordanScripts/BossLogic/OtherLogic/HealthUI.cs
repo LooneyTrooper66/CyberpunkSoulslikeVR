@@ -23,6 +23,7 @@ public class HealthUI : MonoBehaviour
         healthBar.value = bossBase.currentHealth / bossBase.maxHealth;
 
         // make sure ui is always facing player
-        transform.rotation = playerCam.rotation * ogRotation;
+        transform.LookAt(playerCam);
+        //transform.rotation = playerCam.rotation * ogRotation;
     }
 }

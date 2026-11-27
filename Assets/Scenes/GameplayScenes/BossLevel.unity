@@ -304,7 +304,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9aab5529a78a5be4d8fca66044db490e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TileLogic
-  player: {fileID: 1785641259}
+  player: {fileID: 0}
   damageDeals: 5
   playerOnTile: 0
 --- !u!65 &49403458
@@ -495,7 +495,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9aab5529a78a5be4d8fca66044db490e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TileLogic
-  player: {fileID: 1785641259}
+  player: {fileID: 0}
   damageDeals: 5
   playerOnTile: 0
 --- !u!65 &66165646
@@ -623,7 +623,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9aab5529a78a5be4d8fca66044db490e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TileLogic
-  player: {fileID: 1785641259}
+  player: {fileID: 0}
   damageDeals: 5
   playerOnTile: 0
 --- !u!65 &93681326
@@ -712,6 +712,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1893255566}
     m_Modifications:
+    - target: {fileID: 948806219448044696, guid: 7f68c7a5fd30cf14bbd3ff9971fcdb39, type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 1222121429}
     - target: {fileID: 1490020383269694506, guid: 7f68c7a5fd30cf14bbd3ff9971fcdb39, type: 3}
       propertyPath: m_Name
       value: BossDrone (2)
@@ -723,11 +727,11 @@ PrefabInstance:
     - target: {fileID: 4190342781076002771, guid: 7f68c7a5fd30cf14bbd3ff9971fcdb39, type: 3}
       propertyPath: playerCam
       value: 
-      objectReference: {fileID: 1933459236}
+      objectReference: {fileID: 1222121428}
     - target: {fileID: 5494791618175851728, guid: 7f68c7a5fd30cf14bbd3ff9971fcdb39, type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 1785641263}
+      objectReference: {fileID: 1222121426}
     - target: {fileID: 5494791618175851728, guid: 7f68c7a5fd30cf14bbd3ff9971fcdb39, type: 3}
       propertyPath: thisHeight
       value: 47.84068
@@ -811,7 +815,7 @@ PrefabInstance:
     - target: {fileID: 7342794304132200686, guid: 7f68c7a5fd30cf14bbd3ff9971fcdb39, type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 1785641259}
+      objectReference: {fileID: 1222121427}
     - target: {fileID: 7342794304132200686, guid: 7f68c7a5fd30cf14bbd3ff9971fcdb39, type: 3}
       propertyPath: pooler
       value: 
@@ -839,6 +843,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1893255566}
     m_Modifications:
+    - target: {fileID: 948806219448044696, guid: 7f68c7a5fd30cf14bbd3ff9971fcdb39, type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 1222121429}
     - target: {fileID: 1490020383269694506, guid: 7f68c7a5fd30cf14bbd3ff9971fcdb39, type: 3}
       propertyPath: m_Name
       value: BossDrone (1)
@@ -850,11 +858,11 @@ PrefabInstance:
     - target: {fileID: 4190342781076002771, guid: 7f68c7a5fd30cf14bbd3ff9971fcdb39, type: 3}
       propertyPath: playerCam
       value: 
-      objectReference: {fileID: 1933459236}
+      objectReference: {fileID: 1222121428}
     - target: {fileID: 5494791618175851728, guid: 7f68c7a5fd30cf14bbd3ff9971fcdb39, type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 1785641263}
+      objectReference: {fileID: 1222121426}
     - target: {fileID: 5494791618175851728, guid: 7f68c7a5fd30cf14bbd3ff9971fcdb39, type: 3}
       propertyPath: thisHeight
       value: 47.84068
@@ -938,7 +946,7 @@ PrefabInstance:
     - target: {fileID: 7342794304132200686, guid: 7f68c7a5fd30cf14bbd3ff9971fcdb39, type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 1785641259}
+      objectReference: {fileID: 1222121427}
     - target: {fileID: 7342794304132200686, guid: 7f68c7a5fd30cf14bbd3ff9971fcdb39, type: 3}
       propertyPath: pooler
       value: 
@@ -1005,7 +1013,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9aab5529a78a5be4d8fca66044db490e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TileLogic
-  player: {fileID: 1785641259}
+  player: {fileID: 0}
   damageDeals: 5
   playerOnTile: 0
 --- !u!65 &179246426
@@ -1223,7 +1231,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9aab5529a78a5be4d8fca66044db490e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TileLogic
-  player: {fileID: 1785641259}
+  player: {fileID: 0}
   damageDeals: 5
   playerOnTile: 0
 --- !u!65 &236759531
@@ -1384,7 +1392,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9aab5529a78a5be4d8fca66044db490e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TileLogic
-  player: {fileID: 1785641259}
+  player: {fileID: 0}
   damageDeals: 5
   playerOnTile: 0
 --- !u!65 &261900038
@@ -1512,7 +1520,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9aab5529a78a5be4d8fca66044db490e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TileLogic
-  player: {fileID: 1785641259}
+  player: {fileID: 0}
   damageDeals: 5
   playerOnTile: 0
 --- !u!65 &274424652
@@ -1605,7 +1613,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9aab5529a78a5be4d8fca66044db490e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TileLogic
-  player: {fileID: 1785641259}
+  player: {fileID: 0}
   damageDeals: 5
   playerOnTile: 0
 --- !u!1 &307383718
@@ -1655,7 +1663,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9aab5529a78a5be4d8fca66044db490e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TileLogic
-  player: {fileID: 1785641259}
+  player: {fileID: 0}
   damageDeals: 5
   playerOnTile: 0
 --- !u!65 &307383721
@@ -1748,7 +1756,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9aab5529a78a5be4d8fca66044db490e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TileLogic
-  player: {fileID: 1785641259}
+  player: {fileID: 0}
   damageDeals: 5
   playerOnTile: 0
 --- !u!1 &327213455
@@ -1798,7 +1806,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9aab5529a78a5be4d8fca66044db490e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TileLogic
-  player: {fileID: 1785641259}
+  player: {fileID: 0}
   damageDeals: 5
   playerOnTile: 0
 --- !u!65 &327213458
@@ -1887,6 +1895,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1893255566}
     m_Modifications:
+    - target: {fileID: 948806219448044696, guid: 7f68c7a5fd30cf14bbd3ff9971fcdb39, type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 1222121429}
     - target: {fileID: 1490020383269694506, guid: 7f68c7a5fd30cf14bbd3ff9971fcdb39, type: 3}
       propertyPath: m_Name
       value: BossDrone
@@ -1898,11 +1910,11 @@ PrefabInstance:
     - target: {fileID: 4190342781076002771, guid: 7f68c7a5fd30cf14bbd3ff9971fcdb39, type: 3}
       propertyPath: playerCam
       value: 
-      objectReference: {fileID: 1933459236}
+      objectReference: {fileID: 1222121428}
     - target: {fileID: 5494791618175851728, guid: 7f68c7a5fd30cf14bbd3ff9971fcdb39, type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 1785641263}
+      objectReference: {fileID: 1222121426}
     - target: {fileID: 5494791618175851728, guid: 7f68c7a5fd30cf14bbd3ff9971fcdb39, type: 3}
       propertyPath: thisHeight
       value: 47.84068
@@ -1986,7 +1998,7 @@ PrefabInstance:
     - target: {fileID: 7342794304132200686, guid: 7f68c7a5fd30cf14bbd3ff9971fcdb39, type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 1785641259}
+      objectReference: {fileID: 1222121427}
     - target: {fileID: 7342794304132200686, guid: 7f68c7a5fd30cf14bbd3ff9971fcdb39, type: 3}
       propertyPath: pooler
       value: 
@@ -2109,7 +2121,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9aab5529a78a5be4d8fca66044db490e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TileLogic
-  player: {fileID: 1785641259}
+  player: {fileID: 0}
   damageDeals: 5
   playerOnTile: 0
 --- !u!1 &386874202
@@ -2325,7 +2337,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9aab5529a78a5be4d8fca66044db490e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TileLogic
-  player: {fileID: 1785641259}
+  player: {fileID: 0}
   damageDeals: 5
   playerOnTile: 0
 --- !u!65 &393721605
@@ -2453,7 +2465,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9aab5529a78a5be4d8fca66044db490e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TileLogic
-  player: {fileID: 1785641259}
+  player: {fileID: 0}
   damageDeals: 5
   playerOnTile: 0
 --- !u!65 &432236506
@@ -2581,7 +2593,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9aab5529a78a5be4d8fca66044db490e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TileLogic
-  player: {fileID: 1785641259}
+  player: {fileID: 0}
   damageDeals: 5
   playerOnTile: 0
 --- !u!65 &444926862
@@ -2670,6 +2682,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1893255566}
     m_Modifications:
+    - target: {fileID: 948806219448044696, guid: 7f68c7a5fd30cf14bbd3ff9971fcdb39, type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 1222121429}
     - target: {fileID: 1490020383269694506, guid: 7f68c7a5fd30cf14bbd3ff9971fcdb39, type: 3}
       propertyPath: m_Name
       value: BossDrone (3)
@@ -2681,11 +2697,11 @@ PrefabInstance:
     - target: {fileID: 4190342781076002771, guid: 7f68c7a5fd30cf14bbd3ff9971fcdb39, type: 3}
       propertyPath: playerCam
       value: 
-      objectReference: {fileID: 1933459236}
+      objectReference: {fileID: 1222121428}
     - target: {fileID: 5494791618175851728, guid: 7f68c7a5fd30cf14bbd3ff9971fcdb39, type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 1785641263}
+      objectReference: {fileID: 1222121426}
     - target: {fileID: 5494791618175851728, guid: 7f68c7a5fd30cf14bbd3ff9971fcdb39, type: 3}
       propertyPath: thisHeight
       value: 47.84068
@@ -2769,7 +2785,7 @@ PrefabInstance:
     - target: {fileID: 7342794304132200686, guid: 7f68c7a5fd30cf14bbd3ff9971fcdb39, type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 1785641259}
+      objectReference: {fileID: 1222121427}
     - target: {fileID: 7342794304132200686, guid: 7f68c7a5fd30cf14bbd3ff9971fcdb39, type: 3}
       propertyPath: pooler
       value: 
@@ -2836,7 +2852,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9aab5529a78a5be4d8fca66044db490e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TileLogic
-  player: {fileID: 1785641259}
+  player: {fileID: 0}
   damageDeals: 5
   playerOnTile: 0
 --- !u!65 &458888237
@@ -3043,7 +3059,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9aab5529a78a5be4d8fca66044db490e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TileLogic
-  player: {fileID: 1785641259}
+  player: {fileID: 0}
   damageDeals: 5
   playerOnTile: 0
 --- !u!65 &479661910
@@ -3256,7 +3272,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9aab5529a78a5be4d8fca66044db490e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TileLogic
-  player: {fileID: 1785641259}
+  player: {fileID: 0}
   damageDeals: 5
   playerOnTile: 0
 --- !u!65 &534043107
@@ -3384,7 +3400,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9aab5529a78a5be4d8fca66044db490e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TileLogic
-  player: {fileID: 1785641259}
+  player: {fileID: 0}
   damageDeals: 5
   playerOnTile: 0
 --- !u!65 &559679559
@@ -3535,7 +3551,7 @@ Canvas:
   m_Enabled: 1
   serializedVersion: 3
   m_RenderMode: 2
-  m_Camera: {fileID: 1933459235}
+  m_Camera: {fileID: 1222121429}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
@@ -3582,7 +3598,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::HealthUI
   bossBase: {fileID: 7686268774500893582}
   healthBar: {fileID: 2010507301}
-  playerCam: {fileID: 1933459236}
+  playerCam: {fileID: 1222121428}
 --- !u!114 &661206603
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3595,7 +3611,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9aab5529a78a5be4d8fca66044db490e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TileLogic
-  player: {fileID: 1785641259}
+  player: {fileID: 0}
   damageDeals: 5
   playerOnTile: 0
 --- !u!114 &686330444
@@ -3610,7 +3626,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9aab5529a78a5be4d8fca66044db490e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TileLogic
-  player: {fileID: 1785641259}
+  player: {fileID: 0}
   damageDeals: 5
   playerOnTile: 0
 --- !u!1 &722916384
@@ -3702,7 +3718,7 @@ Canvas:
   m_Enabled: 1
   serializedVersion: 3
   m_RenderMode: 2
-  m_Camera: {fileID: 1933459235}
+  m_Camera: {fileID: 1222121429}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
@@ -3762,7 +3778,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9aab5529a78a5be4d8fca66044db490e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TileLogic
-  player: {fileID: 1785641259}
+  player: {fileID: 0}
   damageDeals: 5
   playerOnTile: 0
 --- !u!65 &739796365
@@ -4022,7 +4038,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9aab5529a78a5be4d8fca66044db490e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TileLogic
-  player: {fileID: 1785641259}
+  player: {fileID: 0}
   damageDeals: 5
   playerOnTile: 0
 --- !u!65 &842695982
@@ -4150,7 +4166,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9aab5529a78a5be4d8fca66044db490e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TileLogic
-  player: {fileID: 1785641259}
+  player: {fileID: 0}
   damageDeals: 5
   playerOnTile: 0
 --- !u!65 &864932130
@@ -4278,7 +4294,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9aab5529a78a5be4d8fca66044db490e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TileLogic
-  player: {fileID: 1785641259}
+  player: {fileID: 0}
   damageDeals: 5
   playerOnTile: 0
 --- !u!65 &903092679
@@ -4406,7 +4422,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9aab5529a78a5be4d8fca66044db490e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TileLogic
-  player: {fileID: 1785641259}
+  player: {fileID: 0}
   damageDeals: 5
   playerOnTile: 0
 --- !u!65 &923985922
@@ -4618,7 +4634,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9aab5529a78a5be4d8fca66044db490e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TileLogic
-  player: {fileID: 1785641259}
+  player: {fileID: 0}
   damageDeals: 5
   playerOnTile: 0
 --- !u!65 &1010998992
@@ -4746,7 +4762,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9aab5529a78a5be4d8fca66044db490e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TileLogic
-  player: {fileID: 1785641259}
+  player: {fileID: 0}
   damageDeals: 5
   playerOnTile: 0
 --- !u!65 &1015456928
@@ -4912,7 +4928,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9aab5529a78a5be4d8fca66044db490e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TileLogic
-  player: {fileID: 1785641259}
+  player: {fileID: 0}
   damageDeals: 5
   playerOnTile: 0
 --- !u!65 &1043477372
@@ -5061,7 +5077,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9aab5529a78a5be4d8fca66044db490e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TileLogic
-  player: {fileID: 1785641259}
+  player: {fileID: 0}
   damageDeals: 5
   playerOnTile: 0
 --- !u!65 &1075088078
@@ -5150,6 +5166,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1893255566}
     m_Modifications:
+    - target: {fileID: 948806219448044696, guid: 7f68c7a5fd30cf14bbd3ff9971fcdb39, type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 1222121429}
     - target: {fileID: 1490020383269694506, guid: 7f68c7a5fd30cf14bbd3ff9971fcdb39, type: 3}
       propertyPath: m_Name
       value: BossDrone (4)
@@ -5161,11 +5181,11 @@ PrefabInstance:
     - target: {fileID: 4190342781076002771, guid: 7f68c7a5fd30cf14bbd3ff9971fcdb39, type: 3}
       propertyPath: playerCam
       value: 
-      objectReference: {fileID: 1933459236}
+      objectReference: {fileID: 1222121428}
     - target: {fileID: 5494791618175851728, guid: 7f68c7a5fd30cf14bbd3ff9971fcdb39, type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 1785641263}
+      objectReference: {fileID: 1222121426}
     - target: {fileID: 5494791618175851728, guid: 7f68c7a5fd30cf14bbd3ff9971fcdb39, type: 3}
       propertyPath: thisHeight
       value: 47.84068
@@ -5249,7 +5269,7 @@ PrefabInstance:
     - target: {fileID: 7342794304132200686, guid: 7f68c7a5fd30cf14bbd3ff9971fcdb39, type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 1785641259}
+      objectReference: {fileID: 1222121427}
     - target: {fileID: 7342794304132200686, guid: 7f68c7a5fd30cf14bbd3ff9971fcdb39, type: 3}
       propertyPath: pooler
       value: 
@@ -5300,6 +5320,303 @@ Transform:
   m_Children: []
   m_Father: {fileID: 7595267480686530083}
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+--- !u!1001 &1222121425
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2243020122175513880, guid: 77e7c27b2c5525e4aa8cc9f99d654486, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2243020122175513880, guid: 77e7c27b2c5525e4aa8cc9f99d654486, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2243020122246761220, guid: 77e7c27b2c5525e4aa8cc9f99d654486, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2243020122246761220, guid: 77e7c27b2c5525e4aa8cc9f99d654486, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2243020122246761220, guid: 77e7c27b2c5525e4aa8cc9f99d654486, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 61.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2243020122246761220, guid: 77e7c27b2c5525e4aa8cc9f99d654486, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 44.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2243020122246761220, guid: 77e7c27b2c5525e4aa8cc9f99d654486, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -23
+      objectReference: {fileID: 0}
+    - target: {fileID: 2243020122508800755, guid: 77e7c27b2c5525e4aa8cc9f99d654486, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2243020122508800755, guid: 77e7c27b2c5525e4aa8cc9f99d654486, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2243020122508800755, guid: 77e7c27b2c5525e4aa8cc9f99d654486, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 35.73
+      objectReference: {fileID: 0}
+    - target: {fileID: 2243020122508800755, guid: 77e7c27b2c5525e4aa8cc9f99d654486, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 2243020122508800755, guid: 77e7c27b2c5525e4aa8cc9f99d654486, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -23
+      objectReference: {fileID: 0}
+    - target: {fileID: 2243020122829345126, guid: 77e7c27b2c5525e4aa8cc9f99d654486, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2243020122829345126, guid: 77e7c27b2c5525e4aa8cc9f99d654486, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2243020122894124685, guid: 77e7c27b2c5525e4aa8cc9f99d654486, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2243020122894124685, guid: 77e7c27b2c5525e4aa8cc9f99d654486, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2243020122894124685, guid: 77e7c27b2c5525e4aa8cc9f99d654486, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 39.07
+      objectReference: {fileID: 0}
+    - target: {fileID: 2243020122894124685, guid: 77e7c27b2c5525e4aa8cc9f99d654486, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 2243020122894124685, guid: 77e7c27b2c5525e4aa8cc9f99d654486, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -23
+      objectReference: {fileID: 0}
+    - target: {fileID: 2243020123108092049, guid: 77e7c27b2c5525e4aa8cc9f99d654486, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2243020123108092049, guid: 77e7c27b2c5525e4aa8cc9f99d654486, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4295892835532738850, guid: 77e7c27b2c5525e4aa8cc9f99d654486, type: 3}
+      propertyPath: m_Height
+      value: 1.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4750419573833148750, guid: 77e7c27b2c5525e4aa8cc9f99d654486, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4750419573833148750, guid: 77e7c27b2c5525e4aa8cc9f99d654486, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4750419573833148750, guid: 77e7c27b2c5525e4aa8cc9f99d654486, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 32.34
+      objectReference: {fileID: 0}
+    - target: {fileID: 4750419573833148750, guid: 77e7c27b2c5525e4aa8cc9f99d654486, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 4750419573833148750, guid: 77e7c27b2c5525e4aa8cc9f99d654486, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -23
+      objectReference: {fileID: 0}
+    - target: {fileID: 4750419573999888530, guid: 77e7c27b2c5525e4aa8cc9f99d654486, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4750419573999888530, guid: 77e7c27b2c5525e4aa8cc9f99d654486, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4750419574750989019, guid: 77e7c27b2c5525e4aa8cc9f99d654486, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4750419574750989019, guid: 77e7c27b2c5525e4aa8cc9f99d654486, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4750419574852684551, guid: 77e7c27b2c5525e4aa8cc9f99d654486, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4750419574852684551, guid: 77e7c27b2c5525e4aa8cc9f99d654486, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4750419574852684551, guid: 77e7c27b2c5525e4aa8cc9f99d654486, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 34.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4750419574852684551, guid: 77e7c27b2c5525e4aa8cc9f99d654486, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 4750419574852684551, guid: 77e7c27b2c5525e4aa8cc9f99d654486, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -23
+      objectReference: {fileID: 0}
+    - target: {fileID: 4750419575037781530, guid: 77e7c27b2c5525e4aa8cc9f99d654486, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4750419575037781530, guid: 77e7c27b2c5525e4aa8cc9f99d654486, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4750419575382347206, guid: 77e7c27b2c5525e4aa8cc9f99d654486, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4750419575382347206, guid: 77e7c27b2c5525e4aa8cc9f99d654486, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4750419575382347206, guid: 77e7c27b2c5525e4aa8cc9f99d654486, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 61.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4750419575382347206, guid: 77e7c27b2c5525e4aa8cc9f99d654486, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 44.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4750419575382347206, guid: 77e7c27b2c5525e4aa8cc9f99d654486, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -23
+      objectReference: {fileID: 0}
+    - target: {fileID: 4750419575634488915, guid: 77e7c27b2c5525e4aa8cc9f99d654486, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4750419575634488915, guid: 77e7c27b2c5525e4aa8cc9f99d654486, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4750419575962273167, guid: 77e7c27b2c5525e4aa8cc9f99d654486, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4750419575962273167, guid: 77e7c27b2c5525e4aa8cc9f99d654486, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4750419575962273167, guid: 77e7c27b2c5525e4aa8cc9f99d654486, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 35.73
+      objectReference: {fileID: 0}
+    - target: {fileID: 4750419575962273167, guid: 77e7c27b2c5525e4aa8cc9f99d654486, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 4750419575962273167, guid: 77e7c27b2c5525e4aa8cc9f99d654486, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -23
+      objectReference: {fileID: 0}
+    - target: {fileID: 7201302951580936532, guid: 77e7c27b2c5525e4aa8cc9f99d654486, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7201302951580936532, guid: 77e7c27b2c5525e4aa8cc9f99d654486, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 7917674758246323947, guid: 77e7c27b2c5525e4aa8cc9f99d654486, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8806329115733545877, guid: 77e7c27b2c5525e4aa8cc9f99d654486, type: 3}
+      propertyPath: m_Name
+      value: XR Origin Hands (XR Rig)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8806329115733545878, guid: 77e7c27b2c5525e4aa8cc9f99d654486, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.95
+      objectReference: {fileID: 0}
+    - target: {fileID: 8806329115733545878, guid: 77e7c27b2c5525e4aa8cc9f99d654486, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 40.06
+      objectReference: {fileID: 0}
+    - target: {fileID: 8806329115733545878, guid: 77e7c27b2c5525e4aa8cc9f99d654486, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 31.38
+      objectReference: {fileID: 0}
+    - target: {fileID: 8806329115733545878, guid: 77e7c27b2c5525e4aa8cc9f99d654486, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.49999982
+      objectReference: {fileID: 0}
+    - target: {fileID: 8806329115733545878, guid: 77e7c27b2c5525e4aa8cc9f99d654486, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8806329115733545878, guid: 77e7c27b2c5525e4aa8cc9f99d654486, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.8660255
+      objectReference: {fileID: 0}
+    - target: {fileID: 8806329115733545878, guid: 77e7c27b2c5525e4aa8cc9f99d654486, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8806329115733545878, guid: 77e7c27b2c5525e4aa8cc9f99d654486, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8806329115733545878, guid: 77e7c27b2c5525e4aa8cc9f99d654486, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 120
+      objectReference: {fileID: 0}
+    - target: {fileID: 8806329115733545878, guid: 77e7c27b2c5525e4aa8cc9f99d654486, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9059786329452581396, guid: 77e7c27b2c5525e4aa8cc9f99d654486, type: 3}
+      propertyPath: m_CameraYOffset
+      value: 1.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 9059786329452581396, guid: 77e7c27b2c5525e4aa8cc9f99d654486, type: 3}
+      propertyPath: m_RequestedTrackingOriginMode
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 77e7c27b2c5525e4aa8cc9f99d654486, type: 3}
+--- !u!4 &1222121426 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8806329115733545878, guid: 77e7c27b2c5525e4aa8cc9f99d654486, type: 3}
+  m_PrefabInstance: {fileID: 1222121425}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1222121427 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8806329115733545877, guid: 77e7c27b2c5525e4aa8cc9f99d654486, type: 3}
+  m_PrefabInstance: {fileID: 1222121425}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1222121428 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7917674758326848202, guid: 77e7c27b2c5525e4aa8cc9f99d654486, type: 3}
+  m_PrefabInstance: {fileID: 1222121425}
+  m_PrefabAsset: {fileID: 0}
+--- !u!20 &1222121429 stripped
+Camera:
+  m_CorrespondingSourceObject: {fileID: 7917674758326848207, guid: 77e7c27b2c5525e4aa8cc9f99d654486, type: 3}
+  m_PrefabInstance: {fileID: 1222121425}
+  m_PrefabAsset: {fileID: 0}
 --- !u!65 &1224001830
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5542,7 +5859,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9aab5529a78a5be4d8fca66044db490e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TileLogic
-  player: {fileID: 1785641259}
+  player: {fileID: 0}
   damageDeals: 5
   playerOnTile: 0
 --- !u!65 &1288167804
@@ -5670,7 +5987,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9aab5529a78a5be4d8fca66044db490e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TileLogic
-  player: {fileID: 1785641259}
+  player: {fileID: 0}
   damageDeals: 5
   playerOnTile: 0
 --- !u!65 &1291364925
@@ -5798,7 +6115,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9aab5529a78a5be4d8fca66044db490e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TileLogic
-  player: {fileID: 1785641259}
+  player: {fileID: 0}
   damageDeals: 5
   playerOnTile: 0
 --- !u!65 &1301143451
@@ -5926,7 +6243,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9aab5529a78a5be4d8fca66044db490e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TileLogic
-  player: {fileID: 1785641259}
+  player: {fileID: 0}
   damageDeals: 5
   playerOnTile: 0
 --- !u!65 &1344216638
@@ -6019,7 +6336,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9aab5529a78a5be4d8fca66044db490e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TileLogic
-  player: {fileID: 1785641259}
+  player: {fileID: 0}
   damageDeals: 5
   playerOnTile: 0
 --- !u!114 &1407385661
@@ -6034,7 +6351,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9aab5529a78a5be4d8fca66044db490e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TileLogic
-  player: {fileID: 1785641259}
+  player: {fileID: 0}
   damageDeals: 5
   playerOnTile: 0
 --- !u!1 &1414071896
@@ -6084,7 +6401,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9aab5529a78a5be4d8fca66044db490e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TileLogic
-  player: {fileID: 1785641259}
+  player: {fileID: 0}
   damageDeals: 5
   playerOnTile: 0
 --- !u!65 &1414071899
@@ -6233,7 +6550,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9aab5529a78a5be4d8fca66044db490e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TileLogic
-  player: {fileID: 1785641259}
+  player: {fileID: 0}
   damageDeals: 5
   playerOnTile: 0
 --- !u!65 &1435595386
@@ -6418,7 +6735,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9aab5529a78a5be4d8fca66044db490e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TileLogic
-  player: {fileID: 1785641259}
+  player: {fileID: 0}
   damageDeals: 5
   playerOnTile: 0
 --- !u!65 &1515776546
@@ -6507,6 +6824,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1893255566}
     m_Modifications:
+    - target: {fileID: 948806219448044696, guid: 7f68c7a5fd30cf14bbd3ff9971fcdb39, type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 1222121429}
     - target: {fileID: 1490020383269694506, guid: 7f68c7a5fd30cf14bbd3ff9971fcdb39, type: 3}
       propertyPath: m_Name
       value: BossDrone (5)
@@ -6518,11 +6839,11 @@ PrefabInstance:
     - target: {fileID: 4190342781076002771, guid: 7f68c7a5fd30cf14bbd3ff9971fcdb39, type: 3}
       propertyPath: playerCam
       value: 
-      objectReference: {fileID: 1933459236}
+      objectReference: {fileID: 1222121428}
     - target: {fileID: 5494791618175851728, guid: 7f68c7a5fd30cf14bbd3ff9971fcdb39, type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 1785641263}
+      objectReference: {fileID: 1222121426}
     - target: {fileID: 5494791618175851728, guid: 7f68c7a5fd30cf14bbd3ff9971fcdb39, type: 3}
       propertyPath: thisHeight
       value: 47.84068
@@ -6606,7 +6927,7 @@ PrefabInstance:
     - target: {fileID: 7342794304132200686, guid: 7f68c7a5fd30cf14bbd3ff9971fcdb39, type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 1785641259}
+      objectReference: {fileID: 1222121427}
     - target: {fileID: 7342794304132200686, guid: 7f68c7a5fd30cf14bbd3ff9971fcdb39, type: 3}
       propertyPath: pooler
       value: 
@@ -6673,7 +6994,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9aab5529a78a5be4d8fca66044db490e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TileLogic
-  player: {fileID: 1785641259}
+  player: {fileID: 0}
   damageDeals: 5
   playerOnTile: 0
 --- !u!65 &1518680345
@@ -6801,7 +7122,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9aab5529a78a5be4d8fca66044db490e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TileLogic
-  player: {fileID: 1785641259}
+  player: {fileID: 0}
   damageDeals: 5
   playerOnTile: 0
 --- !u!65 &1564863504
@@ -6929,7 +7250,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9aab5529a78a5be4d8fca66044db490e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TileLogic
-  player: {fileID: 1785641259}
+  player: {fileID: 0}
   damageDeals: 5
   playerOnTile: 0
 --- !u!65 &1566671574
@@ -7057,7 +7378,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9aab5529a78a5be4d8fca66044db490e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TileLogic
-  player: {fileID: 1785641259}
+  player: {fileID: 0}
   damageDeals: 5
   playerOnTile: 0
 --- !u!65 &1597691365
@@ -7171,7 +7492,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9aab5529a78a5be4d8fca66044db490e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TileLogic
-  player: {fileID: 1785641259}
+  player: {fileID: 0}
   damageDeals: 5
   playerOnTile: 0
 --- !u!1 &1706200361
@@ -7221,7 +7542,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9aab5529a78a5be4d8fca66044db490e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TileLogic
-  player: {fileID: 1785641259}
+  player: {fileID: 0}
   damageDeals: 5
   playerOnTile: 0
 --- !u!65 &1706200364
@@ -7349,7 +7670,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9aab5529a78a5be4d8fca66044db490e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TileLogic
-  player: {fileID: 1785641259}
+  player: {fileID: 0}
   damageDeals: 5
   playerOnTile: 0
 --- !u!65 &1719026621
@@ -7442,7 +7763,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9aab5529a78a5be4d8fca66044db490e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TileLogic
-  player: {fileID: 1785641259}
+  player: {fileID: 0}
   damageDeals: 5
   playerOnTile: 0
 --- !u!65 &1729296651
@@ -7513,7 +7834,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9aab5529a78a5be4d8fca66044db490e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TileLogic
-  player: {fileID: 1785641259}
+  player: {fileID: 0}
   damageDeals: 5
   playerOnTile: 0
 --- !u!65 &1760127494
@@ -7641,7 +7962,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9aab5529a78a5be4d8fca66044db490e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TileLogic
-  player: {fileID: 1785641259}
+  player: {fileID: 0}
   damageDeals: 5
   playerOnTile: 0
 --- !u!65 &1762808081
@@ -7764,177 +8085,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.016, y: 0.016, z: 0.005}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!1 &1785641259
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1785641263}
-  - component: {fileID: 1785641262}
-  - component: {fileID: 1785641261}
-  - component: {fileID: 1785641260}
-  - component: {fileID: 1785641265}
-  - component: {fileID: 1785641267}
-  - component: {fileID: 1785641266}
-  m_Layer: 10
-  m_Name: Player
-  m_TagString: Player
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!136 &1785641260
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1785641259}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!23 &1785641261
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1785641259}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RayTracingAccelStructBuildFlagsOverride: 0
-  m_RayTracingAccelStructBuildFlags: 1
-  m_SmallMeshCulling: 1
-  m_ForceMeshLod: -1
-  m_MeshLodSelectionBias: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_MaskInteraction: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!33 &1785641262
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1785641259}
-  m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
---- !u!4 &1785641263
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1785641259}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.3, y: 41.17, z: 29.8}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1933459236}
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!54 &1785641265
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1785641259}
-  serializedVersion: 5
-  m_Mass: 1
-  m_LinearDamping: 0
-  m_AngularDamping: 0.05
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
-  m_InertiaTensor: {x: 1, y: 1, z: 1}
-  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ImplicitCom: 1
-  m_ImplicitTensor: 1
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 126
-  m_CollisionDetection: 0
---- !u!114 &1785641266
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1785641259}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e409150a7976558419009a3f1f3ac8e0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PlayerHealth
-  playerHealth: 50
---- !u!114 &1785641267
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1785641259}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0cb6d9349bfc4f7459c2cce32345acc0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PlayerTowerOn
-  towerCurrentlyOn: 
 --- !u!1 &1792442236
 GameObject:
   m_ObjectHideFlags: 0
@@ -7982,7 +8132,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9aab5529a78a5be4d8fca66044db490e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TileLogic
-  player: {fileID: 1785641259}
+  player: {fileID: 0}
   damageDeals: 5
   playerOnTile: 0
 --- !u!65 &1792442239
@@ -8096,7 +8246,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9aab5529a78a5be4d8fca66044db490e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TileLogic
-  player: {fileID: 1785641259}
+  player: {fileID: 0}
   damageDeals: 5
   playerOnTile: 0
 --- !u!1 &1845232886
@@ -8285,7 +8435,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9aab5529a78a5be4d8fca66044db490e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TileLogic
-  player: {fileID: 1785641259}
+  player: {fileID: 0}
   damageDeals: 5
   playerOnTile: 0
 --- !u!65 &1848404374
@@ -8521,7 +8671,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9aab5529a78a5be4d8fca66044db490e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TileLogic
-  player: {fileID: 1785641259}
+  player: {fileID: 0}
   damageDeals: 5
   playerOnTile: 0
 --- !u!114 &1903861525
@@ -8536,7 +8686,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9aab5529a78a5be4d8fca66044db490e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TileLogic
-  player: {fileID: 1785641259}
+  player: {fileID: 0}
   damageDeals: 5
   playerOnTile: 0
 --- !u!114 &1903861526
@@ -8551,7 +8701,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9aab5529a78a5be4d8fca66044db490e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TileLogic
-  player: {fileID: 1785641259}
+  player: {fileID: 0}
   damageDeals: 5
   playerOnTile: 0
 --- !u!114 &1903861527
@@ -8566,7 +8716,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9aab5529a78a5be4d8fca66044db490e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TileLogic
-  player: {fileID: 1785641259}
+  player: {fileID: 0}
   damageDeals: 5
   playerOnTile: 0
 --- !u!1 &1910433693
@@ -8616,7 +8766,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9aab5529a78a5be4d8fca66044db490e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TileLogic
-  player: {fileID: 1785641259}
+  player: {fileID: 0}
   damageDeals: 5
   playerOnTile: 0
 --- !u!65 &1910433696
@@ -8744,7 +8894,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9aab5529a78a5be4d8fca66044db490e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TileLogic
-  player: {fileID: 1785641259}
+  player: {fileID: 0}
   damageDeals: 5
   playerOnTile: 0
 --- !u!65 &1925489522
@@ -8825,143 +8975,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1925489519}
   m_Mesh: {fileID: 82550945414474335, guid: 6cde73c78d8d68f4eb345fe0a7c80237, type: 3}
---- !u!1 &1933459232
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1933459236}
-  - component: {fileID: 1933459235}
-  - component: {fileID: 1933459234}
-  - component: {fileID: 1933459233}
-  m_Layer: 0
-  m_Name: Camera
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1933459233
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1933459232}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a79441f348de89743a2939f4d699eac1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Unity.RenderPipelines.Universal.Runtime::UnityEngine.Rendering.Universal.UniversalAdditionalCameraData
-  m_RenderShadows: 1
-  m_RequiresDepthTextureOption: 2
-  m_RequiresOpaqueTextureOption: 2
-  m_CameraType: 0
-  m_Cameras: []
-  m_RendererIndex: -1
-  m_VolumeLayerMask:
-    serializedVersion: 2
-    m_Bits: 1
-  m_VolumeTrigger: {fileID: 0}
-  m_VolumeFrameworkUpdateModeOption: 2
-  m_RenderPostProcessing: 0
-  m_Antialiasing: 0
-  m_AntialiasingQuality: 2
-  m_StopNaN: 0
-  m_Dithering: 0
-  m_ClearDepth: 1
-  m_AllowXRRendering: 1
-  m_AllowHDROutput: 1
-  m_UseScreenCoordOverride: 0
-  m_ScreenSizeOverride: {x: 0, y: 0, z: 0, w: 0}
-  m_ScreenCoordScaleBias: {x: 0, y: 0, z: 0, w: 0}
-  m_RequiresDepthTexture: 0
-  m_RequiresColorTexture: 0
-  m_TaaSettings:
-    m_Quality: 3
-    m_FrameInfluence: 0.1
-    m_JitterScale: 1
-    m_MipBias: 0
-    m_VarianceClampScale: 0.9
-    m_ContrastAdaptiveSharpening: 0
-  m_Version: 2
---- !u!81 &1933459234
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1933459232}
-  m_Enabled: 1
---- !u!20 &1933459235
-Camera:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1933459232}
-  m_Enabled: 1
-  serializedVersion: 2
-  m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
-  m_projectionMatrixMode: 1
-  m_GateFitMode: 2
-  m_FOVAxisMode: 0
-  m_Iso: 200
-  m_ShutterSpeed: 0.005
-  m_Aperture: 16
-  m_FocusDistance: 10
-  m_FocalLength: 50
-  m_BladeCount: 5
-  m_Curvature: {x: 2, y: 11}
-  m_BarrelClipping: 0.25
-  m_Anamorphism: 0
-  m_SensorSize: {x: 36, y: 24}
-  m_LensShift: {x: 0, y: 0}
-  m_NormalizedViewPortRect:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 1
-    height: 1
-  near clip plane: 0.3
-  far clip plane: 1000
-  field of view: 60
-  orthographic: 0
-  orthographic size: 5
-  m_Depth: 0
-  m_CullingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_RenderingPath: -1
-  m_TargetTexture: {fileID: 0}
-  m_TargetDisplay: 0
-  m_TargetEye: 3
-  m_HDR: 1
-  m_AllowMSAA: 1
-  m_AllowDynamicResolution: 0
-  m_ForceIntoRT: 0
-  m_OcclusionCulling: 1
-  m_StereoConvergence: 10
-  m_StereoSeparation: 0.022
---- !u!4 &1933459236
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1933459232}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: 0, y: 2, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1785641263}
-  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!1 &1935570780
 GameObject:
   m_ObjectHideFlags: 0
@@ -9068,7 +9081,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1936475036
 Transform:
   m_ObjectHideFlags: 0
@@ -9097,7 +9110,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ca1de2a911908b489315e95a7b4a009, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LookAtPlayer
-  playerModel: {fileID: 1785641263}
+  playerModel: {fileID: 1222121426}
 --- !u!1 &1954414047
 GameObject:
   m_ObjectHideFlags: 0
@@ -9145,7 +9158,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9aab5529a78a5be4d8fca66044db490e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TileLogic
-  player: {fileID: 1785641259}
+  player: {fileID: 0}
   damageDeals: 5
   playerOnTile: 0
 --- !u!65 &1954414050
@@ -9472,7 +9485,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9aab5529a78a5be4d8fca66044db490e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TileLogic
-  player: {fileID: 1785641259}
+  player: {fileID: 0}
   damageDeals: 5
   playerOnTile: 0
 --- !u!65 &2015856675
@@ -9802,7 +9815,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9aab5529a78a5be4d8fca66044db490e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TileLogic
-  player: {fileID: 1785641259}
+  player: {fileID: 0}
   damageDeals: 5
   playerOnTile: 0
 --- !u!65 &2124957519
@@ -9930,7 +9943,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9aab5529a78a5be4d8fca66044db490e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TileLogic
-  player: {fileID: 1785641259}
+  player: {fileID: 0}
   damageDeals: 5
   playerOnTile: 0
 --- !u!65 &2125231223
@@ -10086,7 +10099,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9aab5529a78a5be4d8fca66044db490e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TileLogic
-  player: {fileID: 1785641259}
+  player: {fileID: 0}
   damageDeals: 5
   playerOnTile: 0
 --- !u!114 &2138148033
@@ -10101,7 +10114,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9aab5529a78a5be4d8fca66044db490e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TileLogic
-  player: {fileID: 1785641259}
+  player: {fileID: 0}
   damageDeals: 5
   playerOnTile: 0
 --- !u!1 &202202790544444037
@@ -12144,7 +12157,7 @@ MonoBehaviour:
   maxHealth: 100
   currentHealth: 5
   animManager: {fileID: 7686268774500893584}
-  player: {fileID: 1785641259}
+  player: {fileID: 1222121427}
   pooler: {fileID: 528178264}
   shootPoints:
   - {fileID: 1986899345}
@@ -12231,8 +12244,8 @@ MonoBehaviour:
   - {fileID: 455193953}
   - {fileID: 1080803236}
   - {fileID: 1516943327}
-  healthBar: {fileID: 0}
-  winUI: {fileID: 0}
+  healthBar: {fileID: 585137580}
+  winUI: {fileID: 1936475035}
 --- !u!135 &7686268774500893583
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -12279,7 +12292,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ca1de2a911908b489315e95a7b4a009, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LookAtPlayer
-  playerModel: {fileID: 1785641263}
+  playerModel: {fileID: 1222121426}
 --- !u!1 &7713070211016558928
 GameObject:
   m_ObjectHideFlags: 0
@@ -12761,5 +12774,5 @@ SceneRoots:
   - {fileID: 585137584}
   - {fileID: 7686268774500893581}
   - {fileID: 239951847}
-  - {fileID: 1785641263}
   - {fileID: 1893255566}
+  - {fileID: 1222121425}
